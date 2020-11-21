@@ -7,6 +7,7 @@ body      {
            }
 header    {
 	        padding: 0px 20px;
+	        margin-bottom: 55px;
             }
 header hgroup   {
 	             width: 175px;
@@ -40,6 +41,8 @@ header nav a:hover {
 
 #banner .image-caption {
 	                    width: 313px;
+	                    float: left;
+	                    padding-top: 33px;
                         }
 .image-caption h1      {
                         font-size: 46px;
@@ -51,34 +54,24 @@ header nav a:hover {
 	                    line-height: 20px;
 	                    margin-bottom: 20px;
                         }
+.image-caption a       {
+	                    text-decoration: none;
+	                    color: #fff;
+	                    background: #7e5c88;
+	                    width: 106px; /*140-17-17 */
+	                    padding: 12px 17px;
+	                    border-radius: 20px;
+                        }
+ /*Seksioni banner */
+#banner .div-circle    {
+	                    width: 330px;
+	                    height: 330px;
+	                    background-image: url(../images/Blush-Roses.jpg);
+	                    border-radius: 190px;
+	                    border: 25px solid #7e5c88;
+	                    float: right;
+}
 
 .clearFix          {
 	                 clear: both;
                     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#banner .image-caption {
-                         width: 313px;
-                         float: left;
-                         padding-top: 99px;
-
-                         }
- .image-caption h1      {
-                          font-size: 46px;
-                          margin-bottom: 30px;
-
-                         }
- .image-caption*/
