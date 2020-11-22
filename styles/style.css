@@ -72,68 +72,86 @@ header nav a:hover {
 	                    float: right;
 }
 
-.clearFix          {
-	                 clear: both;
-                    }
-
-
-#work{
-	overflow: hidden;
+.clearFix              {
+	                    clear: both;
+                        }
+#works .projectDiv     {
+	                    float: left;
+	                    margin-right: 20px;
 }
+#works .projectDiv h3  {
+	                    color: #333;
+	                    background: #eee;
+	                    font-size: 12px;
+	                    width: 225px;
+	                    padding: 13px 0;
+	                    text-align: center;
+	                    font-weight: bold;
+                        }
+#works .projectDiv h4  {
+                         color: #979797;
+                         background: #eee;
+                         font-size: 12px; 
+                         width: 225px;
+                         padding: 13px 0;
+                         text-align: center;
+                        
+                         }
+#work                  {
+	                    overflow: hidden;
+                        }
 
-.projectDiv{
-		overflow: hidden;
-	width: 166.2px;
-	width: 23.437%;
-	float: left;
-	margin: 28px 20px auto auto;
-	margin: 38px 2.08% auto auto;
-	background-color: #eeeeee;
-}
+.projectDiv            {
+		                overflow: hidden;
+	                    width: 166.2px;
+	                    width: 23.437%;
+	                    float: left;
+	                    margin: 28px 20px auto auto;
+	                    margin: 38px 2.08% auto auto;
+	                    background-color: #eeeeee;
+                        }
 
 .latest-project-work-img{
-	    width: 225px;
-		height: 225px;
-	position: relative;
-	left: 50%;
-	-webkit-transform: translate(-50%, 0);	
-	-ms-transform: translate(-50%, 0);	
-	-moz-transform: translate(-50%, 0);	
-	-o-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
-}
-.desc, .latest-title{
-	font-size: 0.75em;
-	text-align: center;
-	padding: 12px;
-	color: #979797;
-	text-transform: capitalize;
-}
+	                     width: 225px;
+		                 height: 225px;
+	                     position: relative;
+	                     left: 50%;
+	                     -webkit-transform: translate(-50%, 0);	
+	                     -ms-transform: translate(-50%, 0);	
+	                     -moz-transform: translate(-50%, 0);	
+	                     -o-transform: translate(-50%, 0);
+	                     transform: translate(-50%, 0);
+                         }
+.desc, .latest-title    {
+	                     font-size: 0.75em;
+	                     text-align: center;
+	                     padding: 12px;
+	                     color: #979797;
+	                     text-transform: capitalize;
+                         }
 
-.latest-work-title{
-	padding: 58px 0 10px 0;
-	border-bottom: 1px solid #e6e6e6;
-	text-transform: capitalize;
-	font-weight: 100;
-}
+.latest-work-title      {
+	                     padding: 58px 0 10px 0;
+	                     border-bottom: 1px solid #e6e6e6;
+	                     text-transform: capitalize;
+	                     font-weight: 100;
+                         }
 
-.latest-title{
-font-weight: bold;
-color: #333;
-}
-.projectDiv:hover{
-	 background: #7e5c88;
-	                color: #fff;
-}
+.latest-title           {
+                         font-weight: bold;
+                         color: #333;
+                         }
+.projectDiv:hover       {
+	                     background: #7e5c88;
+	                     color: #fff;
+                         }
 
-
-.latest-a
-{
-	text-decoration: none;
-}
-#footer {
-    padding-top: 50px;
-}
-#footer a{
-    text-decoration: none;
-}
+.latest-a                {
+	                     text-decoration: none;
+                         }
+#footer                 {
+                         padding-top: 50px;
+                         }
+#footer a               {
+                         text-decoration: none;
+                         }
