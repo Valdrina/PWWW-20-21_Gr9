@@ -131,3 +131,9 @@ color: #333;
 {
 	text-decoration: none;
 }
+#footer {
+    padding-top: 50px;
+}
+#footer a{
+    text-decoration: none;
+}
