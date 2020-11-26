@@ -149,9 +149,50 @@ header nav a:hover {
 .latest-a                {
 	                     text-decoration: none;
                          }
-#footer                 {
+footer                 {
                          padding-top: 50px;
                          }
-#footer a               {
+footer a               {
                          text-decoration: none;
                          }
+
+footer nav ul li{
+	list-style: none; 
+
+}
+
+footer  p,a{
+	color: #999999;
+	font-size: 8px;
+}
+
+.footer-content-1{
+	width: 219px;
+	float: left;
+	padding-right: 22px;
+	padding-bottom: 50px; 
+	padding-left: 5px;
+
+}
+
+.footer-content-1 h1{
+	font-size: 10px;
+	color: #999999;
+	padding-bottom: 1em;
+	font-weight: bold;
+	}
+
+.footer-content-1 h1 span {
+	font-weight: normal;
+
+}
+.clearBoth { clear:both; }
+
+footer .copyright {
+	    padding: 20px;
+
+
+}
+.copyright span{
+	float:right;
+}
