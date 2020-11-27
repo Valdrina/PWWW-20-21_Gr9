@@ -150,34 +150,33 @@ header nav a:hover {
 .latest-a                {
 	                     text-decoration: none;
                          }
-footer                 {
-                         padding-top: 50px;
-                         }
-footer a               {
-                         text-decoration: none;
-                         }
-
-footer nav ul li{
-	list-style: none; 
-
+ /* pjesa e footer-it */                        
+footer{
+ padding-top: 50px;
 }
+footer a{
+ 	text-decoration: none;
+     color: #7e5c88;
+
+ }
 
 footer  p,a{
 	color: #999999;
-	font-size: 8px;
+	font-size: 10px;
+	line-height: 1.3;
 }
-
+/* pozicionimi i diiv elementeve */
 .footer-content-1{
-	width: 219px;
+	width: 226px;
 	float: left;
-	padding-right: 22px;
+	padding-right: 15px;
 	padding-bottom: 50px; 
 	padding-left: 5px;
 
 }
 
 .footer-content-1 h1{
-	font-size: 10px;
+	font-size: 12px;
 	color: #999999;
 	padding-bottom: 1em;
 	font-weight: bold;
@@ -189,11 +188,90 @@ footer  p,a{
 }
 .clearBoth { clear:both; }
 
-footer .copyright {
-	    padding: 20px;
+.copyright {
+ padding: 5px;
 
+}
+.footer-content-1 ul{
+	padding: 0px;
+}
+.footer-content-1 li{
+	list-style: none;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	border-bottom: solid #e0e0e0;
+	border-width: 1px;
 
 }
 .copyright span{
 	float:right;
+}
+#rm{
+	float: right;
+}
+/* ndarja e seksioneve te faqes krijimi i hijes eliptike */
+.shadow {
+    padding-bottom: 20px;
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+
+.shadow::before {
+    content: "";
+    height: 10px;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    bottom: 1px;
+    z-index: -5;
+    -webkit-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+    -moz-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+    box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+}
+footer nav ul li span{
+	padding-left: 3px;
+	font-size: 10px;
+	color: #7e5c88;
+
+}
+
+/* kriijimi i ikonave te mediave sociale*/
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+  background:#7e5c88;
+}
+.fa-linkedin {
+  opacity: 0.7;
+  background: #999999;
+  color: white;
+}
+.fa-twitter {
+  opacity: 0.7;
+  background: #999999;
+  color: white;
+}
+.fa-pinterest {
+  opacity: 0.7;
+  background: #999999;
+  color: white;
+}
+.fa-rss {
+  opacity: 0.7;
+  background: #999999;
+  color: white;
 }
