@@ -38,9 +38,18 @@ header nav a:hover {
 	                background: #7e5c88;
 	                color: #fff;
 
+
                     }
 #banner {
 	padding: 0px 6.25%;
+
+
+                    }
+#banner {
+	padding: 0px 6.25%;
+	padding-bottom: 40px;
+
+
 }
 #banner .image-caption {
 	                    width: 313px;
@@ -66,6 +75,7 @@ header nav a:hover {
 	                    padding: 12px 17px;
 	                    border-radius: 20px;
                         }
+
  /*Seksioni banner */
 #banner .div-circle    {
 	                    width: 330px;
@@ -74,6 +84,7 @@ header nav a:hover {
 	                    border-radius: 190px;
 	                    border: 25px solid #7e5c88;
 	                    float: right;
+
 }
 
 .clearFix              {
@@ -112,11 +123,20 @@ header nav a:hover {
 	color: #fff;
 }*/
 
+
 /* #work                  {
 	                    overflow: hidden;
                         }
 
  .projectDiv            {
+=======
+#works                  {
+	                    overflow: hidden;
+                        }
+
+
+.projectDiv            {
+>>>>>>> b466c49d1d864e8b3a663ac1dbbeffe6954d9f1b
 		                overflow: hidden;
 	                    width: 166.2px;
 	                    width: 23.437%;
@@ -164,6 +184,7 @@ header nav a:hover {
 
 .latest-a                {
 	                     text-decoration: none;
+<<<<<<< HEAD
                          } */
 
  #works h2{
@@ -201,6 +222,13 @@ header nav a:hover {
 background-color:#7e5c88 ;
 color: #fff;
 }
+
+.content-title {
+	margin-bottom: 28px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e6e6e6;		
+}
+                         
 
  /* pjesa e footer-it */                        
 footer{
