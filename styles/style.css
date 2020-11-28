@@ -8,7 +8,7 @@ body      {
            }
 header    {
 	        padding: 0px 20px;
-	        margin-bottom: 55px;
+	        margin-bottom: 51px;
             }
 header hgroup   {
 	             width: 175px;
@@ -38,12 +38,16 @@ header nav a     {
 header nav a:hover {
 	                background: #7e5c88;
 	                color: #fff;
-                    }
 
+                    }
+#banner {
+	padding: 0px 6.25%;
+}
 #banner .image-caption {
 	                    width: 313px;
 	                    float: left;
 	                    padding-top: 33px;
+	                    
                         }
 .image-caption h1      {
                         font-size: 46px;
@@ -76,6 +80,12 @@ header nav a:hover {
 .clearFix              {
 	                    clear: both;
                         }
+                        /*
+#works h2 {
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
 #works .projectDiv     {
 	                    float: left;
 	                    margin-right: 20px;
@@ -98,6 +108,11 @@ header nav a:hover {
                          text-align: center;
                         
                          }
+#works .projectDiv:hover h3, #works .projectDiv:hover h4 {
+	background: #7e5c88;
+	color: #fff;
+}*/
+
 #work                  {
 	                    overflow: hidden;
                         }
@@ -150,6 +165,7 @@ header nav a:hover {
 .latest-a                {
 	                     text-decoration: none;
                          }
+                         
  /* pjesa e footer-it */                        
 footer{
  padding-top: 50px;
