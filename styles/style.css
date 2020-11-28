@@ -42,6 +42,8 @@ header nav a:hover {
                     }
 #banner {
 	padding: 0px 6.25%;
+	padding-bottom: 40px;
+
 }
 #banner .image-caption {
 	                    width: 313px;
@@ -67,6 +69,7 @@ header nav a:hover {
 	                    padding: 12px 17px;
 	                    border-radius: 20px;
                         }
+
  /*Seksioni banner */
 #banner .div-circle    {
 	                    width: 330px;
@@ -75,6 +78,7 @@ header nav a:hover {
 	                    border-radius: 190px;
 	                    border: 25px solid #7e5c88;
 	                    float: right;
+
 }
 
 .clearFix              {
@@ -113,9 +117,10 @@ header nav a:hover {
 	color: #fff;
 }*/
 
-#work                  {
+#works                  {
 	                    overflow: hidden;
                         }
+
 
 .projectDiv            {
 		                overflow: hidden;
