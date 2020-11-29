@@ -206,7 +206,9 @@ header nav a:hover {
 	text-align: center;
 	font-weight: bold;
 
+
 }
+
 
 #works .projectDiv h4{
 	color: #979797;
@@ -223,12 +225,44 @@ background-color:#7e5c88 ;
 color: #fff;
 }
 
+
+/* content */
+
 .content-title {
 	margin-bottom: 28px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #e6e6e6;		
 }
-                         
+ 
+.about-name {
+	width: 137px;
+	/* margin: 0 auto; */
+	text-align: center;
+}
+
+.about-author-name {
+	font-size: 0.9em;
+	margin-bottom: 4px;	
+	color: #979797;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.about-author-desc {
+	font-size: 0.9em;
+	margin-bottom: 4px;
+	color: #979797;
+}
+
+.about-author-link {
+	font-size: 0.9em;
+	margin-bottom: 4px;
+	color: #7e5c88;
+	text-transform: capitalize;
+}
+
+
+
 
  /* pjesa e footer-it */                        
 footer{
