@@ -38,17 +38,15 @@ header nav a:hover {
 	                background: #7e5c88;
 	                color: #fff;
 
-
                     }
 #banner {
-	padding: 0px 6.25%;
+	      padding: 0px 6.25%;
 
 
-                    }
+          }
 #banner {
 	padding: 0px 6.25%;
 	padding-bottom: 40px;
-
 
 }
 #banner .image-caption {
@@ -326,6 +324,7 @@ footer  p,a{
 }
 /* ndarja e seksioneve te faqes krijimi i hijes eliptike */
 .shadow {
+	
     padding-bottom: 20px;
     display: flex;
     background: #fff;
