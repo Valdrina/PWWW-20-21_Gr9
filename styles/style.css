@@ -47,13 +47,26 @@ header nav a:hover {
 #banner {
 	padding: 0px 6.25%;
 	padding-bottom: 40px;
+	position: relative;
+
 
 }
+/*left arrow */
+#banner .left {
+		background: url("../images/left.png");
+		height:27px;
+		width:15px; 
+		position: absolute;
+		top: 50%;
+		right:100%;
+		cursor: pointer;
+	}
+
 #banner .image-caption {
 	                    width: 313px;
 	                    float: left;
 	                    padding-top: 33px;
-	                    
+	                    float: left;
                         }
 .image-caption h1      {
                         font-size: 46px;
@@ -74,16 +87,27 @@ header nav a:hover {
 	                    border-radius: 20px;
                         }
 
- /*Seksioni banner */
-#banner .div-circle    {
-	                    width: 330px;
-	                    height: 330px;
-	                    background-image: url(../images/Blush-Roses.jpg);
-	                    border-radius: 190px;
-	                    border: 25px solid #7e5c88;
-	                    float: right;
+/* lets fix the logo circle pic  */
 
-}
+ #banner .div-circle img{
+  margin-top: 20px;
+  border: 25px solid #7e5c88;
+  width: 380px;
+  height: 380px;
+  border-radius: 100%;
+  float: right;
+ }
+/*right arrow */
+ #banner .right {
+		background: url("../images/right.png");
+		height:27px;
+		width:15px; 
+		top: 50%;
+		left:100%;
+		position: absolute;
+		cursor: pointer;
+
+	}
 
 .clearFix              {
 	                    clear: both;
