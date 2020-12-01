@@ -232,6 +232,37 @@ color: #fff;
 	border-bottom: 1px solid #e6e6e6;		
 }
  
+
+ .content-title {
+	margin-bottom: 28px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e6e6e6;		
+}
+
+.from-the-vogue-img-title {
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: #7e5c88;	
+	text-transform: capitalize;
+}
+
+.from-the-vogue-img-date  {
+	font-size: 0.8em;	
+	margin-bottom: 9px;
+	color: #979797;	
+	text-transform: capitalize;	
+}
+
+.from-the-vogue-img-text  {
+	font-size: 0.9em;
+	line-height: 16.8px;
+	width: 300px;	
+	color: #979797;
+}
+
+
+
 .about-name {
 	width: 137px;
 	/* margin: 0 auto; */
@@ -259,7 +290,19 @@ color: #fff;
 	text-transform: capitalize;
 }
 
+.from-the-blog{
 
+	float: left;
+	width: 80%;
+
+
+ 
+}
+
+.about-us{
+	float: right;
+	width: 20%;
+}
 
 
  /* pjesa e footer-it */                        
