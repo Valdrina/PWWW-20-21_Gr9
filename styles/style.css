@@ -109,105 +109,7 @@ header nav a:hover {
 
 	}
 
-.clearFix              {
-	                    clear: both;
-                        }
-                        /*
-#works h2 {
-	color: #333;
-	font-size: 16px;
-	margin-bottom: 50px;
-}
-#works .projectDiv     {
-	                    float: left;
-	                    margin-right: 20px;
-}
-#works .projectDiv h3  {
-	                    color: #333;
-	                    background: #eee;
-	                    font-size: 12px;
-	                    width: 225px;
-	                    padding: 13px 0;
-	                    text-align: center;
-	                    font-weight: bold;
-                        }
-#works .projectDiv h4  {
-                         color: #979797;
-                         background: #eee;
-                         font-size: 12px; 
-                         width: 225px;
-                         padding: 13px 0;
-                         text-align: center;
-                        
-                         }
-#works .projectDiv:hover h3, #works .projectDiv:hover h4 {
-	background: #7e5c88;
-	color: #fff;
-}*/
-
-
-/* #work                  {
-	                    overflow: hidden;
-                        }
-
- .projectDiv            {
-=======
-#works                  {
-	                    overflow: hidden;
-                        }
-
-
-.projectDiv            {
->>>>>>> b466c49d1d864e8b3a663ac1dbbeffe6954d9f1b
-		                overflow: hidden;
-	                    width: 166.2px;
-	                    width: 23.437%;
-	                    float: left;
-	                    margin: 28px 20px auto auto;
-	                    margin: 38px 2.08% auto auto;
-	                    background-color: #eeeeee;
-                        }
-                        #work .projectDiv    {float: left;}
-
-.latest-project-work-img{
-	                     width: 225px;
-		                 height: 225px;
-	                     position: relative;
-	                     left: 50%;
-	                     -webkit-transform: translate(-50%, 0);	
-	                     -ms-transform: translate(-50%, 0);	
-	                     -moz-transform: translate(-50%, 0);	
-	                     -o-transform: translate(-50%, 0);
-	                     transform: translate(-50%, 0);
-                         }
-.desc, .latest-title    {
-	                     font-size: 0.75em;
-	                     text-align: center;
-	                     padding: 12px;
-	                     color: #979797;
-	                     text-transform: capitalize;
-                         }
-
-.latest-work-title      {
-	                     padding: 58px 0 10px 0;
-	                     border-bottom: 1px solid #e6e6e6;
-	                     text-transform: capitalize;
-	                     font-weight: 100;
-                         }
-
-.latest-title           {
-                         font-weight: bold;
-                         color: #333;
-                         }
-.projectDiv:hover       {
-	                     background: #7e5c88;
-	                     color: #fff;
-                         }
-
-.latest-a                {
-	                     text-decoration: none;
-<<<<<<< HEAD
-                         } */
+ 
 
  #works h2{
  color: #333;
@@ -224,7 +126,7 @@ header nav a:hover {
 	background: #eee;
 	font-size: 12px;
 	width: 225px;
-	padding: 13px 0;
+	padding: 13px 0 ;
 	text-align: center;
 	font-weight: bold;
 
@@ -246,22 +148,26 @@ header nav a:hover {
 background-color:#7e5c88 ;
 color: #fff;
 }
-
+.clearFix              {
+	                    clear: both;
+                        }
+                      
 
 /* content */
 
-.content-title {
+/* .content-title {
 	margin-bottom: 28px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #e6e6e6;		
 }
- 
+  */
 
  .content-title {
 	margin-bottom: 28px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #e6e6e6;		
+ 	border-bottom: 1px solid #e6e6e6; 	
 }
+
 
 .from-the-vogue-img-title {
 	font-size: 1em;
@@ -281,15 +187,30 @@ color: #fff;
 .from-the-vogue-img-text  {
 	font-size: 0.9em;
 	line-height: 16.8px;
-	width: 300px;	
+	width: 200px;	
 	color: #979797;
 }
 
+.about-us{
+	border-bottom: 1px solid #e6e6e6;	
+}
+.about-img {
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	outline: 1px solid #d8d8d8;
+	outline-offset: 5px;
+	margin: 7px auto  20px auto;
+}
 
+/* .about-img-author {
+	height: 100px;
 
+}
+ */
 .about-name {
 	width: 137px;
-	/* margin: 0 auto; */
+	 margin: 0 auto;  
 	text-align: center;
 }
 
@@ -302,7 +223,7 @@ color: #fff;
 }
 
 .about-author-desc {
-	font-size: 0.9em;
+	font-size: 0.6em;
 	margin-bottom: 4px;
 	color: #979797;
 }
@@ -315,18 +236,23 @@ color: #fff;
 }
 
 .from-the-blog{
-
+ 
 	float: left;
 	width: 80%;
 
 
+
  
 }
-
+ .vogue-post{
+ 	float: left;
+	/* display: inline-block; */
+	margin-right: 20px;
+}  
 .about-us{
 	float: right;
-	width: 20%;
-}
+	 width: 20%;
+} 
 
 
  /* pjesa e footer-it */                        
