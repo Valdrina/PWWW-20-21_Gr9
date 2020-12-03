@@ -91,7 +91,7 @@ header nav a:hover {
 	background-color: #7e5c88;
 	color: #ffffff;
 	text-transform: capitalize;
-	
+	text-decoration: none;
                         }
 
 /* lets fix the logo circle pic  */
