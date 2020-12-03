@@ -7,7 +7,7 @@ body      {
            }
 header    {
 	        padding: 0px 20px;
-	        margin-bottom: 51px;
+	        margin-bottom: 31px;
             }
 header hgroup   {
 	             width: 175px;
@@ -46,7 +46,7 @@ header nav a:hover {
           }
 #banner {
 	padding: 0px 6.25%;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	position: relative;
 
 
@@ -79,12 +79,19 @@ header nav a:hover {
 	                    margin-bottom: 20px;
                         }
 .image-caption a       {
-	                    text-decoration: none;
-	                    color: #fff;
-	                    background: #7e5c88;
-	                    width: 106px; /*140-17-17 */
-	                    padding: 12px 17px;
-	                    border-radius: 20px;
+	                    font-size: 0.9em;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 155px;
+	height: 35px;
+	background-color: #7e5c88;
+	color: #ffffff;
+	text-transform: capitalize;
+	text-decoration: none;
                         }
 
 /* lets fix the logo circle pic  */
