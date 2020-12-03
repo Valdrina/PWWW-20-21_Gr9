@@ -187,12 +187,13 @@ color: #fff;
 .from-the-vogue-img-text  {
 	font-size: 0.9em;
 	line-height: 16.8px;
-	width: 200px;	
+	width: 225px;	
 	color: #979797;
 }
 
 .about-us{
 	border-bottom: 1px solid #e6e6e6;	
+
 }
 .about-img {
 	width: 60px;
@@ -200,7 +201,14 @@ color: #fff;
 	overflow: hidden;
 	outline: 1px solid #d8d8d8;
 	outline-offset: 5px;
-	margin: 7px auto  20px auto;
+	float: left;
+	 margin: 7px auto   30px auto; 
+
+/* margin-right: 5px;
+margin-top: 0px;
+margin-bottom: 0px; */
+
+
 }
 
 /* .about-img-author {
@@ -209,9 +217,15 @@ color: #fff;
 }
  */
 .about-name {
-	width: 137px;
-	 margin: 0 auto;  
-	text-align: center;
+	/*  width: 137px;  */
+	 margin: 0px auto;  
+	text-align: center; 
+	
+	width: 100%;
+
+margin-right: 30px;
+
+
 }
 
 .about-author-name {
@@ -220,6 +234,7 @@ color: #fff;
 	color: #979797;
 	font-weight: bold;
 	text-transform: capitalize;
+
 }
 
 .about-author-desc {
@@ -234,6 +249,15 @@ color: #fff;
 	color: #7e5c88;
 	text-transform: capitalize;
 }
+/* 
+.about-name {
+	width: 137px;
+	 margin: 0 auto;  
+/* 	text-align: center; */
+/* 	width: 100%; */
+	
+
+/* } */
 
 .from-the-blog{
  
@@ -249,13 +273,19 @@ color: #fff;
 	/* display: inline-block; */
 	margin-right: 20px;
 }  
-.about-us{
+/*  .about-us{
 	float: right;
 	 width: 20%;
-} 
-
+}   */
+.about-us{
+	float: left;
+		width: 20%;
+}
+.about-img{
+	float: left;
 
  /* pjesa e footer-it */                        
+}
 footer{
  padding-top: 50px;
 }
