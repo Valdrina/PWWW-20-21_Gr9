@@ -132,19 +132,22 @@ header nav a:hover {
  }                      
  #works .projectDiv{
  	float: left;
- 	margin-right:20px; 
+ 	margin-right:25px;
+
  }                        
 #works .projectDiv h3{
 	color: #333;
 	background: #eee;
 	font-size: 12px;
 	width: 225px;
-	padding: 13px 0 ;
+	
+	padding: 13px 0;
 	text-align: center;
 	font-weight: bold;
-
+   margin-bottom: 0px;
 
 }
+
 
 
 #works .projectDiv h4{
@@ -154,13 +157,23 @@ header nav a:hover {
 	width: 225px;
 	padding: 13px 0;
 	text-align: center;
+   margin-top: 0px;
 
 }
-
+ #works .projectDiv img{
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ 	
+ }
 #works .projectDiv:hover h3,#works .projectDiv:hover h4{
 background-color:#7e5c88 ;
 color: #fff;
 }
+
+/* #works .projectDiv:hover {
+background-color:#7e5c88 ;
+color: #fff;
+} */
 
 .clearFix              {
 	                    clear: both;
@@ -382,6 +395,8 @@ footer  p,a{
     display: flex;
     background: #fff;
     position: relative;
+    border-bottom: 0.5px solid #e0e0e0;
+    width: 100%;
 }
 
 .shadow::before {
