@@ -123,7 +123,7 @@ header nav a:hover {
  color: #333;
  font-size: 18px;
  font-weight: bold;
- /*margin-bottom:50px; */
+
 
  } 
  #works hr{
@@ -155,17 +155,23 @@ header nav a:hover {
 	background: #eee;
 	font-size: 12px;
 	width: 225px;
-	padding: 13px 0;
+	
 	text-align: center;
-   margin-top: 0px;
+   margin-top: -3px;
+
+   padding: 13px 0;
 
 }
- #works .projectDiv img{
- 	margin-top: 0;
+
+
+
+  #works .projectDiv img{
+
+ 	margin-top: 0; 
  	margin-bottom: 0;
 
  	
- }
+ } 
 #works .projectDiv:hover h3,#works .projectDiv:hover h4{
 background-color:#7e5c88 ;
 color: #fff;
@@ -174,6 +180,9 @@ color: #fff;
 #works .projectDiv.last{
 	margin: 0;
 }
+
+
+
 /* #works .projectDiv:hover {
 background-color:#7e5c88 ;
 color: #fff;
