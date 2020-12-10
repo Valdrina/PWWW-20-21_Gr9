@@ -1,11 +1,5 @@
-body      {
-            width: 1000px;
-            font-family: georgia;
-            border-top: 5px solid #7e5c88;
-            margin: 0 auto;
 
-           }
-header    {
+/*header    {
 	        padding: 0px 20px;
 	        margin-bottom: 31px;
             }
@@ -38,7 +32,7 @@ header nav a:hover {
 	                background: #7e5c88;
 	                color: #fff;
 
-                    }
+                    }*/
 #banner {
 	      padding: 0px 6.25%;
 
