@@ -1,0 +1,130 @@
+#title{
+	font-size: 24px;
+	margin-top: 160px;
+	text-align: center;
+	color: #7e5c88;
+}
+
+.location {
+	margin-top: 50px;
+	border-top: 0.5px solid #979797;
+	border-bottom: 0.5px solid #979797;
+
+
+}
+.location h5, .payment_details h5, .shipping_address h5, .review  h5{
+	text-align: center;
+}
+
+.location p, .payment_details p{
+		text-align: center;
+
+}
+.buttons {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    margin-right: 20px; 
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    width: 150px;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
+    background-color: rgba(126,92,136, 0.8);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+}
+
+.buttons:hover {
+    background-color: rgba(121, 7, 242, 0.10);
+}
+
+.buttons:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.payment_details{
+		border-bottom: 0.5px solid #979797;
+		width: 50%
+		margin-left:25%;
+}
+.shipping_address{
+		border-bottom: 0.5px solid #979797;
+
+}
+.style1 p{
+	text-align: center;
+
+}
+
+.cd_num{
+	width: 300px;
+	height: 20px;
+}
+
+#loc{
+	text-align: center;
+}
+.review h5{
+	text-align: center;
+}
+.review p{
+	width: 50%;
+	margin-left: 25%;
+	text-align: left;
+	font-size: 14px;
+}
+
+.review span{
+	float: left;
+}
+
+
+#price{
+	text-align: center;
+
+}
+footer{
+	margin-top: 40px;
+	background-color:#979797;
+	padding-top: 20px;
+	height: 500px;
+	width: 1000px;
+}
+footer h4{
+	padding-bottom: 15px;
+	color: white;
+}
+footer .footerContainer   {
+	font-size: 13.5px;
+	margin-left: 12.5%;
+	margin-right: 11.5%;
+	color: white;
+
+}
+footer a{
+	color: white;
+}
+#right{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+}
+#copyright{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+
+
+
+
+
