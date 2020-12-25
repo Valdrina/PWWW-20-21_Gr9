@@ -1,1 +1,70 @@
 /*fashion css*/
+#title{
+	font-size: 30;
+	margin-top: 130px;
+	text-align: center;
+	color: #7e5c88;
+}
+a { text-decoration: none;
+    padding: 2em;
+
+   }
+ #view {
+ 	text-align: center;
+ 	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+	border-bottom: 1px solid #979797;
+	padding-bottom: 20px;
+ }
+ #c {
+ 	text-align: center;
+ 	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+ }
+ #street {
+ 	text-align: center;
+ 	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+ }
+ #model {
+ 	text-align: center;
+ 	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+ }
+ #design {
+ 	text-align: center;
+ 	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+ }
+ #trend {
+ 	text-align: center;
+ 	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+ }
+ #pjesa2
+          {     
+              height: 400px;
+              margin: 3px 0px 0px 0px;
+              background-color: white;
+              padding: 10px 5px;
+            
+              
+          }
+  .forth
+          {
+              margin: 5px 0px 0px 0px;
+              width:24%;
+              height: 300px;
+              text-align: center;
+              display: inline-block;
+              padding: 0px;
+                
+          }
+   .more a{
+           padding: 5px;
+           color: white;
+           width:fit-content;
+           height:fit-content;
+           background-color: #7e5c88;
+           text-decoration: none;
+           border-radius: 5px;
