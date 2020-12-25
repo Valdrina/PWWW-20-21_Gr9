@@ -1,9 +1,43 @@
+@font-face {
+  font-family: kng;
+  src: url(Kind_and_Rich.otf);
+}
+
+#maindiv{
+	margin-top: 120px;
+	width: 100%;
+	height: 420px;
+	top: 50%;
+	position:relative;
+	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("../images/vg.jpg");
+	animation: slider 9s ;
+	animation-iteration-count:infinite;
+}
+
+@keyframes slider{
+	0%{
+	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), 
+		url("../images/vg.jpg");
+
+	}
+	50%{
+	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("../images/vg2.jpg");
+
+	}
+
+
+
+}
+
 #title{
-	font-size: 24px;
-	margin-top: 160px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-family: kng;
+	font-size: 78px;
 	text-align: center;
 	color: #7e5c88;
 }
+
 
 /*.location {
 	margin-top: 50px;
@@ -12,7 +46,7 @@
 
 
 }*/
-.location h5, .payment_details h5, .shipping_address h5, .review  h5{
+ .payment_details h5, .review  h5{
 	text-align: center;
 }
 
@@ -66,6 +100,9 @@
 .cd_num{
 	width: 300px;
 	height: 20px;
+}
+.enlg{
+	height: 17px;
 }
 
 #loc{
