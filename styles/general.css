@@ -10,6 +10,16 @@ body      {
 	padding: 0px 20px;
 	margin-bottom: 31px;
 	}
+	
+#title1{ 
+	margin-left: 10px; 
+	transition: all .4s ease-in; 
+ }
+
+#title1:hover{
+	 transform: scale(1.1);
+
+}
 
 header hgroup   {
 	width: 175px;
@@ -28,22 +38,26 @@ header hgroup h3 {
 	color: #979797;
 	}
 
-header nav       {
+header nav {
 	width: 653px;
 	float: right;
 	}
 
-header nav a     {
+header nav a  {
+	float: left;
+	margin-right: 0px;
 	text-decoration: none;
 	font-size: 13px;
 	color: #979797;
 	padding: 53px 19px 33px 19px;
 	display: inline-block;
+	transition: all 0.4s ease-in;
                   }
 
 header nav a:hover {
 	background: #7e5c88;
 	color: #fff;
+
 
 	}
 

@@ -5,13 +5,13 @@
 	color: #7e5c88;
 }
 
-.location {
+/*.location {
 	margin-top: 50px;
 	border-top: 0.5px solid #979797;
 	border-bottom: 0.5px solid #979797;
 
 
-}
+}*/
 .location h5, .payment_details h5, .shipping_address h5, .review  h5{
 	text-align: center;
 }
@@ -71,16 +71,21 @@
 #loc{
 	text-align: center;
 }
+
+#table1{
+	width: 50%;
+}
+#table1 tr h5{
+	border-top:  0.5px solid #979797;
+	padding-top: 20px;
+}
 .review h5{
 	text-align: center;
 }
 .review p{
-	width: 50%;
-	margin-left: 25%;
 	text-align: left;
 	font-size: 14px;
 }
-
 .review span{
 	float: left;
 }
@@ -88,6 +93,7 @@
 
 #price{
 	text-align: center;
+	font-size: 13.5px;
 
 }
 footer{
@@ -122,6 +128,8 @@ footer a{
 	padding-bottom: 15px;
 	text-align: center;
 }
+
+
 
 
 

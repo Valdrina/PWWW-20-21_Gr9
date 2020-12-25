@@ -10,51 +10,48 @@
 <body>
 <header >
 	<hgroup>
-		<h2>VOGUE</h2>
+		<h2 id = "title1">VOGUE</h2>
 		<h3>Free PSD Website Template</h3>
 	</hgroup>
 
 	<nav>
+		<a href="../index.html">HOME</a>
 		<a href="Pages/fashion.html">FASHION</a>
 		<a href="Pages/beauty.html">BEAUTY</a>
 		<a href="Pages/culture.html">CULTURE</a>
-		<a href="#">LIVING</a>
 		<a href="#">RUNWAY</a>
 		<a href="Pages/Subsc.html">SUBSCRIBE NOW</a>
 	</nav>
 	<div class="clearFix"></div>
 </header>
+
 <main>
+
 	<h4 id ="title">SUBSCRIPTION FORM</h4>
-	<div class = "location">
-		<h5>STEP 1. LOCATION </h5>
-		<p>
+	<div class = "payment_details">
+
+	<form> <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
+		<tr><td colspan="4"><h5>STEP 1. LOCATION </h5></td></tr>
+
+		<tr><td colspan="4" align="center"> 
 		<input class ="buttons" type="button" value="U.S">
-		<input class ="buttons" type="button" value="International">
+		<input class ="buttons" type="button" value="International" >
 	
-	</p></div>
+	</td> </tr>
 
-	<div style = "display: none;">
-		<p> <span>Deliver To</span>
-		<datalist id="countries">
-   		 <option value="Albania">
-  		 <option value="Andora">
-    	 <option value="Anguilla">
-  </datalist>
-		</p>
-	 </div>
+	<tr><td><div style="display: none;"><!-- map goes here --></div>
+	</td></tr>
 
-	 <div class = "payment_details">
-		<h5>STEP 2. Payment Details  </h5>
-		<p><small>You may cancel at any time! </small></p>
-		<p>
-			<form> <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
-       <tr>    
-              <td colspan="3" class="style1"><p>Credit/Debit Card :<br>  
+<tr><td colspan="4">	 
+		<h5>STEP 2. PAYMENT DETAILS  </h5></td></tr>
+		<tr><td colspan="4" align="center"><small>You may cancel at any time! </small></td></tr>
+		
+       <tr align="center">    
+              <td colspan="4" class="style1"><p>Credit/Debit Card :<br>  
               <input class="cd_num" type="text" /></p></td>    
        </tr>  
        <tr>
-       		<td align="left"><label>Exp.Month:<br>
+       		<td align="left" colspan="2"><label>Exp.Month:<br>
        		<input type="Month"></label></td>
 
        		<td align="left"><label>Exp.Year:<br>
@@ -63,20 +60,15 @@
        		<td align="left"><label>CVV:<br>
        		<input type="text"><label></td>
 
-       </tr>
-			</table></form>
-		</p>
-	 </div>
-	 <div class="shipping_address">
-	 	<h5>STEP 3. SHIPPING ADDRESS</h5>
-			<form> 
+       </tr>		
+	 	<tr class="shipping"><td colspan="4"><h5>STEP 3. SHIPPING ADDRESS</h5></td></tr>
 
-		<table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
 		<tr>
-			<td colspan="2" ><label>First name :<br>  
+			<td colspan="2" align="left" ><label>First name:<br>  
               <input  type="text"  /></label></td>
+              <td></td>
 
-              <td colspan="2" ><label>Last Name :<br>  
+              <td colspan="2" align="left"><label>Last Name:<br>  
               <input  type="text"  /></label></td> 
 
 
@@ -86,9 +78,12 @@
 			<td colspan="2"><label>Location: <br>
 				<input type="text">
 			</label></td>
-			<td colspan="2" ><label>Street Address: <br>
+			<td colspan="1" ><label>Street Address: <br>
 				<input type="text">
 			</label></td>
+
+			<td><label>Phone Number: <br>
+				<input type="text"></td>
 		</tr>
 
 		<tr>
@@ -102,28 +97,34 @@
 		</tr>
 
 		<tr>
-			<td colspan="4" class="span"><label>
+			<td colspan="4" class="span" align="center"><label>
 				Email: <br>
 				<input type="Email">
 			</label></td>
 
 		</tr>
-			</table>
 
-		</form>
-	 </div>
-
-	 <div class="review">
-	 	<h5>STEP 5. REVIEW AND SUMBIT </h5>
-	 	<p id="price">After six months, renews automatically at one year for <strong>$24.99.</strong> You may cancel at anytime.</p>
-		<p></p>
-	 	<p><strong>Automatic Renewal:</strong></p>
-<p>Your subscription will automatically renew for one year. Before each renewal, we will send a reminder with the term and rate then in effect (current rates listed above). If you do nothing, we will charge the payment method you selected. To cancel at any time, contact customer service online or by phone as shown below to receive a full refund for all unserved issues.</p>
-<p>By subscribing you agree to Automatic Renewal as described above, our<i> User Agreement</i>, and <i>Privacy Policy & Cookie Statement</i>.</p>
+	 	<tr>
+	 		<td  colspan="4"><h5>STEP 5. REVIEW AND SUMBIT </h5></td>
+	 	<tr><td colspan="4"><p id="price">After six months, renews automatically at one year for <strong>$24.99.</strong> You may cancel at anytime.</p>
+		<p></p></td></tr>
+	 	<tr>
+	 		<td colspan="4"><h5><strong>Automatic Renewal:</strong></h5></td>
+		<tr>
+			<td colspan="4" class="review"><p>Your subscription will automatically renew for one year. Before each renewal, we will send a reminder with the term and rate then in effect (current rates listed above). If you do nothing, we will charge the payment method you selected. To cancel at any time, contact customer service online or by phone as shown below to receive a full refund for all unserved issues.</p></td></tr>
+	<tr>
+		<td colspan="4" class ="review"><p>By subscribing you agree to Automatic Renewal as described above, our<i> User Agreement</i>, and <i>Privacy Policy & Cookie Statement</i>.</p></td>
+	</tr>
+	<tr>	<td colspan="4">
 	 <p id="price">
 	 	<input class="buttons" type="submit" value="Subscribe">
 	 </p>
+		</td>
+	</tr>
 	 </div>
+			</table>
+
+		</form>
 
 </main>
 <footer>
