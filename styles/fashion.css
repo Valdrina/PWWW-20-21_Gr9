@@ -5,22 +5,33 @@
 	text-align: center;
 	color: #7e5c88;
 }
-a { text-decoration: none;
-    padding: 2em;
+#linkat  {
+  border-bottom: 1px solid #979797;
+  padding-bottom: 12px;
+  padding-top: 10px;
 
    }
- #view {
+  #linkat a {
+    text-decoration: none;
+    padding: 2em;
+    font-family: georgia;
+  }
+ #view, #model, #design, #trend {
  	text-align: center;
  	border-top:  0.5px solid #979797;
 	padding-top: 20px;
 	border-bottom: 1px solid #979797;
 	padding-bottom: 20px;
+  font-family: georgia;
  }
- #c {
+ #c, #street {
  	text-align: center;
- 	border-top:  0.5px solid #979797;
-	padding-top: 20px;
+	padding-top: 1px;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 20px;
+  font-family: georgia;
  }
+ /*
  #street {
  	text-align: center;
  	border-top:  0.5px solid #979797;
@@ -40,7 +51,7 @@ a { text-decoration: none;
  	text-align: center;
  	border-top:  0.5px solid #979797;
 	padding-top: 20px;
- }
+ }*/
  #pjesa2
           {     
               height: 400px;
@@ -60,6 +71,13 @@ a { text-decoration: none;
               padding: 0px;
                 
           }
+
+  #teksti { font-size: 12px;
+                      color: #979797;
+                      line-height: 20px;
+                      margin-bottom: 20px;
+
+  }
    .more a{
            padding: 5px;
            color: white;
@@ -67,4 +85,40 @@ a { text-decoration: none;
            height:fit-content;
            background-color: #7e5c88;
            text-decoration: none;
-           border-radius: 5px;
+           border-radius: 5px; 
+            }
+#pjesa3
+          {     
+              height: 320px;
+              margin: 3px 0px 0px 0px;
+              background-color: white;
+              padding: 10px 5px;
+            
+              
+          }
+      .shadow {
+  
+    padding-bottom: 20px;
+    display: flex;
+    background: #fff;
+    position: relative;
+    border-bottom: 0.5px solid #e0e0e0;
+    width: 100%;
+  
+}
+.shadow::before {
+    content: "";
+    height: 10px;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    bottom: 1px;
+    z-index: -5;
+    -webkit-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+    -moz-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+    box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+}
