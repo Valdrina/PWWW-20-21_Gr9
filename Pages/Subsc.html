@@ -16,9 +16,9 @@
 
 	<nav>
 		<a href="../index.html">HOME</a>
-		<a href="Pages/fashion.html">FASHION</a>
-		<a href="Pages/beauty.html">BEAUTY</a>
-		<a href="Pages/culture.html">CULTURE</a>
+		<a href="../Pages/fashion.html">FASHION</a>
+		<a href="../Pages/beauty.html">BEAUTY</a>
+		<a href="../Pages/culture.html">CULTURE</a>
 		<a href="#">RUNWAY</a>
 		<a href="Pages/Subsc.html">SUBSCRIBE NOW</a>
 	</nav>
@@ -30,7 +30,8 @@
 	<h4 id ="title">SUBSCRIPTION FORM</h4>
 	<div class = "payment_details">
 
-	<form> <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
+	<form name="subscription" onsubmit="return(validate());"> 
+		<table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
 		<tr><td colspan="4"><h5>STEP 1. LOCATION </h5></td></tr>
 
 		<tr><td colspan="4" align="center"> 
@@ -39,7 +40,9 @@
 	
 	</td> </tr>
 
-	<tr><td><div style="display: none;"><!-- map goes here --></div>
+	<tr>
+		<td colspan="4">
+		<div  id="locationx"></div>
 	</td></tr>
 
 <tr><td colspan="4">	 
@@ -51,55 +54,68 @@
               <input class="cd_num" type="text" /></p></td>    
        </tr>  
        <tr>
-       		<td align="left" colspan="2"><label>Exp.Month:<br>
-       		<input type="Month" class="enlg"></label></td>
-
+       	<td align="left" colspan="2" ><label>Exp.Month:<br>
+       	<select name="month" class="data">
+       	<option value="-1" selected="true">Choose month</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+     </select></label></td>
        		<td align="left"><label>Exp.Year:<br>
-       		<input type="Year"class="enlg"></label></td>
+       		<input type="text"class="enlg"name="year"></label></td>
 
        		<td align="left"><label>CVV:<br>
-       		<input type="text"class="enlg"><label></td>
+       		<input type="text"class="enlg"  name="cvv"><label></td>
 
        </tr>		
 	 	<tr class="shipping"><td colspan="4"><h5>STEP 3. SHIPPING ADDRESS</h5></td></tr>
 
 		<tr>
-			<td colspan="2" align="left" ><label>First name:<br>  
-              <input  type="text" class="enlg" /></label></td>
+			<td colspan="2" align="left"   ><label>First name:<br>  
+              <input  type="text" class="enlg" name ="name"/></label></td>
               <td></td>
 
-              <td colspan="2" align="left"><label>Last Name:<br>  
-              <input  type="text"class="enlg"  /></label></td> 
+              <td colspan="2" align="left" ><label>Last Name:<br>  
+              <input  type="text"class="enlg"name ="surname"  /></label></td> 
 
 
 		</tr>
 
 		<tr>
 			<td colspan="2"><label>Location: <br>
-				<input type="text"class="enlg">
+				<input type="text"class="enlg" name="location">
 			</label></td>
 			<td colspan="1" ><label>Street Address: <br>
-				<input type="text"class="enlg">
+				<input type="text"class="enlg" name="street">
 			</label></td>
 
 			<td><label>Phone Number: <br>
-				<input type="text"class="enlg"></td>
+				<input type="text"class="enlg" name="phone"></td>
 		</tr>
 
 		<tr>
 			<td colspan="2"><label>City:<br>
-				<input type="text"class="enlg"></label></td>
+				<input type="text"class="enlg" name="city"></label></td>
 			<td><label>Province:<br>
 				<input type="text"class="enlg"></label></td>
 			<td><label>Postal Code:<br>
-				<input type="text"class="enlg"></label></td>
+				<input type="text"class="enlg" name="zip"></label></td>
 
 		</tr>
 
 		<tr>
 			<td colspan="4" class="span" align="center"><label>
 				Email: <br>
-				<input type="Email"class="enlg">
+				<input type="Email"class="enlg" class="cd_num">
 			</label></td>
 
 		</tr>
@@ -149,9 +165,52 @@
 <p id="right" ><strong><a href="https://www.condenast.com/user-agreement">USER AGREEMENT</a> | <a href="https://www.condenast.com/privacy-policy">PRIVACY POLICY (Your CA Privacy Rights).</a></strong></p>
 <p id="copyright"><strong>Copyright &copy; 2020 Condé Nast Digital. All rights reserved.</strong></span></p>
 <div>
+	
+<script>
+	function validate() {
 
+		if( document.subscription.cd.value == "" || document.subscription.year.value.length != 16 ) {
+            alert( "Please provide your correct Card Information!" );
+            document.subscription.cd.focus() ;
+            return false;
+         }
 
+         if( document.subscription.month.value == "-1") {
+            alert( "Please provide your correct card expiry month!" );
+            return false;
+         }
 
+		  if( document.subscription.year.value == "" || document.subscription.year.value.length != 4 || document.subscription.year.value <2020 ) {
+            alert( "Please provide your card expiry year!" );
+            document.subscription.name.focus() ;
+            return false;
+         }
+
+         if( document.subscription.cvv.value == "" || document.subscription.cvv.value.length != 3  ) {
+            alert( "Please provide your correct Card Information!" );
+            document.subscription.cvv.focus() ;
+            return false;
+         }
+
+         if( document.subscription.name.value == ""  || 
+         	 document.subscription.surname.value == "" || 
+         	 document.subscription.location.value == ""||
+         	 document.subscription.str.value == "" || 
+         	 document.subscription.phone.value == "" || 
+         	 document.subscription.city.value == "" || 
+         	 document.subscription.zip.value == "") {
+            alert( "Please provide your neccesary Informations!" );
+            document.subscription.cd.focus() ;
+            return false;
+         }
+
+         return true;
+          
+	}
+  </script>
+  <script src="../js/geoloc.js"></script>
+         <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPvs2MZNfRqUqOcLPsSo6f1GXOGv9MW7M&callback=initMap"></script>
 </footer>
 </body>
 </html>

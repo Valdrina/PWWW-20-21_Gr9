@@ -46,6 +46,12 @@
 
 
 }*/
+#locationx{
+
+margin-left: 25%
+width: 100%;
+height: 450px;
+}
  .payment_details h5, .review  h5{
 	text-align: center;
 }
@@ -103,6 +109,9 @@
 }
 .enlg{
 	height: 17px;
+}
+.data{
+	width: 150px;
 }
 
 #loc{
