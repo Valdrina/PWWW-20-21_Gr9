@@ -46,7 +46,36 @@
     <source src="../videos/Vogue.mp4" type = "video/mp4"/>
     Shfletuesi juaj nuk e perkrahe video elementin
   </video>
+   <button  id="button" onclick="playPause()">Play/Pause</button>
+
+ <script>
+     var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+   
+    if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    alert( "You have clicked the button " + localStorage.clickcount + " time(s).");
+     }
+     else {
+    alert("Sorry, your browser does not support web storage...");
+  }
+}
+
+ </script>
   </div>
+
+ <a href="https://www.vogue.com/">
+ <img id="vogue" class="rrotullim" src="../images/v.png" >
+</a>
 
 
 	<h2 id="view">View</h2>
@@ -56,7 +85,7 @@
             <h2>Street Style</h2> 
           <figure><img src="../images/f1.jpg" width="225" height="140" alt="there's no photo">
               <figcaption>
-              <p id="teksti">Tamron Hall Is the Most Fashionable Woman on Daytime Television. Period.</p>
+              <p id="teksti"><italic>Tamron Hall Is the Most Fashionable Woman on Daytime Television. Period.</italic></p>
               <footer class="more"><a href="https://www.vogue.com/article/tamron-hall-fashion-interview">READ MORE &raquo;</a></footer>
             </figcaption>
           </figure>
