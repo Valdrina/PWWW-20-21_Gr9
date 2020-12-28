@@ -2,6 +2,9 @@
   font-family: kng;
   src: url(Kind_and_Rich.otf);
 }
+*{
+
+}
 
 #maindiv{
 	margin-top: 120px;
@@ -24,8 +27,6 @@
 	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("../images/vg2.jpg");
 
 	}
-
-
 
 }
 
@@ -142,6 +143,18 @@ height: 450px;
 	font-size: 13.5px;
 
 }
+#pricing{
+	text-align: left;
+	font-size: 13.5px;
+}
+
+.sp{
+	float: right;
+}
+#totalBilled{
+	font-weight: bold;
+	font-size: 14.5px;
+}
 footer{
 	margin-top: 40px;
 	background-color:#979797;
@@ -174,8 +187,19 @@ footer a{
 	padding-bottom: 15px;
 	text-align: center;
 }
-
-
+#pos{
+  width: 180px;
+  height: 230px;
+  padding: 10px;
+  border: 2px solid #7e5c88;
+  float: right;
+}
+#div2{
+  width: 180px;
+  height: 230px;
+  padding: 10px;
+  float: left;
+}
 
 
 
