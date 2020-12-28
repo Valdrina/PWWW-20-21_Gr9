@@ -18,13 +18,14 @@
   }
 
 
- #view, #model, #design, #trend {
+ #view, #model, #trend {
  	text-align: center;
- 	border-top:  0.5px solid #979797;
-	padding-top: 20px;
+	padding-top: 5px;
 	border-bottom: 1px solid #979797;
 	padding-bottom: 20px;
   font-family: georgia;
+  text-shadow: 6px 4px 6px #7e5c88;
+
  }
  #c, #street {
  	text-align: center;
@@ -32,6 +33,7 @@
   border-bottom: 1px solid #979797;
   padding-bottom: 20px;
   font-family: georgia;
+  text-shadow: 6px 4px 6px #7e5c88;
  }
  /*
  #street {
@@ -87,7 +89,7 @@
            height:fit-content;
            background-color: #7e5c88;
            text-decoration: none;
-           border-radius: 5px; 
+           border-radius: 15px; 
             }
 #pjesa3
           {     
@@ -124,3 +126,33 @@
     border-radius: 100%;
 
 }
+#button {
+  border-radius: 100%;
+  font-size: georgia;
+  color: white;
+  font-style: italic;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #7e5c88;
+
+}
+ #pjesaLast
+          {     
+             
+              margin: 3px 0px 0px 0px;
+              background-color: white;
+
+            
+              
+          }
+  .last
+          {   
+              margin: 5px 0px 0px 0px;
+              width:24%;
+              height: 100px;
+              text-align: center;
+              display: inline-block;
+              padding-left: 5em;
+              padding-right: 5em;
+                
+          }
