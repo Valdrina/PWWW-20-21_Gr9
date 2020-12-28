@@ -7,6 +7,26 @@
 	    <link rel="icon"  href="../images/v.ico">
 
 </head>
+
+<script>
+	function clickCorona(){
+	  if (typeof(Storage) !== "undefined") {
+	   localStorage.setItem("con", "session.");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("con");
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("res").innerHTML = "You have visited Coronavirus " + sessionStorage.clickcount + " times in this ";
+  } else {
+    document.getElementById("res").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+	}
+
+
+</script>
 <body>
 
 	  <header>
@@ -43,8 +63,8 @@
 </header>
 
 
-	<img src="../images/c1.jpg">
-	<h2>An Oral History of Fashion's Response to the AIDS Epidemic</h2>
+	<img src="../images/c1.jpg" id="img">
+	<h2 id="h2">An Oral History of Fashion's Response to the AIDS Epidemic</h2>
 	<section id="works">
 		
 		<div class="projectDiv">
@@ -79,33 +99,57 @@
 	<div class="from-the-news">
     <h3>NEWS</h3>
     <hr>
-    <article class="news-post">
+    <ol>
+   <li> <article class="news-post">
+    	
 					<div class="news-img">
 						<a href="#"><img src="../images/c6.jpg" alt="vogue-pic" width="225" height="125"></a>
 
-					<a href="#"><h6 class="from-the-news-img-title">CORONAVIRUS</h6></a>
+					<button onClick="clickCorona()"><a href="#"><h6 class="from-the-news-img-title">CORONAVIRUS</h6></a></button>
 					<p class="from-the-news-img-date">Friday 5th September</p>
-					<div class="from-the-news-img-text">An Infection Disease Doctor Answers All Your Questions About The Covid Vaccine</div>
-				</article>  
+					<h4 style=" font-weight:normal ;width: 200px;">An Infection Disease Doctor Answers All Your Questions About The Covid Vaccine</h4>
+				</div>
+				</article>
+				</li>  
 
-	  <article class="news-post">
+	 <li> <article class="news-post">
 					<div class="news-img">
 						<a href="#"><img src="../images/c7.jpg" alt="vogue-pic" width="225" height="125"></a>
 
 					<a href="#"><h6 class="from-the-news-img-title">ELECTION 2020</h6></a>
 					<p class="from-the-news-img-date">Friday 5th September</p>
-					<div class="from-the-news-img-text">As Biden's Pick for Interior, Deb Haaland Will be the First Native American to Serve the Cabinet</div>
-				</article>
+					<h4 style=" font-weight:normal ;width: 200px;">As Biden's Pick for Interior, Deb Haaland Will be the First Native American to Serve the Cabinet</h4>
 
-				    <article class="news-post">
+					</div>
+				</article></li>
+
+				 <li>   <article class="news-post">
 					<div class="news-img">
 						<a href="#"><img src="../images/c8.jpg" alt="vogue-pic" width="225" height="125"></a>
 
 					<a href="#"><h6 class="from-the-news-img-title">NEWS</h6></a>
 					<p class="from-the-news-img-date">Friday 5th September</p>
-					<div class="from-the-news-img-text">Here's What Everyone was Googling in 2020</div>
-				</article>
-	</div>	
+					<h4 style=" font-weight:normal ;width: 200px;">Here's What Everyone was Googling in 2020</h4>
+            </div> 
+					
+				</article></li>
+			</ol>
+
+	</div>
+	<div id="res"> </div>	
+	<div id="result"></div>
+
+<!-- <script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("con", "session.");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("con");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script> -->
 </main>
 </body>
 </html>

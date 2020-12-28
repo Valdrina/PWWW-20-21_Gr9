@@ -3,3 +3,62 @@ h1{
     font-weight: normal;
     color: #96739f;
 }
+
+.projectDiv{
+
+	width: 25%;
+   margin-right: 35px;
+
+}
+#h2{
+	font-weight: normal;
+}
+
+#works {
+display: flex;
+margin-top: 50px;
+
+}
+
+
+.projectDiv h4{
+  font-weight: normal;
+}
+
+.projectDiv h3{
+	font-size: 1em;
+}
+
+#img{
+	margin-top: 20px;
+}
+
+ol{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.news-post{
+	width: 33.3%;
+	margin-right: 100px;
+
+}
+
+
+.news-post p{
+	font-size: 10px;
+}
+
+.news-post button{
+	margin-top: 20px;
+	border: none;
+	background-color: red;
+	padding: 0; 
+	
+}
+ 
+
+ .news-post a{
+ 	text-decoration: none;
+ }
