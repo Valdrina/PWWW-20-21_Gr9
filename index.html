@@ -31,7 +31,7 @@
 <main>
 	<section id="banner">
 				<!-- right arrow -->
-		<div class="left"><a href="#"></a></div>
+		<div class="left" onclick="changeView();"></div>
 
 		<div class="image-caption">
 			<h1>VOGUE MAGAZINE</h1>
@@ -44,7 +44,30 @@
 
 		</div>
 				<!-- right arrow -->
-		<div class="right"><a href="#"></a></div>
+		<div class="right" onclick="changeView();"></div>
+
+		<div class="clearFix"></div>
+
+	
+
+	</section>
+
+	<section id="banner2" style="display: none;">
+				<!-- right arrow -->
+		<div class="left" onclick="changeView();"></div>
+
+		<div class="image-caption">
+			<h1>VOGUE MAGAZINE </h1>
+			<p>This month, Vogue celebrates four cover stars who embody values like creativity, inclusivity, and a fierce independence of spirit. The latest celebrity cover stars, magazine articles, and more from Vogue.</p>
+			<a href="">Read More Here &raquo;</a>
+		</div>
+		<div class="div-circle">
+			
+			<img src="images/redVogue.jpg">
+
+		</div>
+				<!-- right arrow -->
+		<div class="right" onclick="changeView();"></div>
 
 		<div class="clearFix"></div>
 
@@ -274,7 +297,24 @@
   										Template by OS Templates</span></p>
   									
   								</div>
-				<script> </script>
+				<script>
+
+function changeView(){
+
+	if(document.getElementById("banner").style.display == "none"){
+	document.getElementById("banner2").style.display = "none";
+	document.getElementById("banner").style.display = "block";
+	
+}
+else{
+	document.getElementById("banner2").style.display = "block";
+	document.getElementById("banner").style.display = "none";
+	
+}
+}
+
+
+				 </script>
 			</footer>
 </body>
 </html>

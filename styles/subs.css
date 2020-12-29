@@ -2,13 +2,9 @@
   font-family: kng;
   src: url(Kind_and_Rich.otf);
 }
-*{
-
+header{
+	color: red;
 }
-body main {
-	padding-bottom: 40px;
-}
-
 #maindiv{
 	margin-top: 120px;
 	width: 100%;
@@ -193,7 +189,7 @@ footer h4{
 	padding-bottom: 15px;
 	color: white;
 }
-footer .footerContainer   {
+footer #footerContainer   {
 	font-size: 13.5px;
 	margin-left: 12.5%;
 	margin-right: 11.5%;
