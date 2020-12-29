@@ -6,7 +6,7 @@
 	    <link rel="stylesheet" type="text/css" href="../styles/general.css">
 	    <link rel="stylesheet" type="text/css" href="../styles/subs.css">
 	    <link rel="icon"  href="../images/v.ico">
-	     <script src="../js/subsc.js"></script>
+	    <script src="../js/subsc.js"></script>
 
 
 
@@ -31,31 +31,27 @@
 
 <main>
 <div id="maindiv"></div>
-	<h4 id ="title">SUBSCRIPTION FORM</h4>
+	<div id ="titlediv">
+	<h4 id ="title">SUBSCRIPTION FORM</h4></div>
 	<div class = "payment_details">
 
 	<form name="subscription" onsubmit="return(validate());"> 
 		<table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
 		<tr><td colspan="4"><h5>STEP 1. LOCATION </h5></td></tr>
-
 		<tr><td colspan="4" align="center"> 
 		<input class ="buttons" type="button" value="U.S">
 		<input class ="buttons" type="button" value="International" >
-	
-	</td> </tr>
+		</td> </tr>
+		<tr><td colspan="4">
+		<div  id="locationx"></div></td></tr>
 
-	<tr>
-		<td colspan="4">
-		<div  id="locationx"></div>
-	</td></tr>
-
-<tr><td colspan="4">	 
+	<tr><td colspan="4">	 
 		<h5>STEP 2. PAYMENT DETAILS  </h5></td></tr>
 		<tr><td colspan="4" align="center"><small>You may cancel at any time! </small></td></tr>
 		
        <tr align="center">    
               <td colspan="4" class="style1"><p>Credit/Debit Card :<br>  
-              <input class="cd_num" type="text" /></p></td>    
+              <input class="cd_num" type="text" name="cd" /></p></td>    
        </tr>  
        <tr>
        	<td align="left" colspan="2" ><label>Exp.Month:<br>
@@ -76,94 +72,73 @@
      </select></label></td>
        		<td align="left"><label>Exp.Year:<br>
        		<input type="text"class="enlg"name="year"></label></td>
-
        		<td align="left"><label>CVV:<br>
-       		<input type="text"class="enlg"  name="cvv"><label></td>
+       		<input type="text"class="enlg"  name="cvv"></label></td></tr>	
 
-       </tr>		
 	 	<tr class="shipping"><td colspan="4"><h5>STEP 3. SHIPPING ADDRESS</h5></td></tr>
 
 		<tr>
-			<td colspan="2" align="left"   ><label>First name:<br>  
-              <input  type="text" class="enlg" name ="name"/></label></td>
+			<td colspan="2" align="left"   ><label>First Name:<br>  
+              <input  type="text" class="enlg" name ="name"></label></td>
               <td></td>
 
               <td colspan="2" align="left" ><label>Last Name:<br>  
-              <input  type="text"class="enlg"name ="surname"  /></label></td> 
+              <input type="text"class="enlg"name ="surname"></label></td></tr>
 
-
-		</tr>
-
-		<tr>
-			<td colspan="2"><label>Location: <br>
-				<input type="text"class="enlg" name="location">
-			</label></td>
+		<tr><td colspan="2"><label>Location: <br>
+				<input type="text"class="enlg" name="location"></label></td>
 			<td colspan="1" ><label>Street Address: <br>
-				<input type="text"class="enlg" name="street">
-			</label></td>
-
+				<input type="text"class="enlg" name="street"></label></td>
 			<td><label>Phone Number: <br>
-				<input type="text"class="enlg" name="phone"></td>
-		</tr>
+				<input type="text"class="enlg" name="phone"></label></td></tr>
 
-		<tr>
-			<td colspan="2"><label>City:<br>
+		<tr><td colspan="2"><label>City:<br>
 				<input type="text"class="enlg" name="city"></label></td>
 			<td><label>Province:<br>
 				<input type="text"class="enlg"></label></td>
 			<td><label>Postal Code:<br>
-				<input type="text"class="enlg" name="zip"></label></td>
+				<input type="text"class="enlg" name="zip"></label></td></tr>
 
-		</tr>
-
-		<tr>
-			<td colspan="4" class="span" align="center"><label>
+		<tr><td colspan="4" class="span" align="center"><label>
 				Email: <br>
 				<input type="Email"class="enlg" class="cd_num">
-			</label></td>
-
-		</tr>
+			</label></td></tr>
 
 		<tr><td colspan="4"><h5>STEP 4. VALIDATION OF IDENTITY</h5></td>
 		</tr>
 		<tr><td colspan="4" align="center"><i><small>Please drag  and drop image to show you are not a robot.
 		</small><i></td>
 		</tr>
-		<td colspan="4">
+		<tr><td colspan="4">
 		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="dragimg" src="../images/dragMagazine.jpeg" draggable="true" ondragstart="drag(event)" width="180" height="229"></div>
 		<div id="pos" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-			</td>
-	 	<tr>
-	 		<td  colspan="4"><h5>STEP 5. REVIEW AND SUMBIT </h5></td>
+		</td></tr>
+
+	 	<tr><td  colspan="4"><h5>STEP 5. REVIEW AND SUMBIT </h5></td></tr>
 	 	<tr><td colspan="4"><p id="price">After six months, renews automatically at one year for <strong>$24.99.</strong> You may cancel at anytime.</p>
 		<p></p></td></tr>
 
-		<tr>
-			<td colspan="4"><label id="pricing">1 Year - Print + Digital Access <span class="sp">&#36;12.00</span></label></td></tr>
+		<tr><td colspan="4"><label id="pricing">1 Year - Print + Digital Access <span class="sp">&#36;12.00</span></label></td></tr>
 	 	
 	 	
 	 		<tr><td colspan="4"><label id="pricing">Shipping &amp; Handling <span class="sp">Included</span></label></td></tr>
 
-	 		<tr><td colspan="4"><label id ="totalBilled">Total Billed <span class="sp">
-	 			&#36;12.00</span><br><span class="sp">&plus;sales tax where applicable</span>
-	 		</span></label></td></tr>
+	 		<tr><td colspan="4"><label id ="totalBilled">Total Billed <span class="sp">&#36;12.00</span><br><span class="sp">&plus;sales tax where applicable</span></label></td></tr>
 
 
 
 
-	 		<td colspan="4"><h5><strong>Automatic Renewal:</strong></h5></td>
+	 	<tr><td colspan="4"><h5><strong>Automatic Renewal:</strong></h5></td></tr>
 		<tr>
-			<td colspan="4" class="review"><p>Your subscription will automatically renew for one year. Before each renewal, we will send a reminder with the term and rate then in effect (current rates listed above). If you do nothing, we will charge the payment method you selected. To cancel at any time, contact customer service online or by phone as shown below to receive a full refund for all unserved issues.</p></td></tr>
-	<tr>
-		<td colspan="4" class ="review"><p>By subscribing you agree to Automatic Renewal as described above, our<i> User Agreement</i>, and <i>Privacy Policy & Cookie Statement</i>.</p></td>
-	</tr>
-		<tr>
-			<td colspan="4">
-	 <p id="price">
-	 	<input class="buttons" type="submit" value="Subscribe">
-	 </p>
-		</td>
-	</tr>
+		<td colspan="4" class="review"><p>Your subscription will automatically renew for one year. Before each renewal, we will send a reminder with the term and rate then in effect (current rates listed above). If you do nothing, we will charge the payment method you selected. To cancel at any time, contact customer service online or by phone as shown below to receive a full refund for all unserved issues.</p></td></tr>
+	
+		<tr><td colspan="4" class ="review"><p>By subscribing you agree to Automatic Renewal as described above, our<i> User Agreement</i>, and <i>Privacy Policy & Cookie Statement</i>.</p></td>
+		</tr>
+
+		<tr><td colspan="4">
+		<p id="price">
+	 	<input id="buttonSubsc" type="submit" value="Subscribe" disabled="true">
+	 	</p></td></tr>
 	 </div>
 			</table>
 
@@ -190,12 +165,13 @@
 </p>
 <p id="right" ><strong><a href="https://www.condenast.com/user-agreement">USER AGREEMENT</a> | <a href="https://www.condenast.com/privacy-policy">PRIVACY POLICY (Your CA Privacy Rights).</a></strong></p>
 <p id="copyright"><strong>Copyright &copy; 2020 Condé Nast Digital. All rights reserved.</strong></span></p>
-<div>
+</div>
 	
 <script>
+ // validate form
 	function validate() {
 
-		if( document.subscription.cd.value == "" || document.subscription.year.value.length != 16 ) {
+		if(isNaN(document.subscription.cd.value) || document.subscription.cd.value == "" || document.subscription.cd.value.length != 16 ) {
             alert( "Please provide your correct Card Information!" );
             document.subscription.cd.focus() ;
             return false;
@@ -206,32 +182,54 @@
             return false;
          }
 
-		  if( document.subscription.year.value == "" || document.subscription.year.value.length != 4 || document.subscription.year.value <2020 ) {
-            alert( "Please provide your card expiry year!" );
-            document.subscription.name.focus() ;
+		  if( isNaN(document.subscription.year.value) || document.subscription.year.value == "" || document.subscription.year.value.length != 4 || document.subscription.year.value <2020) {
+            alert( "Please provide your correct card expiry year!" );
+            document.subscription.year.focus() ;
             return false;
          }
-
-         if( document.subscription.cvv.value == "" || document.subscription.cvv.value.length != 3  ) {
-            alert( "Please provide your correct Card Information!" );
+        
+		  if( isNaN(document.subscription.cvv.value) || document.subscription.cvv.value == "" || document.subscription.cvv.value.length != 3) {
+            alert( "Please provide your correct cvv !" );
             document.subscription.cvv.focus() ;
             return false;
          }
 
-         if( document.subscription.name.value == ""  || 
-         	 document.subscription.surname.value == "" || 
-         	 document.subscription.location.value == ""||
-         	 document.subscription.str.value == "" || 
-         	 document.subscription.phone.value == "" || 
-         	 document.subscription.city.value == "" || 
-         	 document.subscription.zip.value == "") {
-            alert( "Please provide your neccesary Informations!" );
-            document.subscription.cd.focus() ;
+         if( document.subscription.name.value == "" || document.subscription.name.value == null ) {
+            alert( "Please provide your correct Name!" );
+            document.subscription.name.focus() ;
+            return false;
+         }
+         if( document.subscription.surname.value == "" || document.subscription.surname.value == null) {
+            alert( "Please provide your correct Last Name!" );
+            document.subscription.surname.focus() ;
+            return false;
+         }
+         if( document.subscription.location.value == "" || document.subscription.location.value == null) {
+            alert( "Please provide your correct Location!" );
+            document.subscription.location.focus() ;
+            return false;
+         }
+         if( document.subscription.str.value == "" || document.subscription.str.value == null) {
+            alert( "Please provide your correct Street Address!" );
+            document.subscription.str.focus() ;
+            return false;
+         }
+         // phone number validation next here
+
+
+         if( document.subscription.city.value == "" || document.subscription.city.value == null) {
+            alert( "Please provide your correct City!" );
+            document.subscription.city.focus() ;
             return false;
          }
 
-         return true;
-          
+         if( isNaN(document.subscription.zip.value) || document.subscription.zip.value == "" || document.subscription.zip.value.length != 5) {
+            alert( "Please provide your correct cvv !" );
+            document.subscription.zip.focus() ;
+            return false;
+         }  
+
+          return true;
 	}
   </script>
   <script src="../js/geoloc.js"></script>

@@ -11,4 +11,9 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
+  
+// make submit button clickable
+  document.getElementById("buttonSubsc").disabled = false; 
+
 }
+
