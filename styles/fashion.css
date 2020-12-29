@@ -156,7 +156,7 @@
 
  #vsubscribe
           {     
-              height: 300px;
+              height: 180px;
               margin: 3px 0px 0px 0px;
               background-color: white;
               padding: 10px 5px;
@@ -185,3 +185,27 @@
   font-size: 20px;
 
 }
+#foot {
+  background-color: lightgray;
+  padding-top: 10px;
+  height: 400px;
+  width: 1000px;
+  padding-left: 10px;
+}
+
+.contact1{
+  width: 226px;
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 30px; 
+  padding-left: 10px;
+
+}
+
+.contact1 h4{
+  font-size: 24px;
+  color: #999999;
+  padding-bottom: 1em;
+  font-weight: bold;
+  }
+
