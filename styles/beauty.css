@@ -1,1 +1,70 @@
 /*beauty css*/
+* {
+  box-sizing: border-box;
+}
+
+#title{
+	margin-top: 120px;
+	margin-bottom: 20px;
+	position: relative;
+	height: 450px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: purple;
+	background-image:url('../images/beauty.jpg');
+	filter: blur(2.5px);
+	background-position: center;
+    background-repeat: no-repeat;
+ 	background-size: cover;
+
+}
+/* neser me editu mireee e mire */
+#titleText{
+		position: absolute;
+		top: 45%;
+		left:15%;
+		font-family: arvo;
+		font-size: 65px;
+		color: #979797;
+
+}
+
+
+#inside{
+	height: 55px;
+    width: 100%;
+    border-color: #979797;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin-bottom: 13px;
+}
+
+#inside a{
+padding-right: 20px;
+text-align: center;
+color: #96739f;
+text-decoration: none;
+
+}
+
+#inside a:hover{
+	color: purple;
+	text-decoration: none;
+}
+.leftContainer{
+	float: left;
+}
+
+.rightContainer{
+	float: right;
+}
+.rightContainer h3{
+	padding-left: 10px;
+	margin-right: 10px;
+}

@@ -196,6 +196,13 @@ footer #footerContainer   {
 	color: white;
 
 }
+#divcol{
+	outline: 2px solid white;
+    outline-offset: 5px;
+	column-count: 3;
+	column-gap: 40px;
+    column-rule-style: solid;
+}
 footer a{
 	color: white;
 }
@@ -214,8 +221,9 @@ footer a{
   width: 180px;
   height: 230px;
   padding: 10px;
-  border: 2px solid #7e5c88;
+  border: 2px dotted #7e5c88;
   float: right;
+
 }
 #div2{
   width: 180px;

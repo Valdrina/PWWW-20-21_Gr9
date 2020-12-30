@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Beauty: Tips and Trends, Beauty Product Reviews | Vogue</title>
-<link rel="stylesheet" type="text/css" href="styles/beauty.css">
+<link rel="stylesheet" type="text/css" href="../styles/beauty.css">
     <link rel="stylesheet" type="text/css" href="../styles/general.css">
    <link rel="icon"  href="../images/v.ico">
 
@@ -11,24 +11,85 @@
 </head>
 
 <body>
-<header >
+  <div id = "blur"></div>
+<header>
 	<hgroup>
 		<h2>VOGUE</h2>
 		<h3>Free PSD Website Template</h3>
 	</hgroup>
 
 	<nav>
-		<a href="Pages/fashion.html">FASHION</a>
-		<a href="Pages/beauty.html">BEAUTY</a>
-		<a href="#">CULTURE</a>
-		<a href="#">LIVING</a>
-		<a href="#">RUNWAY</a>
-		<a href="#">SHOPPING</a>
+		<a href="../index.html">HOME</a>
+    <a href="../Pages/fashion.html">FASHION</a>
+    <a href="../Pages/beauty.html">BEAUTY</a>
+    <a href="../Pages/culture.html">CULTURE</a>
+    <a href="#">RUNWAY</a>
+    <a href="../Pages/Subsc.html">SUBSCRIBE NOW</a>
 	</nav>
 	<div class="clearFix"></div>
 </header>
 
-</body>
+<main>
+
+<div id="title"></div>
+<h2 id="titleText"style=" -webkit-text-stroke: 2px #96739f;">BEAUTY</h2>
+
+<nav id = "inside">
+  <a href="#wellness">WELLNESS</a>
+  <a href="#skin">SKIN</a>
+  <a href="#hair">HAIR</a>
+  <a href="#nails">NAILS</a>
+</nav>
+
+<div id = "wellness" style="display: inline;">
+
+    <div class="leftContainer" style="width: 50%; display: inline-block; height: 333px;">
+    <img src="../images/wellness.jpg" width="500px" >
+    </div>
+    <div class="rightContainer"style="width: 50%; display: inline-block; height: 333px;">
+    <h3>What Is the New Coronavirus Strain and What Does It Mean? <span><small> BY DHARUSHANA MUTHULINGAM</small></span> <span id = "dataEP"></span></h3>
+      <script>
+    var d = new Date(2020,11,23);
+
+    var s = d.getDate() +"/"+d.getMonth()+"/"+d.getFullYear();
+    document.getElementById("dataEP").innerHTML=s;
+    </script>
+    <p>In mid-September of this year, epidemiologists were surprised to find a new coronavirus variant (or strain) that was markedly different from all the others. This strain was observed in Kent and the Greater London area of the U.K. This strain, named B.1.1.7, continued to appear throughout the U.K. and a few other countries.All viruses can mutate. The molecules that code the genetic sequence (DNA or RNA), like any physical thing, can change over time. This new variant is worrisome for being harmful because a mutation in its behavior may cause it to be spread more easily. Pandemic fatigue is real, especially during the winter holidays at the end of a difficult year. Distancing and supporting each other other as we ramp up the vaccinations, this is how we can get through this together.</p>
+    </div>
+</div>
+
+    <div id = "skin" style="display: inline;">
+
+   <div class="leftContainer" style="width: 50%; display: inline-block; height: 333px;">
+   <img src="../images/wellness.jpg"  width="500px">
+   </div>
+   <div class="rightContainer"style="width: 50%; display: inline-block; height: 333px;">
+   <h3>What Is the New Coronavirus Strain and What Does It Mean? </h3>
+    </div>
+  </div>
+
+  
+  <div id = "hair" style="display: inline;">
+  <div class="leftContainer" style="width: 50%; display: inline-block; height: 333px;">
+  <img src="../images/wellness.jpg"  width="500px">
+  </div>
+  <div class="rightContainer"style="width: 50%; display: inline-block; height: 333px;">
+  <h3>What Is the New Coronavirus Strain and What Does It Mean? </h3>
+  </div>
+</div>
+
+
+<div id = "nails" style="display: inline;">
+
+  <div class="leftContainer" style="width: 50%; display: inline-block; height: 333px;">
+  <img src="../images/wellness.jpg"  width="500px">
+  </div>
+  <div class="rightContainer"style="width: 50%; display: inline-block; height: 333px;">
+  <h3>What Is the New Coronavirus Strain and What Does It Mean? </h3>
+  </div>
+</div>
+
+</main>
 
 
 
@@ -39,12 +100,9 @@
 
 
 
-		<footer>
+	<!--	<footer>
 				<!-- 	   	<div class="shadow"></div>
 
-  						  <br class="clearBoth" >
-
-  						  <br class="clearBoth" > -->
   								<div class="footer-content-1">
 
   									<h1>LATEST TWEETS</h1>
@@ -92,7 +150,6 @@
   									</p>
 
   								</div>
-  								<!-- social media logos -->
   								<div class="footer-content-1">
   									<h1>SOCIALISE</h1>
   									<nav>
@@ -116,6 +173,9 @@
   									
   								</div>
 		
-			</footer>
+			</footer> 
+ -->
 
+
+</body>
 </html>
