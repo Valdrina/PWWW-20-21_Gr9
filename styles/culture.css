@@ -28,9 +28,14 @@ margin-top: 50px;
 .projectDiv h3{
 	font-size: 1em;
 }
+.projectDiv a{
+	text-decoration: none;
+	color: #7e5c88;
+}
 
 #img{
 	margin-top: 20px;
+	width: 1000px;
 }
 
 ol{
@@ -61,6 +66,7 @@ ol{
 /*  	padding: 0;  */
  
  font-size: 14px;
+
 }
 .news-post h4{
 margin: 0;
@@ -83,9 +89,23 @@ padding: 0;
 	 transform: rotate3d(0, 1, 0, 60deg);
 	 margin-top: 30px;
 	 margin-left: -250px;
+	 border : 1px solid black;
+	 background-image: url('../images/c15.jpg');
+	 
+	 background-size: cover;
+    clear: both;
+    width: 100%;
+ 
+   
 
 }
-
+#tv img{
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	
+}
 #tv h6{
 	font-weight: normal;
 	color: #7e5c88;
@@ -96,11 +116,45 @@ padding: 0;
 
 #tv h4{
 font-weight: normal;
-color: #7e5c88;
+color: black;
 }
 
 .tvandmovies{
 	display: flex;
 	flex-direction: row;
 	margin-left: 95px;
+
+
+}
+.day { background: url('../images/c13.jpg'); 
+
+background-size: cover ; }
+.afternoon { background: url('../images/c13.jpg');
+
+background-size: cover ; }
+.night { background: url('../images/c14.jpg');
+background-size: cover ;  }
+#ndrysho{
+	margin-top: 20px;
+	border: 1px solid black;
+    background-color: transparent;
+    padding: .25rem .5rem;
+    line-height: 1;
+    color: black;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+ 
+}
+
+
+#tmtxt{
+	font-weight:  normal;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: black;
 }

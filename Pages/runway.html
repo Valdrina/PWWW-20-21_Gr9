@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Culture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="../styles/general.css">
+<link rel="stylesheet" type="text/css" href="../styles/runway.css">
+ <link rel="icon"  href="../images/v.ico">
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    margin: 100px;
+}
+</style>
+
+
+<script>
+
+  var imgObj = null;
+           function init(){
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative';
+               imgObj.style.left = '0px';
+               imgObj.style.top ='0px';
+               var y=imgObj.offsetTop;
+            }   
+            function moveRight(){
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            }
+
+            function moveLeft(){
+               imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+            }
+
+             function moveDown(){
+               imgObj.style.top = parseInt(imgObj.style.top) + 10 + 'px';
+            }
+
+            function moveTop(){
+               imgObj.style.top = parseInt(imgObj.style.top) - 10 + 'px';
+            }
+
+
+
+            window.onload =init;
+</script>
+</head>
+<body >
+      <header>
+    <hgroup>
+        <h2>VOGUE</h2>
+        <h3>Free PSD Website Template</h3>
+    </hgroup>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="../Pages/fashion.html">FASHION</a>
+        <a href="../Pages/beauty.html">BEAUTY</a>
+        <a href="../Pages/culture.html">CULTURE</a>
+        <a href="../Pages/runway.html">RUNWAY</a>
+        <a href="../Pages/Subsc.html">SUBSCRIBE NOW</a>
+    </nav>
+
+
+    <div class="clearFix"></div>
+</header>
+
+<img src="../images/c17.jpg"  height="500px" id="foto" ><br />
+
+<p>Move the beg </p>
+
+
+
+
+<img src="../images/c16.jpg" id="myImage" >
+
+<div style="text-align:center;width:480px;" class="d">
+  <button onclick="moveTop()" class="but">UP</button><br><br>
+  <button onclick="moveLeft();" class="but">LEFT</button>
+  <button onclick="moveRight();" class="but">RIGHT</button><br><br>
+  <button onclick="moveDown();" class="but">DOWN</button>
+</div>
+
+
+</body>
+</html>

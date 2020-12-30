@@ -5,9 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="../styles/culture.css">
 <link rel="stylesheet" type="text/css" href="../styles/general.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	    <link rel="icon"  href="../images/v.ico">
+ <link rel="icon"  href="../images/v.ico">
 
-</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style> -->
 
 <script>
 	function clickCorona(){
@@ -27,8 +34,45 @@
 	}
 
 
+
+
+$(document).ready(function(){
+  $("#r").click(function(){
+    $("#r").hide();
+  });
+
+  });
+
+
+// var bodyColor;
+var currentTime = new Date().getHours();
+function switchBodyColor() {
+if (document.body) {
+    
+    if (currentTime >= 0 && currentTime < 12) {
+        document.body.className = "day";
+    }
+    
+    	else if (currentTime >= 12 && currentTime < 17) {
+         document.body.className = "afternoon";
+    }
+    else if (currentTime >= 17 && currentTime < 24) {
+    	 document.body.className = "night";
+    }
+}
+
+
+
+}
+
+
+
+
+
 </script>
-<body>
+
+</head>
+<body >
 
 	  <header>
 	<hgroup>
@@ -41,7 +85,7 @@
 		<a href="../Pages/fashion.html">FASHION</a>
 		<a href="../Pages/beauty.html">BEAUTY</a>
 		<a href="../Pages/culture.html">CULTURE</a>
-		<a href="#">RUNWAY</a>
+		<a href="../Pages/runway.html">RUNWAY</a>
 		<a href="../Pages/Subsc.html">SUBSCRIBE NOW</a>
 	</nav>
 	<div class="clearFix"></div>
@@ -69,28 +113,28 @@
 	<section id="works">
 		
 		<div class="projectDiv">
-			<h3>CULTURE</h3>
+			<a href="#"><h3>CULTURE</h3>
 			<img src="../images/c2.jpg" width="225" height="225">
-			<h4>For Years I Reported of Gender-Based Violendce. Now My life's Work Is Fighting Against IT</h4>
+			<h4>For Years I Reported of Gender-Based Violendce. Now My life's Work Is Fighting Against IT</h4></a>
 		</div>
 
 				<div class="projectDiv">
-			<h3>MAGAZINE</h3>
+			<a href="#"><h3>MAGAZINE</h3>
 			<img src="../images/c3.jpg" width="225" height="225">
-			<h4>How Savannah Guthire and Kristen Welker Won 2020 Election Coverage</h4>
+			<h4>How Savannah Guthire and Kristen Welker Won 2020 Election Coverage</h4></a>
 		</div>
 
 
 				<div class="projectDiv">
-			<h3>OPINION</h3>
+			<a href="#"><h3>OPINION</h3>
 			<img src="../images/c4.jpg" width="225" height="225">
-			<h4>Why I'm Using Dr. from Here on out</h4>
+			<h4>Why I'm Using Dr. from Here on out</h4></a>
 		</div>
 
 				<div class="projectDiv">
-			<h3>POSTCARDS FROM HOME</h3>
+			<a href="#"><h3>POSTCARDS FROM HOME</h3>
 			<img src="../images/c5.jpg" width="225" height="225">
-			<h4>No, This Pandemic Is Not Over.Please Don't Act Like It Is</h4>
+			<h4>No, This Pandemic Is Not Over.Please Don't Act Like It Is</h4></a>
 		</div>
 
 
@@ -136,7 +180,7 @@
 				</article></li>
 			</ol>
 
-	</div>
+	
 	<div id="r">
 	<div id="res"> </div>	
 	<div id="result"></div>
@@ -144,26 +188,31 @@
 
 
 </div>
+ <h3 id="tmtxt">TV & MOVIES </h3>
+    <hr>
 <div class="tvandmovies">
-<div id="tv">
-     <h6>TV & MOVIES </h6>
+<div id="tv"><!-- 
+     <h6>TV & MOVIES </h6> -->
 	<a href="#"><img src="../images/c9.jpg" width="600" height="400"></a>
-    <h4>It's Little Women Season </h4>
+   <!--  <h4>It's Little Women Season </h4> -->
 	</div>
 
 <div id="tv">
-     <h6>TV & MOVIES </h6>
+     <!-- <h6>TV & MOVIES </h6> -->
 	<a href="#"><img src="../images/c10.jpg" width="600" height="400"></a>
-    <h4>What’s Going On With the Nancy Meyers Family Drama?</h4>
+ <!--    <h4>What’s Going On With the Nancy Meyers Family Drama?</h4> -->
 	</div>
 
 <div id="tv">
-     <h6>TV & MOVIES </h6>
+    <!--  <h6>TV & MOVIES </h6> -->
 	<a href="#"><img src="../images/c11.jpg" width="600" height="400"></a>
-    <h4>The Hair in Mank: How Amanda Seyfried and Lily Collins Transformed Into Their Iconic Characters</h4>
+   <!--  <h4>The Hair in Mank: How Amanda Seyfried and Lily Collins Transformed Into Their Iconic Characters</h4> -->
 	</div>
 
 	</div>
+	<button onClick="switchBodyColor()" id="ndrysho">CHANGE BACKGROUND</button>
+	
+
 </main>
 </body>
 </html>
