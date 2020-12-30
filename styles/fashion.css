@@ -20,7 +20,7 @@
 
  #view, #model, #trend {
  	text-align: center;
-	padding-top: 5px;
+	padding-top: 0px;
 	border-bottom: 1px solid #979797;
 	padding-bottom: 20px;
   font-family: georgia;
@@ -58,10 +58,10 @@
  }*/
  #pjesa2
           {     
-              height: 400px;
+              height: 350px;
               margin: 3px 0px 0px 0px;
               background-color: white;
-              padding: 10px 5px;
+              padding: 15x 5px;
             
               
           }
@@ -93,10 +93,10 @@
             }
 #pjesa3
           {     
-              height: 320px;
+              height: 280px;
               margin: 3px 0px 0px 0px;
               background-color: white;
-              padding: 10px 5px;
+              padding: 5px 5px;
             
               
           }
@@ -138,8 +138,6 @@
 }
  #pjesaLast
           {     
-             
-              margin: 3px 0px 0px 0px;
               background-color: white;                     
           }
   .last
@@ -156,7 +154,7 @@
 
  #vsubscribe
           {     
-              height: 180px;
+              height: 130px;
               margin: 3px 0px 0px 0px;
               background-color: white;
               padding: 10px 5px;
@@ -185,18 +183,20 @@
   font-size: 20px;
 
 }
+
 #foot {
   background-color: lightgray;
   padding-top: 10px;
   height: 400px;
   width: 1000px;
   padding-left: 10px;
+  display: inline-block;
 }
 
 .contact1{
-  width: 226px;
+  width: 300px;
   float: left;
-  padding-right: 15px;
+  padding-right: 20px;
   padding-bottom: 30px; 
   padding-left: 10px;
 
@@ -205,7 +205,57 @@
 .contact1 h4{
   font-size: 24px;
   color: #999999;
-  padding-bottom: 1em;
+  padding-bottom: 3px;
   font-weight: bold;
+  text-align: center;
   }
 
+.footerlink {
+  width: 310px;
+  float: right;
+  padding-right: 15px;
+  padding-bottom: 30px; 
+  padding-left: 10px;
+}
+
+.footerlink h4{
+  font-size: 24px;
+  color: #999999;
+  padding-bottom: 3px;
+  font-weight: bold;
+  text-align: center;
+  }
+.nav-list li {
+  padding-bottom: 1em;
+}
+.nav-list li a {
+  text-decoration: none;
+}
+.abbr {
+  width: 300px;
+  float: right;
+  padding-right: 15px;
+  padding-bottom: 15px; 
+  padding-left: 10px;
+  text-align: center;
+}
+.abbr p {
+  font-size: 24px;
+  color: #999999;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+
+
+.wrap{
+  width: 150px; 
+  border: 1px solid #000000;
+   word-wrap: break-word;
+}
+
+#wrap {
+  margin: 0 auto;
+  max-width: 300px;
+  border: solid 2px #ccc;
+  padding: 12px;
+}
