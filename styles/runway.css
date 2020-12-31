@@ -1,6 +1,7 @@
 .d{
 	margin-top: 50px;
 margin-left: 0;
+margin-top: 200px;
 
 }
 p{
@@ -18,10 +19,123 @@ p{
     font-size: 12px;
     outline: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 #foto{
 
 	margin-top: 30px;
 	margin-left: 125px;
+	margin-right: 100px;
+}
+
+
+
+#fb{
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+}
+
+#twobut{
+	display: flex;
+	flex-direction: row;
+}
+
+#myImage{
+	margin-bottom: 40px;
+}
+
+
+#GMV::before{
+	content: "GMV";
+	font-style: oblique;
+}
+
+.wrapper {
+display: flex;
+margin-top: 50px;
+
+}
+
+.projectDiv{
+
+	width: 25%;
+   margin-right: 35px;
+
+}
+#works h2{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+#works p{
+	margin: 0 auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    max-width: 600px;
+    text-align: center;
+}
+.projectDiv hr{
+margin-left: 0;	
+ width: 80px;
+}
+
+.projectDiv h4{
+	font-family: Savoy,helvetica,sans-serif;
+
+font-weight: normal;
+color: black;
+}
+
+.projectDiv a{
+	text-decoration: none;
+}
+.projectDiv h6{
+	color: black;
+}
+.liimg{
+	margin-top: 20px;
+		display: flex;
+	flex-direction: row;
+
+}
+
+.liimg a{
+	display: flex;
+	flex-direction: row;
+	 text-decoration: none;
+ color: black;
+ margin-left: 50px;
+}
+
+.liimg img{
+margin-left: 10px;
+}
+.liimg ul{
+	margin-left: -20px;
+}
+table{
+	 border-collapse: collapse;
+	 border-radius: 25px;
+	  background-color:#facfef;
+	  outline: none;
+}
+th,td{
+	  padding: 5px;
+	
+	   border-radius: 25px;
+}
+tbody{
+
+}
+td{
+	 
+}
+#a{
+	 border: 1px solid #f054c8;
+}
+#b{
+	 border: 1px solid #f054c8;
 }

@@ -6,44 +6,105 @@
 <link rel="stylesheet" type="text/css" href="../styles/general.css">
 <link rel="stylesheet" type="text/css" href="../styles/runway.css">
  <link rel="icon"  href="../images/v.ico">
-<style>
-canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
-    margin: 100px;
-}
+
+<style type="text/css">
+   #myCanvas{
+    margin-left: 375px;
+} 
 </style>
 
+<script >
+    
 
-<script>
 
-  var imgObj = null;
+
+  var imgObj ;
            function init(){
                imgObj = document.getElementById('myImage');
                imgObj.style.position= 'relative';
                imgObj.style.left = '0px';
                imgObj.style.top ='0px';
+           
+
                var y=imgObj.offsetTop;
             }   
+                    var a;
             function moveRight(){
                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-            }
-
+               a= imgObj.style.left;
+                              }
+            
             function moveLeft(){
                imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+                // check(imgObj.style.left,imgObj.style.top);
+               if(imgObj.style.left =='-120px'){
+                alert("go on");
+
+               }
+               return imgObj.style.left;
+ 
             }
+    
 
              function moveDown(){
-               imgObj.style.top = parseInt(imgObj.style.top) + 10 + 'px';
+               imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
+      
             }
-
+    
             function moveTop(){
-               imgObj.style.top = parseInt(imgObj.style.top) - 10 + 'px';
+               imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
+        
+              
+              if(imgObj.style.top =='-230px'){
+                // alert("yay");
+
+               }
+                 
+              return imgObj.style.top;
+
+ 
+                    
             }
 
-
+           
 
             window.onload =init;
+
+
+// function largeFunction(n){
+//         if(n==='-10px'){
+//                 alert("you are in the right spot!");}
+//                 console.log(n);
+// }
+
+
+
+
+// (function(){
+//   largeFunction();
+// })(window.getComputedStyle( imgObj ).left)
+
+
+        
+               function myFunction() {
+  var x =imgObj.style.top;
+  console.log(x);
+  document.getElementById("demo").innerHTML = x; 
+}
+            
+         // function check(s,d ){
+              
+            
+              
+         //      if(s=='120px' && d =='-230px'){
+         //      alert('ajvhh');
+         //      }
+
+         // }
+
+
+
+
 </script>
 </head>
 <body >
@@ -65,23 +126,179 @@ canvas {
 
     <div class="clearFix"></div>
 </header>
-
-<img src="../images/c17.jpg"  height="500px" id="foto" ><br />
-
-<p>Move the beg </p>
-
-
-
-
-<img src="../images/c16.jpg" id="myImage" >
-
-<div style="text-align:center;width:480px;" class="d">
-  <button onclick="moveTop()" class="but">UP</button><br><br>
-  <button onclick="moveLeft();" class="but">LEFT</button>
-  <button onclick="moveRight();" class="but">RIGHT</button><br><br>
-  <button onclick="moveDown();" class="but">DOWN</button>
+<div id="fb">
+<img src="../images/c17.jpg"  height="500px" id="foto" >
+ <div style="text-align:center;width:480px;" class="d">
+  <button onclick="moveTop()" class="but">UP</button><br/><br/>
+  <div id="twobut">
+  <button onclick="moveLeft()" class="but">LEFT</button>
+  <button onclick="moveRight()" class="but">RIGHT</button>
+</div><br/><br/>
+  <button onclick="moveDown()" class="but">DOWN</button>
 </div>
+</div>
+<br /> 
+<canvas id="myCanvas" width="200" height="100" > </canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Move the bag",10,50);
+</script>
 
+
+
+
+<img src="../images/c16.jpg" id="myImage"  style="position:absolute; left: 0px; top: 0px;">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<div class="clearFix"></div>
+
+   <section id="works">
+<hr/>
+<h2>Good Morning <em>Vogue</em></h2>
+<hr/>
+
+<p id="GMV"> explores the challenges facing today’s creators and business leaders—from the nonstop pace of collections, to a persistent lack of diversity and structural racism.
+</p>
+ 
+        <div class="wrapper">
+        <div class="projectDiv">
+            
+            <img src="../images/r1.jpg" width="225" height="225">
+            <a href="#"><h6>TRENDS</h6>
+            <h4>“We’ve Gone From Dressing to Look Good to Dressing to Feel Good”—How Fashion Is Changing for Spring 2021</h4></a>
+            <hr/>
+        </div>
+
+                <div class="projectDiv">
+         
+            <img src="../images/r2.jpg" width="225" height="225">
+               <a href="#"><h6>RUNWAY</h6>
+            <h4>“Faced With Restrictions, These Are the Designers Who Took Us Somewhere New”—Vogue Editors Weigh In on the Most Innovative Presentations of Spring 2021</h4></a>
+            <hr/>
+        </div>
+
+
+                <div class="projectDiv">
+          
+            <img src="../images/r3.jpg" width="225" height="225">
+              <a href="#"><h6>CELEBRITY STYLE</h6>
+            <h4>“It’s Important to All of Us That Our Conversations Reflect What’s Going On”: How the Digital Red Carpet Is Changing Celebrity Fashion</h4></a>
+            <hr/>
+        </div>
+
+                <div class="projectDiv">
+           
+            <img src="../images/r4.jpg" width="225" height="225">
+             <a href="#"><h6>RUNWAY</h6>
+            <h4>“The Conditions That We’re Facing Are Making Us Think Very Differently”—Nicolas Ghesquière Talks Louis Vuitton on Good Morning Vogue</h4></a>
+            <hr />
+        </div>
+  </div>
+
+
+    </section>
+ <dl><dt>Fashion Week</dt><dd>Russia</dd></dl>
+    <div class="liimg"> 
+
+        <a href="#">
+
+        <ul><li>Erdem</li>
+        <ul><li>Fashion</li></ul>
+        </ul>
+         <img src="../images/r5.jpg" width="300px" height="300px">
+         </a>
+
+         <a href="#">
+        
+         <img src="../images/r6.jpg" width="300px" height="300px"> <ul><li>Batsheva</li> <ul><li>Fashion</li></ul></ul>
+         </a>
+
+     </div>
+
+     <table  CELLSPACING=3 CELLPADDING=3>
+<tr>
+<td COLSPAN="7" ALIGN=center><B>December 2020</B></td>
+</tr>
+
+<tr>
+<td COLSPAN="7" ALIGN=center><I>Another year comes to an end</I></td>
+</tr>
+
+<tr id="a">
+<td ALIGN=center id="b">Sun</td>
+<td ALIGN=center id="b">Mon</td>
+<td ALIGN=center id="b">Tue</td>
+<td ALIGN=center id="b">Wed</td>
+<td ALIGN=center id="b">Thu</td>
+<td ALIGN=center id="b">Fri</td>
+<td ALIGN=center id="b">Sat</td>
+</tr>
+
+<tr>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+<td ALIGN=center>1</td>
+<td ALIGN=center>2</td>
+<td ALIGN=center>3</td>
+<td ALIGN=center>4</td>
+<td ALIGN=center>5</td>
+</tr>
+
+<tr>
+<td ALIGN=center>6</td>
+<td ALIGN=center>7</td>
+<td ALIGN=center>8</td>
+<td ALIGN=center>9</td>
+<td ALIGN=center>10</td>
+<td ALIGN=center>11</td>
+<td ALIGN=center>12</td>
+</tr>
+
+<tr>
+<td ALIGN=center>13</td>
+<td ALIGN=center>14</td>
+<td ALIGN=center>15</td>
+<td ALIGN=center>16</td>
+<td ALIGN=center>17</td>
+<td ALIGN=center>18</td>
+<td ALIGN=center>19</td>
+</tr>
+
+<tr>
+<td ALIGN=center>20</td>
+<td ALIGN=center>21</td>
+<td ALIGN=center>22</td>
+<td ALIGN=center>23</td>
+<td ALIGN=center>24</td>
+<td ALIGN=center>25</td>
+<td ALIGN=center>26</td>
+</tr>
+
+<tr>
+<td ALIGN=center>27</td>
+<td ALIGN=center>28</td>
+<td ALIGN=center>29</td>
+<td ALIGN=center>30</td>
+<td ALIGN=center>31</td>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+</tr>
+
+<tr>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+<td ALIGN=center></td>
+</tr>
+
+</table> 
 
 </body>
 </html>
