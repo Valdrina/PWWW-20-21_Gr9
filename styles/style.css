@@ -338,7 +338,7 @@ margin-bottom: 0px; */
  /* pjesa e footer-it */                        
 }
 
-footer{
+/*footer{
  padding-top: 50px;
 }
 footer a{
@@ -353,7 +353,7 @@ footer  p,a{
 	line-height: 1.3;
 
 }
-/* pozicionimi i diiv elementeve */
+
 .footer-content-1{
 	width: 226px;
 	float: left;
@@ -398,7 +398,7 @@ footer  p,a{
 	float: right;
 }
 /* ndarja e seksioneve te faqes krijimi i hijes eliptike */
-.shadow {
+/*.shadow {
 	
     padding-bottom: 20px;
     display: flex;
@@ -434,7 +434,7 @@ footer nav ul li span{
 
 /* kriijimi i ikonave te mediave sociale*/
 
-.fa {
+/*.fa {
   padding: 5px;
   font-size: 30px;
   width: 15px;
@@ -466,4 +466,4 @@ footer nav ul li span{
   opacity: 0.7;
   background: #999999;
   color: white;
-}
+}*/
