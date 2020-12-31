@@ -95,6 +95,10 @@ font-size: 14px;
 	float: right;
 	font-size: 12px;
 }
+#audio {
+	padding-top: 30px;
+	padding-left: 15px;
+}
 .story2 {
 	background-image: radial-gradient(white,grey);
 	margin-bottom: 40px;

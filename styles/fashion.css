@@ -1,20 +1,25 @@
 /*fashion css*/
 #title{
 	font-size: 30;
-	margin-top: 130px;
+	margin-top: 150px;
 	text-align: center;
+  font-family: kng;
 	color: #7e5c88;
+  background-image: url("../images/back.jpg");
+  background-repeat: repeat-x;
 }
 #linkat  {
   border-bottom: 1px solid #979797;
   padding-bottom: 12px;
-  padding-top: 10px;
-
+  padding-top: 2px;
+  
    }
-  #linkat a {
+#link {
     text-decoration: none;
     padding: 2em;
     font-family: georgia;
+    color: #979797;
+    
   }
 
 
@@ -159,7 +164,6 @@
               background-color: white;
               padding: 10px 5px;
               text-align: center;
-           
               
           }
   .sublast
@@ -185,12 +189,13 @@
 }
 
 #foot {
-  background-color: lightgray;
+  background-color: #6D6D6D;
   padding-top: 10px;
-  height: 400px;
+  height: 340px;
   width: 1000px;
   padding-left: 10px;
   display: inline-block;
+
 }
 
 .contact1{
@@ -199,12 +204,13 @@
   padding-right: 20px;
   padding-bottom: 30px; 
   padding-left: 10px;
+  border-bottom: 1px solid black;
 
 }
 
 .contact1 h4{
   font-size: 24px;
-  color: #999999;
+  color: #B7B7B7;
   padding-bottom: 3px;
   font-weight: bold;
   text-align: center;
@@ -220,7 +226,7 @@
 
 .footerlink h4{
   font-size: 24px;
-  color: #999999;
+  color: #B7B7B7;
   padding-bottom: 3px;
   font-weight: bold;
   text-align: center;
@@ -237,25 +243,32 @@
   padding-right: 15px;
   padding-bottom: 15px; 
   padding-left: 10px;
-  text-align: center;
+  
+
 }
-.abbr p {
+.abbr h4 {
   font-size: 24px;
-  color: #999999;
+  color: #B7B7B7;
   padding-bottom: 3px;
   font-weight: bold;
+  text-align: center;
+}
+.abbr li {
+  list-style: none;
+}
+.abbr ul li {
+  padding-bottom: 1.5em;
+  padding-left: 30px;
+}
+.abbr ul li a{
+  text-decoration: none;
+  color: #0000EE;
 }
 
+.copyright {
 
-.wrap{
-  width: 150px; 
-  border: 1px solid #000000;
-   word-wrap: break-word;
-}
+ padding-top: 280px;
+ padding-left: 15px;
+ font-size: 15px;
 
-#wrap {
-  margin: 0 auto;
-  max-width: 300px;
-  border: solid 2px #ccc;
-  padding: 12px;
 }
