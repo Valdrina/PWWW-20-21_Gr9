@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -123,6 +123,46 @@
   <p>When she considers what’s next in her hair journey, Mitchell says she wants to dive into the world of wigs. “A lot of the time when Black women wear wigs, we’re given a hard time, but when others do it, it’s seen as cool and quirky,” she says. “I think wigs are amazing and glamorous, I just want to master laying them down better.”<br>“Experimenting in a healthy way is a beautiful thing,” she says of her biggest hair lesson to date. Take risks and learn about new styles, without fear of being judged by peers.”</p>
   </div>
 
+  <hr>
+  <h2 class="titles">ADVERTISMENT</h2>
+  <hr>
+
+<div id = "freeProducts">
+<h3 align="center">Offering you the new Partnership with Sephora</h3> 
+<h4 align="center">Fill out this form and earn 50% off selected beauty products. </h4> 
+
+<form name="apply" oninput="x.value='Congratulations you will receieve 50% off '+brand.value+' '+product.value" onsubmit="return(validateForm());">
+
+  <p align="center">Name: <input type="text" name="Name" autocomplete="on">
+   Last Name: <input type="text" name="LastName" autocomplete="on"></p>
+  <p align="center">Email: <input type="email" name="Email"></p>
+  <p align="center">Choose your favourite brands:
+    <input list="brands" name="brand" id="brand"
+    pattern="^(Mac|Fenty|Kylie Cosmetics|Jeffre Stars|Huda Beauty)$">
+    
+    <datalist id="brands">
+    <option value="Mac" data-id="1">
+    <option value="Fenty" data-id="2">
+    <option value="Kylie Cosmetics" data-id="3">
+    <option value="Jeffre Stars" data-id="4">
+    <option value="Huda Beauty" data-id="5">
+  </datalist> 
+  Choose your favourite product:
+    <input list="products" name="product" id="product"
+     pattern="^(Lip Kit|Foundation|Palette|Concealer|Mascara)$">
+    <datalist id="products">
+    <option value="Lip Kit" data-id="1">
+    <option value="Mascara" data-id="2">
+    <option value="Foundation" data-id="3">
+    <option value="Palette" data-id="4">
+    <option value="Concealer" data-id="5">
+</p>
+<p align="center"><output name="x"></output></p>
+  <p align="center"><input type="submit" value="Submit "></p>
+
+
+</form>
+</div>
 
  
 <footer>
@@ -203,7 +243,54 @@
                   </div>
 		
 			</footer> 
+<script>
+  function validateForm(){
 
+var input  = [document.apply.Name,document.apply.LastName,document.apply.brand,document.apply.product,document.apply.Email];
+
+ // var name = document.apply.Name.value;
+
+  var letters = /^[A-Za-z]+$/;
+   if (!input[0].value.match(letters)){
+    alert("Invalid Name given! ");
+     return false;
+   }
+// var last = document.apply.LastName.value;
+  if (!input[1].value.match(letters)){
+    alert("Invalid Last Name given! ");
+     return false;
+   }
+  // var br = document.apply.brand;
+
+   var pattern = input[2].getAttribute("pattern");
+   var re = new RegExp(pattern);
+
+   if(!re.test(input[2].value)){
+    alert("Please choose a value from pattern datalist!");
+    return false;
+   }
+
+  // var br2 = document.apply.product;
+   var pattern = input[3].getAttribute("pattern");
+   var re2 = new RegExp(pattern);
+  if(!re2.test(input[3].value)){
+    alert("Please choose a value from product datalist!");
+    return false;
+   }
+
+  //var address = document.apply.Email.value;
+
+  var re3 = /\S+@\S+\.\S+/;
+  if(!re3.test(input[4].value)){
+    alert("Please insert a valid email address!");
+    return false;
+
+  }
+
+return true;
+
+ }
+</script>
 
 </body>
 </html>

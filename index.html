@@ -32,7 +32,7 @@
 <main>
 	<section id="banner">
 				<!-- right arrow -->
-		<div class="left" onclick="changeView();"></div>
+		<div class="left" onclick="switchState();"></div>
 
 		<div class="image-caption">
 			<h1>VOGUE MAGAZINE</h1>
@@ -45,7 +45,7 @@
 
 		</div>
 				<!-- right arrow -->
-		<div class="right" onclick="changeView();"></div>
+		<div class="right" onclick="switchState();"></div>
 
 		<div class="clearFix"></div>
 
@@ -55,7 +55,7 @@
 
 	<section id="banner2" style="display: none;">
 				<!-- right arrow -->
-		<div class="left" onclick="changeView();"></div>
+		<div class="left" onclick="switchState();"></div>
 
 		<div class="image-caption">
 			<h1>VOGUE MAGAZINE </h1>
@@ -68,7 +68,7 @@
 
 		</div>
 				<!-- right arrow -->
-		<div class="right" onclick="changeView();"></div>
+		<div class="right" onclick="switchState();"></div>
 
 		<div class="clearFix"></div>
 
@@ -300,18 +300,26 @@
   								</div>
 				<script>
 
-function changeView(){
+function switchState(){
+  var testVar = document.getElementById("banner").style.display;
 
-	if(document.getElementById("banner").style.display == "none"){
-	document.getElementById("banner2").style.display = "none";
-	document.getElementById("banner").style.display = "block";
-	
-}
-else{
-	document.getElementById("banner2").style.display = "block";
-	document.getElementById("banner").style.display = "none";
-	
-}
+	switch(testVar){
+
+		case "block":
+		document.getElementById("banner").style.display = "none";
+		document.getElementById("banner2").style.display = "block";
+		console.log(document.getElementById("banner").style.display);
+		break;
+
+
+		default:
+		document.getElementById("banner2").style.display = "none";
+		document.getElementById("banner").style.display = "block";
+		break;
+
+	}
+
+
 }
 
 
