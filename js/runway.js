@@ -1,6 +1,5 @@
-
-
   var imgObj ;
+  var a;
            function init(){
                imgObj = document.getElementById('myImage');
                imgObj.style.position= 'relative';
@@ -10,42 +9,29 @@
 
                var y=imgObj.offsetTop;
             }   
-                    var a;
+                    
             function moveRight(){
                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-               a= imgObj.style.left;
+                 check(imgObj.style.left,imgObj.style.top);
                               }
             
             function moveLeft(){
                imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
                 check(imgObj.style.left,imgObj.style.top);
-               if(imgObj.style.left =='-120px'){
-                alert("go on");
-
-               }
-               return imgObj.style.left;
- 
+               
             }
     
 
              function moveDown(){
                imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
-      
+              check(imgObj.style.left,imgObj.style.top);
+
             }
     
             function moveTop(){
                imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
-        
                check(imgObj.style.left,imgObj.style.top);
-              if(imgObj.style.top =='-230px'){
-                // alert("yay");
-
-               }
-                 
-              return imgObj.style.top;
-
- 
-                    
+                               
             }
 
              console.log(a);
@@ -74,18 +60,15 @@ var s= this;
 
 
         
-               function myFunction() {
+  function myFunction() {
   var x =imgObj.style.top;
   console.log(x);
   document.getElementById("demo").innerHTML = x; 
 }
             
-         function check(s,d ){
-              
-            
-              
-              if(s=='120px' && d =='-230px'){
-              alert('ajvhh');
+         function check(a,b){
+             if(a=='-120px' && b =='-230px'){
+              alert('Congratulations you have reached the hand of the owner :)');
               }
 
          }
