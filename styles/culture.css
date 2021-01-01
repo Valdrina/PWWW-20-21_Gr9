@@ -158,3 +158,6 @@ canvas {
     border:1px solid #d3d3d3;
     background-color: black;
 }
+#svg {
+	padding-left: 380px;
+}

@@ -99,6 +99,10 @@ font-size: 14px;
 	padding-top: 30px;
 	padding-left: 15px;
 }
+#audio2 {
+	padding-top: 15px;
+	padding-left: 350px;
+}
 .story2 {
 	background-image: radial-gradient(white,grey);
 	margin-bottom: 40px;
@@ -171,7 +175,7 @@ font-size: 14px;
 }
 #hair{
 	margin-top: 30px;
-	height: 480px;
+	height: 555px;
 	width: 100%;
 	background-color: pink;
 
