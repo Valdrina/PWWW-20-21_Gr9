@@ -47,8 +47,11 @@ $(document).ready(function(){
 // var bodyColor;
 var currentTime = new Date().getHours();
 function switchBodyColor() {
+
+
+
 if (document.body) {
-    
+    	
     if (currentTime >= 0 && currentTime < 12) {
         document.body.className = "day";
     }
@@ -58,13 +61,13 @@ if (document.body) {
     }
     else if (currentTime >= 17 && currentTime < 24) {
     	 document.body.className = "night";
+
     }
 }
 
 
 
 }
-
 
 
 
@@ -207,12 +210,101 @@ if (document.body) {
     <!--  <h6>TV & MOVIES </h6> -->
 	<a href="#"><img src="../images/c11.jpg" width="600" height="400"></a>
    <!--  <h4>The Hair in Mank: How Amanda Seyfried and Lily Collins Transformed Into Their Iconic Characters</h4> -->
-	</div>
-
-	</div>
-	<button onClick="switchBodyColor()" id="ndrysho">CHANGE BACKGROUND</button>
 	
 
+	</div>
+
+	</div>
+	<p>Latest movies</p>
+	<button onClick="switchBodyColor()" id="ndrysho">CHANGE BACKGROUND</button>
+	<script>
+		 document.getElementById("ndrysho").addEventListener("click", function() {
+  alert("background changed");
+});
+
+	</script>
+
 </main>
+
+
+ 
+<footer>
+              <div class="shadow"></div>
+
+                <br class="clearBoth" >
+
+                <br class="clearBoth" >
+                  <div class="footer-content-1">
+
+                    <h1>LATEST TWEETS</h1>
+                    <h1>Post Title<br>
+                      <span>Posted by Admin on 00.00.0000</span>
+                    </h1>
+                    <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet.
+                      
+                    </p>
+                  <span id = "rm"><a href="#">Read More &#187;</a></span>
+                    
+                  </div>
+                  
+                  <div class="footer-content-1">
+                    <h1>QUICK LINKS</h1>
+                    <nav>
+                    <ul>
+                      <li class="l1-1"><a href="#">Link Text Here</a></li>
+                      <li class="l1-1"><a href="#">Link Text Here</a></li>
+                      <li class="l1-1"><a href="#">Link Text Here</a></li>
+                      <li class="l1-1"><a href="#">Link Text Here</a></li>
+                      <li class="l1-1"><a href="#">Link Text Here</a></li>
+                      <li class="l1-1"><a href="#">Link Text Here</a></li>
+                    </ul></nav>
+                    
+                  </div>
+                  <div class="footer-content-1">
+                    <h1>CONTACT US</h1>
+                    <p>
+                    Company Name<br>
+                    Street Name & Number <br>
+                    Town<br>
+                    Postcode/Zip</p>
+                    
+                    <p>Tel:<br>
+                    xxxx xxxxxxxx
+                    </p>
+                    <p>
+                    Fax: <br>
+                    xxxx xxxxxxxx 
+                    </p>
+                    <p>
+                    Email: <br>
+                    contact@mydomain.com
+                    </p>
+
+                  </div>
+                  <!-- social media logos -->
+                  <div class="footer-content-1 social">
+                    <h1>SOCIALISE</h1>
+                    <nav>
+                    <ul>
+                      <li><a href="#" class="fa fa-linkedin"><img src="../images/linkedIn.png"></a><span> LinkedIn</span></li>
+                      <li><a href="#" class="fa fa-twitter"><img src="../images/twitter.png"></a><span> Twitter</span></li>
+                      <li><a href="#" class="fa fa-pinterest"><img src="../images/pinterest.png"></a><span> Pinterest</span></li>
+                      <li><a href="#" class="fa fa-rss"><img src="../images/rss.png"></a><span> RSS Feed</span></li>
+                    </ul>
+                  </nav>
+                    
+                  </div>
+                  <br class="clearBoth" >
+                   <div class="shadow"></div>
+
+                  <br class="clearBoth">
+
+                  <div class="copyright">
+                      <p>Copyright &#169; 2013 V - All Rights Reserved <span>
+                      Template by OS Templates</span></p>
+                    
+                  </div>
+		
+			</footer> 
 </body>
 </html>

@@ -14,99 +14,9 @@
 } 
 </style>
 
-<script >
-    
+<script src="../js/runway.js"></script>
 
 
-
-  var imgObj ;
-           function init(){
-               imgObj = document.getElementById('myImage');
-               imgObj.style.position= 'relative';
-               imgObj.style.left = '0px';
-               imgObj.style.top ='0px';
-           
-
-               var y=imgObj.offsetTop;
-            }   
-                    var a;
-            function moveRight(){
-               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-               a= imgObj.style.left;
-                              }
-            
-            function moveLeft(){
-               imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
-                // check(imgObj.style.left,imgObj.style.top);
-               if(imgObj.style.left =='-120px'){
-                alert("go on");
-
-               }
-               return imgObj.style.left;
- 
-            }
-    
-
-             function moveDown(){
-               imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
-      
-            }
-    
-            function moveTop(){
-               imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
-        
-              
-              if(imgObj.style.top =='-230px'){
-                // alert("yay");
-
-               }
-                 
-              return imgObj.style.top;
-
- 
-                    
-            }
-
-           
-
-            window.onload =init;
-
-
-// function largeFunction(n){
-//         if(n==='-10px'){
-//                 alert("you are in the right spot!");}
-//                 console.log(n);
-// }
-
-
-
-
-// (function(){
-//   largeFunction();
-// })(window.getComputedStyle( imgObj ).left)
-
-
-        
-               function myFunction() {
-  var x =imgObj.style.top;
-  console.log(x);
-  document.getElementById("demo").innerHTML = x; 
-}
-            
-         // function check(s,d ){
-              
-            
-              
-         //      if(s=='120px' && d =='-230px'){
-         //      alert('ajvhh');
-         //      }
-
-         // }
-
-
-
-
-</script>
 </head>
 <body >
       <header>
@@ -220,7 +130,7 @@ ctx.strokeText("Move the bag",10,50);
 
      </div>
 
-     <table  CELLSPACING=3 CELLPADDING=3>
+<!--      <table  CELLSPACING=3 CELLPADDING=3 class="tabela1">
 <tr>
 <td COLSPAN="7" ALIGN=center><B>December 2020</B></td>
 </tr>
@@ -299,8 +209,179 @@ ctx.strokeText("Move the bag",10,50);
 <td ALIGN=center></td>
 </tr>
 
-</table> 
+</table>  -->
+
+<h3 id="tickets">VIP TICKETS FASHION WEEK</h3>
+<img src="../images/rf.jpg" width="980px" height="600px" id="fw">
+<div class="tabelat" >
+
+<table class="tabela2">
+    <tr><td>BACK VIP SEATING</td></tr>
+    <tr><td  class ="cmimi">$100</td></tr>
+    <tr><td>Access to our Official Kick-Off Party with Open Bar</td> </tr>
+    <tr><td>Expedited Entry with access to EVERY show with Front Row Seating </td></tr>
+     
+
+              <tr><td> <button id="sub" onClick="displayF()" >Subscribe</button></td></tr>
+</table>
+
+
+<table class="tabela3">
+    <tr><td>MIDDLE VIP SEATING</td></tr>
+    <tr><td class ="cmimi">$150</td></tr>
+  <tr><td> Access to our Official Kick-Off Party with Open Bar</td> </tr>
+    <tr><td>Expedited Entry with access to EVERY show with Front Row Seating </td></tr>
+     <tr><td>Access to our Official After Party</td> </tr>
+  
+              <tr><td> <button  id="sub"  onClick="displayF()">Subscribe</button></td></tr>
+</table>
+
+
+
+<table class="tabela4">
+    <tr><td>FRONT ROW VIP SEATING</td></tr>
+    <tr><td  class ="cmimi">$200</td></tr>
+  <tr><td> Access to our Official Kick-Off Party with Open Bar</td> </tr>
+    <tr><td>Expedited Entry with access to EVERY show with Front Row Seating </td></tr>
+     <tr><td></i> Access to our Official After Party</i></td> </tr>
+    <tr><td>  Meet & Greet Opportunities</td></tr>
+    <tr><td> First option for our Exclusive Experiences</td></tr>
+              <tr><td> <button id="sub"   onClick="displayF()">Subscribe</button> </td></tr>
+</table>
+
+
+
+</div>
+
+
+<form id="forma" >
+  <fieldset>
+    <legend>PERSONAL INFO</legend>
+    <div class="personalInfo">
+    <p>
+    <label for="size_1">Name: </label>
+      <input type="text" name="size">
+
+    </p>
+    <p>
+         <label for="size_2">Surname: </label>
+      <input type="text" name="size" id="size_2" >
+     
+    </p>
+    <p>
+         <label for="size_3">Email: </label>
+      <input type="email" name="size" id="size_3" >
+     
+    </p>
+    <p>
+      <label for="quantity">Seats: </label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+    </p>
+    <p>
+      <label for="pin">PIN:</label>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4" >
+</p>
+    </div>
+    <hr/>
+<div id="PD">
+<p>
+    <label for="size_1">Credit/Debit Card :</label><br/>
+      <input type="text" name="size">
+
+    </p>
+<p>
+    <label for="size_1">Exp:</label><br/>
+      <input type="text" name="size">
+
+    </p>
+
+    <p>
+    <label for="size_1">CVV:</label><br/>
+      <input type="text" name="size">
+
+    </p>
+</div>
+
+<hr/>
+
+
+<div id="SHA">
+  <p>
+     <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  </p>
+<p>
+    <label for="size_1">Street Addres:</label><br/>
+      <input type="text" name="size">
+
+    </p>
+<p>
+    <label for="size_1">Phone Number:</label><br/>
+      <input type="text" name="size" placeholder="123-45-678">
+
+    </p>
+
+    <p>
+    <label for="size_1">City:</label><br/>
+      <input type="text" name="size">
+
+    </p>
+
+      <p>
+    <label for="size_1">Postal Code:</label><br/>
+      <input type="text" name="size">
+
+    </p>
+</div>
+
+<input type="submit" id="sub">
+  </fieldset>
+</form>
+
+<canvas id="DemoCanvas" width="1000" height="100"></canvas>  
+<div id="facts">
+<p><em>Fact: </em>Vogue magazine has seen an increase in its print and digital reach over the past seven years. The fashion and lifestyle magazine uplifted its reach to almost <em id="v"></em> million individuals between April 2019 and March 2020. During this period, <em id="e"></em> million women read the title in its print format.</p>
+
+
+</div>
+<script>  
+var canvas = document.getElementById('DemoCanvas');
+//Always check for properties and methods, to make sure your code doesn't break in other browsers.
+if (canvas.getContext) 
+ {
+  var context = canvas.getContext('2d');
+  // Reset the current path
+  context.beginPath(); 
+  // Staring point (10,45)
+   context.moveTo(10,45);
+  // End point (180,47)
+  context.lineTo(1000,47);
+  // Make the line visible
+   context.strokeStyle = '#5ea4f3';
+  context.stroke();
+   }
+
+   function mathCalc(){
+ var m = Math.PI;
+ var rez =Math.round(m)*Math.sin(90 * m/ 180)*Math.cos(0 * m / 180)*Math.max(0,1)*Math.min(1,2);
+ console.log(rez);
+ return (rez*766666.6666666667);
+}
+
+document.getElementById("v").innerHTML = mathCalc();
+
+function mathCalc1(){
+  var e= Math.E;
+  return (Math.round(e)*466666.6666666667);
+
+}
+  document.getElementById("e").innerHTML = mathCalc1();
+</script> 
+
+
+
 <footer>
+
               <div class="shadow"></div>
 
                 <br class="clearBoth" >

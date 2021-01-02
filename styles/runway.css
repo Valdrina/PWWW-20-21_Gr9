@@ -116,26 +116,122 @@ margin-left: 10px;
 .liimg ul{
 	margin-left: -20px;
 }
-table{
+.tabela1{
 	 border-collapse: collapse;
 	 border-radius: 25px;
 	  background-color:#facfef;
 	  outline: none;
+      margin: 30px;
 }
-th,td{
+.tabela1 th,td{
 	  padding: 5px;
 	
 	   border-radius: 25px;
 }
-tbody{
+.tabela2{
+background-color: #ffffff;
+  
+    border-top: 2px solid #5ea4f3;
+    padding: 30px;
+    overflow: hidden;
+ 
+    width: 45%;
+
 
 }
-td{
-	 
+
+
+.tabela3{
+background-color: #ffffff;
+  
+    border-top: 2px solid #5ea4f3;
+    padding: 30px;
+    overflow: hidden;
+  
+     margin-left: 20px;
+     width: 60%;
 }
-#a{
-	 border: 1px solid #f054c8;
+
+#sub{
+	background-color: #5ea4f3;
+	color: white;
+	text-decoration: none;
+    margin-left: 40px;
+
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
-#b{
-	 border: 1px solid #f054c8;
+
+.tabela4{
+background-color: #ffffff;
+  
+    border-top: 2px solid #5ea4f3;
+    padding: 30px;
+    overflow: hidden;
+ 
+     margin-left: 20px;
+     width: 100%;
+}
+
+
+.tabelat{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+}
+
+.cmimi{
+	color:  #2288f9;
+	font-size: 45px;
+}
+.text-small {
+  font-size: 0.9rem !important;
+  color: black;
+}
+
+.personalInfo{
+	display: flex;
+	flex-direction: row;
+
+}
+.personalInfo p{
+	margin-left: 20px;
+}
+
+#PD{
+	display: flex;
+	flex-direction: row;	
+}
+#PD p{
+	margin-left: 20px;
+}
+
+#SHA{
+	display: flex;
+	flex-direction: row;	
+}
+#SHA p{
+	margin-left: 20px;
+}
+
+#forma{
+	display: none;
+}
+
+#fw{
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#tickets{
+	font-weight: normal;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+
+em{
+	color: #7e5c88;
 }

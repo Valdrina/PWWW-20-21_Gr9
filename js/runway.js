@@ -1,5 +1,4 @@
 
-
   var imgObj ;
            function init(){
                imgObj = document.getElementById('myImage');
@@ -18,7 +17,7 @@
             
             function moveLeft(){
                imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
-                check(imgObj.style.left,imgObj.style.top);
+                // check(imgObj.style.left,imgObj.style.top);
                if(imgObj.style.left =='-120px'){
                 alert("go on");
 
@@ -36,7 +35,7 @@
             function moveTop(){
                imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
         
-               check(imgObj.style.left,imgObj.style.top);
+              
               if(imgObj.style.top =='-230px'){
                 // alert("yay");
 
@@ -48,15 +47,9 @@
                     
             }
 
-             console.log(a);
+           
 
             window.onload =init;
-this.a;
-var s= this;
-         
-         if( a=='-10px'){
-            alert('a');
-         }
 
 
 // function largeFunction(n){
@@ -80,18 +73,25 @@ var s= this;
   document.getElementById("demo").innerHTML = x; 
 }
             
-         function check(s,d ){
+         // function check(s,d ){
               
             
               
-              if(s=='120px' && d =='-230px'){
-              alert('ajvhh');
-              }
+         //      if(s=='120px' && d =='-230px'){
+         //      alert('ajvhh');
+         //      }
 
-         }
+         // }
+
+function displayF(){
+  var p =document.getElementById("forma");
+  p.style.display= "block";
+}
 
 
+// function mathCalc(){
+//  var m = Math.PI;
+//  return Math.round(m)*Math.sin(90 * m/ 180)*Math.cos(0 * m / 180)*Math.max(0,1)*Math.min(1,2)*766666.667;
+// }
 
-
-          
-            
+// document.getElementById("visitors").innerHTML = mathCalc();
