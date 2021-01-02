@@ -3,10 +3,11 @@
 	font-size: 30;
 	margin-top: 150px;
 	text-align: center;
-  font-family: kng;
+  font-family: "Times New Roman", Times, serif;
 	color: #7e5c88;
+  height: 40px;
   background-image: url("../images/back.jpg");
-  background-repeat: repeat-x;
+  background-size:cover;
   outline-style: double;
   outline-color: #979797;
 
@@ -44,28 +45,8 @@
   font-family: georgia;
   text-shadow: 6px 4px 6px #7e5c88;
  }
- /*
- #street {
- 	text-align: center;
- 	border-top:  0.5px solid #979797;
-	padding-top: 20px;
- }
- #model {
- 	text-align: center;
- 	border-top:  0.5px solid #979797;
-	padding-top: 20px;
- }
- #design {
- 	text-align: center;
- 	border-top:  0.5px solid #979797;
-	padding-top: 20px;
- }
- #trend {
- 	text-align: center;
- 	border-top:  0.5px solid #979797;
-	padding-top: 20px;
- }*/
- #pjesa2
+ 
+ #photoSection
           {     
               height: 350px;
               margin: 3px 0px 0px 0px;
@@ -74,7 +55,10 @@
             
               
           }
-  .forth
+  .fotot img{
+            margin-left: -34px;
+          }
+  .fotot
           {
               margin: 5px 0px 0px 0px;
               width:24%;
@@ -100,7 +84,7 @@
            border-radius: 15px; 
            font-size: 12px;
             }
-#pjesa3
+#photoSection2
           {     
               height: 280px;
               margin: 3px 0px 0px 0px;
@@ -109,7 +93,7 @@
             
               
           }
-      .shadow {
+.shadow {
   
     padding-bottom: 20px;
     display: flex;
@@ -147,19 +131,24 @@
 }
  #pjesaLast
           {     
-              background-color: white;                     
+              background-color: white;  
+
           }
+
   .last
           {   
               margin: 5px 0px 0px 0px;
-              width:24%;
+              width:30%;
               height: 100px;
-              text-align: center;
+              text-align: left;
               display: inline-block;
               padding-left: 5em;
               padding-right: 5em;
                 
           }
+.last video{
+    margin-left: -40px;
+  }
 
  #vsubscribe
           {     
@@ -196,13 +185,17 @@
   padding-bottom: 15px;
 }
 .videoCaption{
+  width: 300px;
   font-size: 13px;
   color: #979797;
-  line-height: 20px;
   text-align: center;
-  width:404px;
+  margin-left:-100px; 
+  padding-left: 25%;
   
 
+}
+.moreLast {
+  padding-left: 26%;
 }
 
 .moreLast a{
