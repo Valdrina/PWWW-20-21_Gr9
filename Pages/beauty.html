@@ -50,7 +50,7 @@
     <img src="../images/wellness.jpg" width="500px" height="400px" >
     </div>
     <div class="rightContainer"style="width: 50%; display: inline-block; height: 400px;">
-    <h3><span class="right">WELLNESS</span> <br>What Is the New Coronavirus Strain and What Does It Mean ?<br> <span class="right"> BY DHARUSHANA MUTHULINGAM </span><br><span id = "dataEP"></span></h3>
+    <h3><span class="right">WELLNESS</span> <br>What Is the New Coronavirus Strain and What Does It Mean ?<br> <span id="author1"></span><br><span id = "dataEP"></span></h3>
       <script>
     var d = new Date(2020,11,23);
 
@@ -64,7 +64,7 @@
     <h3><span class="right">WELLNESS</span> <br>
 
       Are You Spiritually Bypassing 2020?
-    <br> <span class="right"> BY SOPHIA LI </span><br><span id = "dataEP2"></span></h3>
+    <br> <span id="author2"></span><br><span id = "dataEP2"></span></h3>
       <script>
     var d = new Date(2020,11,30);
 
@@ -90,13 +90,15 @@
 
   <div id = "skin">
     <img src="../images/skin.jpg" class="photoCircle">
-    <h3>Why a Hot Ginger Bath Is the Perfect Detox Ritual for Winter</h3>
+    <h3>Why a Hot Ginger Bath Is the Perfect Detox Ritual for Winter
+      <br> <span id="author3"></span></h3>
     <p>For centuries, ritual bathing has been practiced in China for its soothing mind-body benefits. And come winter, any dip in the tub would be remiss not to include a zing of ginger, says Anna Lam, founder of natural skin-care brand GingerChi. Ginger has been used in Asian cultures for thousands of years for culinary and medicinal purposes due to its anti-inflammatory, circulation-boosting, and digestion-aiding effects year-round. But, the fibrous root becomes that much more crucial during the colder months, thanks not just to its naturally warming properties, but its accordance with the traditional Chinese concept of chi, which is the energy force inherent in all living things. In order for chi to circulate, there must be balance—otherwise known as the ancient philosophy of yin and yang.“The heat of a warm bath and the ‘yang’ energy of ginger is much needed for the ‘yin’ season of winter,” explains Lam. “Eating ginger, drinking ginger tea, and taking a ginger bath all help warm the meridians, opening the blockages to promote the flow of blood and the chi throughout the body. Bathing during the cooler months is essential as it helps bring the body back into balance, improves circulation, and fortifies the immune system.”</p>
       </div>
 
   <div id="skin2">
      <img src="../images/skin2.jpg" class="photoCircle2">
-    <h3>Under-Eye Patches to Banish Puffiness Once and for All</h3>
+    <h3>Under-Eye Patches to Banish Puffiness Once and for All
+      <br> <span id="author4"></span></h3>
     <p>Under-eye patches may be all the rage on Instagram thanks to everyone from Victoria Beckham to Kaia Gerber and Cindy Crawford, but as it turns out the double-tap-worthy treatment packs a serious punch. Though not intended for everyday use, they offer a “boost” to the delicate area on especially swollen mornings, notes Hollywood facialist Mila Moursi. (The root causes of that puffiness? Pollution, poor sleep, inadequate makeup removal, and hot, dry indoor air—as well as heavy creams, which can overburden the skin at night, she adds.) The latest wave of masks contain a host of de-puffing, fine-line-plumping actives, from caffeine and rejuvenating rose quartz to 24-karat gold. Here, the best under-eye patches to stock up on now. A favorite in the Vogue office, BeautyBio’s collagen-infused gel masks—made with illuminating pearl and colloidal silver—fake the appearance of a full-night’s rest, even if life is running at a breakneck pace. Consider Chanel’s luxe firming two-step system—a roll-on serum and hydrogel patches stamped with the French house’s logo—the 2.55 of eye care.Experience celebrity facialist Joanna Vargas’s sought-after touch from the comfort of your own couch with these brightening eye patches, which are the go-to among many a Hollywood starlet.</p>
       </div>
   </div>
@@ -131,7 +133,7 @@
 <h3 align="center">Offering you the new Partnership with Sephora</h3> 
 <h4 align="center">Fill out this form and earn 50% off selected beauty products. </h4> 
 
-<form name="apply" oninput="x.value='Congratulations you will receieve 50% off '+brand.value+' '+product.value" onsubmit="return(validateForm());">
+<form name="apply" oninput="x.value='Congratulations you will receieve 50% off '+brand.value+' '+product.value" onsubmit="return(validateForm());" novalidate>
 
   <p align="center">Name: <input type="text" name="Name" autocomplete="on">
    Last Name: <input type="text" name="LastName" autocomplete="on"></p>
@@ -162,6 +164,7 @@
 
 
 </form>
+<div id="moving"><img src="../images/1.tiff"></div>
 </div>
 
  
@@ -250,7 +253,7 @@ var input  = [document.apply.Name,document.apply.LastName,document.apply.brand,d
 
  // var name = document.apply.Name.value;
 
-  var letters = /^[A-Za-z]+$/;
+  var letters = /^[A-Z]+$/i; // modificator 'i' will make the search case insensitive although the inside of regex says otherwise
    if (!input[0].value.match(letters)){
     alert("Invalid Name given! ");
      return false;
@@ -280,17 +283,57 @@ var input  = [document.apply.Name,document.apply.LastName,document.apply.brand,d
 
   //var address = document.apply.Email.value;
 
-  var re3 = /\S+@\S+\.\S+/;
-  if(!re3.test(input[4].value)){
-    alert("Please insert a valid email address!");
-    return false;
-
-  }
+  try
+    {
+        checkUserEmail(input[4].value);
+    }
+    catch(error)
+    {
+      alert(error);
+        return false;
+    }
 
 return true;
 
  }
-</script>
+  function checkUserEmail(email)
+{
+  var Rsymbol = new RegExp("@");
+  var Rpoint = new RegExp("\\.");
+    if(email.length == 0)
+    {
+        throw 'please provide an email address';
+           console.log(Rsymbol.exec(email));
+    }
+    else if(Rsymbol.exec(email)== null && Rpoint.exec(email)==null)
+    {
 
+        throw 'please provide a valid email address';
+    }
+
+}
+ function author( fname, lname, age){
+    this.firstName = fname;
+    this.lastName = lname;
+    this.age = age;
+
+  }
+
+  author.prototype.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+  var author1 = new author("DHARUSHANA","MUTHULINGAM", 23);
+  var author2 = new author("SOPHIA", "LI",26);
+  var author3 = new author("SUSSANNE","MONTGOMERY",34);
+  var author4 = new author("LILIANE","SMITH",28);
+
+document.getElementById("author1").innerHTML = "BY "+ author1.firstName+" "+author1.lastName;
+document.getElementById("author2").innerHTML = "BY "+ author2.firstName+" "+author2.lastName;
+document.getElementById("author3").innerHTML = "BY "+ author3.firstName+" "+author3.lastName;
+document.getElementById("author4").innerHTML = "BY "+ author4.name();
+
+ 
+</script>
 </body>
 </html>
