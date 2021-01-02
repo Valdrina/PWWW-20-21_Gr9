@@ -173,6 +173,7 @@ canvas {
     border:1px solid #d3d3d3;
     background-color: black;
 }
+<<<<<<< HEAD
 
 
 footer{
@@ -319,3 +320,8 @@ footer nav ul li span{
   opacity: 0.8;
 
 }
+=======
+#svg {
+	padding-left: 380px;
+}
+>>>>>>> e678a9db3dff0c1e7ce7b4daa6123c02fee9cb83

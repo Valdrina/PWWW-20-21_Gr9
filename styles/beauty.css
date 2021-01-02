@@ -15,12 +15,9 @@
 	width: 100%;
 	text-align: center;
 	font-size: 30px;
-	color: purple;
-	background-image:url('../images/beauty.jpg');
-	filter: blur(2.5px);
-	background-position: center;
-    background-repeat: no-repeat;
- 	background-size: cover;
+	background-image: url('../images/pink.png'),url('../images/water.jpg') ;
+	background-position: center ,left top;
+    background-repeat: no-repeat,repeat;
 
 }
 
@@ -55,6 +52,7 @@
 	text-align: center;
 	color: #96739f;
 	text-decoration: none;
+	font-size: 16px;
 
 }
 
@@ -68,7 +66,7 @@
 
 .rightContainer{
 	float: right;
-	background-image: radial-gradient(white, #d4af37);
+	background-image: radial-gradient(white, #d8f9ff);
 }
 .rightContainer h3 , .leftContainer h3{
 	padding-left: 10px;
@@ -99,9 +97,13 @@ font-size: 14px;
 	padding-top: 30px;
 	padding-left: 15px;
 }
+#audio2 {
+	padding-top: 15px;
+	padding-left: 350px;
+}
 .story2 {
-	background-image: radial-gradient(white,grey);
-	margin-bottom: 40px;
+	background-image: radial-gradient(white,#979797);
+	margin-bottom: 30px;
 }
 .titles{
 	margin: 0 auto;
@@ -145,7 +147,7 @@ font-size: 14px;
 	height: 480px;
 	width: 100%;
 	background-color: #96739f;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 
 }
 #skin2 h3{
@@ -171,9 +173,10 @@ font-size: 14px;
 }
 #hair{
 	margin-top: 30px;
-	height: 480px;
+	height: 555px;
 	width: 100%;
 	background-color: pink;
+	margin-bottom: 30px;
 
 }
 .grid-container {
@@ -222,4 +225,18 @@ font-size: 14px;
 }
 #cnt{
 	text-align: center;
+}
+#freeProducts{
+	background-color:  #add8e6;
+	height: 280px;
+	width: 100%;
+}
+#freeProducts h3{
+	padding-top: 10px;
+	font-weight: normal;
+	font-size: 25px;
+}
+#freeProducts h4{
+	font-weight: normal;
+	font-size: 14px;
 }
