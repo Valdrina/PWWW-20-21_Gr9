@@ -12,7 +12,7 @@
 .foto {
 
 	width: 120px;
-	border-top: 2px solid #A60505;
+	border-top: 2px solid #7e5c88;
 	padding-top: 20px;
 	margin-left: 45%;
 }
@@ -66,3 +66,18 @@ border-bottom: 1px solid #979797;
 	padding-right: 200px;
 	padding-left: 200px;
 }
+.tx{
+	font-size: 14px;
+}
+
+#signButton{
+	height:35px;
+	width: 100px;
+}
+#signButton:hover{
+	background-color: #7e5c88;
+}
+#em{
+	border-style: solid none solid solid;
+}
+
