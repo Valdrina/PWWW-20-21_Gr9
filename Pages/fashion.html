@@ -266,7 +266,7 @@ function playPause() {
   <section id="pjesaLast" >
 
   <article class="last"> 
-          <figure><video id="video1" loop autoplay muted>
+          <figure><video id="video1" width="380" loop autoplay muted>
     <source src="../videos/1.mp4" type = "video/mp4"/>
     Shfletuesi juaj nuk e perkrahe video elementin
   </video>
@@ -276,7 +276,7 @@ function playPause() {
         </article>
 
         <article class="last"> 
-          <figure><video id="video1"  loop autoplay muted>
+          <figure><video id="video1" width="380" loop autoplay muted>
     <source src="../videos/2.mp4" type = "video/mp4"/>
     Shfletuesi juaj nuk e perkrahe video elementin
   </video>
@@ -298,9 +298,36 @@ function playPause() {
 Get 1 year of <mark><i>Vogue</i></mark> plus an exlusive gift
 </article>
 </section>
-<div class="shadow"></div>
 
-                <br class="clearBoth" >
+
+<section id="rate">
+<h5>Please rate the page with a number between 5 and 10: </h5>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+</section>
+<script>
+   function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+</script>
+
+
+<div class="shadow"></div>
+   <br class="clearBoth" >
 
    <footer>
                   <div class="footer-content-1">
