@@ -314,13 +314,15 @@ Get 1 year of <mark><i>Vogue</i></mark> plus an exlusive gift
   x = document.getElementById("demo").value;
   try { 
     if(x == "")  throw "empty";
-    if(isNaN(x)) throw "not a number";
+    if(isNaN(x)) throw "Input is not a number";
     x = Number(x);
     if(x < 5)  throw "too low";
     if(x > 10)   throw "too high";
+   else throw "Thank you for your rating!"
+    
   }
   catch(err) {
-    message.innerHTML = "Input is " + err;
+    message.innerHTML = " " + err;
   }
 }
 </script>
