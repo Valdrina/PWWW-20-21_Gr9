@@ -33,26 +33,29 @@
 <div id="maindiv"></div>
 	<div id ="titlediv">
 	<h4 id ="title">SUBSCRIPTION FORM</h4></div>
-	<div class = "payment_details">
+	<div class = "details">
 
-	<form name="subscription" onsubmit="return(validate());" novalidate> 
+	<form name="subscription" onsubmit="return(validate());" action="#" method="post" novalidate> 
+
 		<table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
 		<tr><td colspan="4"><h5>STEP 1. LOCATION </h5></td></tr>
-		<tr><td colspan="4" align="center"> 
-		<input class ="buttons" type="button" value="U.S">
-		<input class ="buttons" type="button" value="International" >
-		</td> </tr>
-		<tr><td colspan="4">
-		<div  id="locationx"></div></td></tr>
 
-	<tr><td colspan="4">	 
+		<tr><td colspan="4" align="center"> 
+		<input class ="buttons" type="button" value="U.S" autofocus>
+		<input class ="buttons" type="button" value="International" onclick="showLocation();">
+		</td></tr>
+
+		<tr><td colspan="4">
+		<div id="locationx" style="display: none;"></div> </td></tr>
+
+		<tr><td colspan="4">	 
 		<h5>STEP 2. PAYMENT DETAILS  </h5></td></tr>
+
 		<tr><td colspan="4" align="center"><small>You may cancel at any time! </small></td></tr>
 		
        <tr align="center">    
               <td colspan="4" class="style1"><p>Credit/Debit Card :<br>  
-              <input class="cd_num" type="text" name="cd" /></p></td>    
-       </tr>  
+              <input class="cd_num" type="text" name="cd"/></p></td></tr>  
        <tr>
        	<td align="left" colspan="2" ><label>Exp.Month:<br>
        	<select name="month" class="data">
@@ -70,12 +73,14 @@
         <option value="11">November</option>
         <option value="12">December</option>
      </select></label></td>
+
        		<td align="left"><label>Exp.Year:<br>
-       		<input type="text"class="enlg"name="year"></label></td>
+       		<input type="text"class="enlg" name="year"></label></td>
        		<td align="left"><label>CVV:<br>
        		<input type="text"class="enlg"  name="cvv"></label></td></tr>	
 
-	 	<tr class="shipping"><td colspan="4"><h5>STEP 3. SHIPPING ADDRESS</h5></td></tr>
+
+	 	<tr><td colspan="4"><h5>STEP 3. SHIPPING ADDRESS</h5></td></tr>
 
 		<tr>
 			<td colspan="2" align="left"   ><label>First Name:<br>  
@@ -101,8 +106,7 @@
 
 		<tr><td colspan="3" class="span" ><label>
 				Email: <br>
-				<input type="Email" class="cd_num" name="email" placeholder="example@domain">
-			</label></td>
+				<input type="Email" class="cd_num" name="email" placeholder="example@domain"></label></td>
 		<td  class="enlg" ><label>
 			Password: <br>
 			<input type="Password" name="psw">
@@ -115,19 +119,21 @@
 		</tr>
 	-->
 	
-		<tr><td colspan="4"><h5>STEP 4. VALIDATION OF IDENTITY</h5></td>
-		</tr>
+		<tr><td colspan="4"><h5>STEP 4. VALIDATION OF IDENTITY</h5></td></tr>
+
 		<tr><td colspan="4" align="center" style="background-color: #cdbfdb;"><i><small>Please drag  and drop image to show you are not a robot.
 		</small><i></td>
 		</tr>
+
 		<tr><td colspan="4">
 		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="dragimg" src="../images/dragMagazine.jpeg" draggable="true" ondragstart="drag(event)" width="180" height="229"></div>
 		<div id="pos" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 		</td></tr>
 
 	 	<tr><td  colspan="4"><h5>STEP 5. REVIEW AND SUMBIT </h5></td></tr>
+
 	 	<tr><td colspan="4"><p id="price">After six months, renews automatically at one year for <strong>$24.99.</strong> You may cancel at anytime.</p>
-		<p></p></td></tr>
+		</td></tr>
 
 		<tr><td colspan="4"><label id="pricing">1 Year - Print + Digital Access <span class="sp">&#36;12.00</span></label></td></tr>
 	 	
@@ -140,19 +146,30 @@
 
 
 	 	<tr><td colspan="4"><h5><strong>Automatic Renewal:</strong></h5></td></tr>
+
 		<tr>
-		<td colspan="4" class="review"><p>Your subscription will automatically renew for one year. Before each renewal, we will send a reminder with the term and rate then in effect (current rates listed above). If you do nothing, we will charge the payment method you selected. To cancel at any time, contact customer service online or by phone as shown below to receive a full refund for all unserved issues.</p></td></tr>
-	
+		<td colspan="4" class="review" style=" font-size: 14px;">
+				
+		<dl>
+	  	<dt>Your subscription will automatically renew for one year.</dt>
+	  	<dd>Before each renewal, we will send a reminder with the term and rate then in effect (current rates listed above).</dd>
+	  	<br>
+	  	<dt>If you do nothing, we will charge the payment method you selected.</dt>
+	  	<dd>To cancel at any time, contact customer service online or by phone as shown below to receive a full refund for all unserved issues.</dd>
+		</dl>
+			</td></tr>
+		
 		<tr><td colspan="4" class ="review"><p>By subscribing you agree to Automatic Renewal as described above, our<i> User Agreement</i>, and <i>Privacy Policy & Cookie Statement</i>.</p></td>
 		</tr>
 
 		<tr><td colspan="4">
 		<p id="price">
 	 	<input id="buttonSubsc" type="submit" value="Subscribe" disabled="true">
+	 	
 	 	</p></td></tr>
-	 </div>
-			</table>
 
+		</div>
+		</table>
 		</form>
 
 </main>
@@ -177,7 +194,7 @@ This offer is only available to customers who have not been subscribed to Vogue 
 
  // validate form using mostly elementary js operations
 
-	function validate() {
+	function validate() {	
 
 		// card number validation
 		if(isNaN(document.subscription.cd.value) || document.subscription.cd.value == "" || document.subscription.cd.value.length != 16 ) {
@@ -185,6 +202,7 @@ This offer is only available to customers who have not been subscribed to Vogue 
             document.subscription.cd.focus();
             return false;
          }
+
          // month as datalist validation
          if( document.subscription.month.value == "-1") {
             alert( "Please provide your correct card expiry month!" );
@@ -192,13 +210,15 @@ This offer is only available to customers who have not been subscribed to Vogue 
 
             return false;
          }
+
          // year as a number bigger or equal to 2020 validationn
 		  if( isNaN(document.subscription.year.value) || document.subscription.year.value == "" || document.subscription.year.value.length != 4 || document.subscription.year.value <2020) {
             alert( "Please provide your correct card expiry year!" );
             document.subscription.year.focus();
             return false;
          }
-        // check cvv security nummber as a 3 digit number
+
+        // check cvv security number as a 3 digit number
 		  if( isNaN(document.subscription.cvv.value) || document.subscription.cvv.value == "" || document.subscription.cvv.value.length != 3) {
             alert( "Please provide your correct cvv !" );
             document.subscription.cvv.focus();
@@ -209,11 +229,15 @@ This offer is only available to customers who have not been subscribed to Vogue 
          var letters = /^[A-Za-z]+$/;
           if (!document.subscription.name.value.match(letters)){
 	   	 alert("Please provide your correct Name!");
+	   	   document.subscription.name.focus();
+
 	     return false;
 	  	 }
 
 	  	 if (!document.subscription.surname.value.match(letters)){
 	   	 alert("Please provide your correct Last Name! ");
+	   	 document.subscription.surname.focus();
+
 	     return false;
 	  	 }
 
@@ -285,45 +309,48 @@ This offer is only available to customers who have not been subscribed to Vogue 
 	}
 
 
-function checkPhoneNumber(input){
+// if international than show location
+function showLocation(){
+ document.getElementById('locationx').style.display = "block";
+}
 
+
+// validate phone number
+function checkPhoneNumber(input){
   	var phoneno = /^\+?([0-9]{3})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
  	
  	 if(!input.value.match(phoneno))
-    {
-
-        throw 'Please provide a valid phone number! ';
-    }
+    { throw 'Please provide a valid phone number! ';}
 
 }
 
+// validate password
 function checkPassword(str) { 
-            if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match( 
+    if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match( 
                     /[^a-zA-Z\d]/g) && str.length >= 8) 
                 return true;
-            else 
-                throw 'Please provide a valid Strong Password containing the following : \n A minimum of 8 letters; \n At least 1 uppercase character; \n At least 1 lowercase character; \n At least 1 digit; \n At least 1 special character. '  ;
+         else 
+            throw 'Please provide a valid Strong Password containing the following : \n A minimum of 8 letters; \n At least 1 uppercase character; \n At least 1 lowercase character; \n At least 1 digit; \n At least 1 special character. '  ;
         } 
 
+// validate email
 function checkUserEmail(email)
 {
   var Rsymbol = new RegExp("@");
   var Rpoint = new RegExp("\\.");
+
     if(email.length == 0)
-    {
-        throw 'Please provide an email address';
-    }
+    {throw 'Please provide an email address';}
+
     else if(Rsymbol.exec(email)== null || Rpoint.exec(email)==null || email.search(Rpoint)==email.length-1 || email.search(Rpoint) <=(email.search(Rsymbol)+1) ||email.search(Rsymbol) == 0)
 
-    {
-        throw 'Please provide a valid email address';
-    }
+    { throw 'Please provide a valid email address';}
 
 }
 
   </script>
   <script src="../js/geoloc.js"></script>
-         <script async defer
+   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPvs2MZNfRqUqOcLPsSo6f1GXOGv9MW7M&callback=initMap"></script>
 </footer>
 </body>
