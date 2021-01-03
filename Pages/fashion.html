@@ -82,7 +82,8 @@ function playPause() {
 	<h2 id="view">View</h2>
 	       <!-- / pjesa e kater fotove -->
        <section id="photoSection" >
-        <article class="fotot">
+
+        <article class="fotot a1">
             <h2 align="center">Street Style</h2> 
           <figure>
             <img src="../images/f1.jpg" width="225" height="140" alt="there's no photo" align="center">
@@ -324,7 +325,7 @@ Get 1 year of <mark><i>Vogue</i></mark> plus an exlusive gift
   }
 }
 </script>
-
+</main>
 
 <div class="shadow"></div>
    <br class="clearBoth" >
@@ -402,112 +403,5 @@ Get 1 year of <mark><i>Vogue</i></mark> plus an exlusive gift
                   </div>
     
       </footer> 
-<script>
-  function validateForm(){
-
-// get all inputs
-var input  = [document.apply.Name,document.apply.LastName,document.apply.brand,document.apply.product,document.apply.Email,
-document.getElementById("male"),document.getElementById("female")];
-
- // validate name and lastname as all letter elements
-  var letters = /^[A-Z]+$/i; // modificator 'i' will make the search case insensitive although the inside of regex says otherwise
-   if (!input[0].value.match(letters)){
-    alert("Invalid Name given! ");
-    input[0].focus();
-     return false;
-   }
-
-  if (!input[1].value.match(letters)){
-    alert("Invalid Last Name given! ");
-    input[1].focus();
-     return false;
-   }
-
-  // validate brand from datalist based one the pattern given
-   var pattern = input[2].getAttribute("pattern");
-   var re = new RegExp(pattern);
-
-   if(!re.test(input[2].value)){
-    alert("Please choose a value from pattern datalist!");
-    input[2].focus();
-    return false;
-   }
-
-  // validate product also based from the pattern given as an attribute
-   var pattern = input[3].getAttribute("pattern");
-   var re2 = new RegExp(pattern);
-  if(!re2.test(input[3].value)){
-    alert("Please choose a value from product datalist!");
-    input[3].focus();
-    return false;
-   }
-
-   // validate email
-  try
-    {
-        checkUserEmail(input[4].value);
-    }
-    catch(error)
-    {
-      alert(error);
-      input[4].focus();
-        return false;
-    }
-
-    // validate check button
-      if((input[5].checked==false) && (input[6].checked==false)){
-      alert("Please choose your gender");
-      
-       return false;
-     }
-
-return true;
-
- }
- 
- //  function to help validate email
-function checkUserEmail(email)
-{
-  var Rsymbol = new RegExp("@");
-  var Rpoint = new RegExp("\\.");
-    if(email.length == 0)
-    {
-        throw 'Please provide an email address';
-    }
-    else if(Rsymbol.exec(email)== null || Rpoint.exec(email)==null || email.search(Rpoint)==email.length-1 || email.search(Rpoint) <=(email.search(Rsymbol)+1) ||email.search(Rsymbol) == 0)
-
-    {
-        throw 'Please provide a valid email address';
-    }
-
-}
-// function author of articles
- function author( fname, lname, age){
-    this.firstName = fname;
-    this.lastName = lname;
-    this.age = age;
-
-  }
-
-// creating a function based on the properties of the above one
-  author.prototype.name = function() {
-  return this.firstName + " " + this.lastName;
-};
-
-  var author1 = new author("DHARUSHANA","MUTHULINGAM", 23);
-  var author2 = new author("SOPHIA", "LI",26);
-  var author3 = new author("SUSSANNE","MONTGOMERY",34);
-  var author4 = new author("LILIANE","SMITH",28);
-  var author5 = new author("ANNA","BITTER",36);
-
-document.getElementById("author1").innerHTML = "BY "+ author1.firstName+" "+author1.lastName;
-document.getElementById("author2").innerHTML = "BY "+ author2.firstName+" "+author2.lastName;
-document.getElementById("author3").innerHTML = "BY "+ author3.firstName+" "+author3.lastName;
-document.getElementById("author4").innerHTML = "BY "+ author4.name();
-document.getElementById("author5").innerHTML = "BY "+ author5.name();
-
- 
-</script>
-	</main>
 </body>
 </html>
