@@ -35,7 +35,7 @@
 	<h4 id ="title">SUBSCRIPTION FORM</h4></div>
 	<div class = "payment_details">
 
-	<form name="subscription" onsubmit="return(validate());"> 
+	<form name="subscription" onsubmit="return(validate());" novalidate> 
 		<table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
 		<tr><td colspan="4"><h5>STEP 1. LOCATION </h5></td></tr>
 		<tr><td colspan="4" align="center"> 
@@ -79,34 +79,45 @@
 
 		<tr>
 			<td colspan="2" align="left"   ><label>First Name:<br>  
-              <input  type="text" class="enlg" name ="name"></label></td>
+              <input  type="text" class="enlg" name ="name" autocomplete="on"></label></td>
               <td></td>
 
               <td colspan="2" align="left" ><label>Last Name:<br>  
-              <input type="text"class="enlg"name ="surname"></label></td></tr>
+              <input type="text"class="enlg"name ="surname" autocomplete="on"></label></td></tr>
 
 		<tr><td colspan="2"><label>Location: <br>
 				<input type="text"class="enlg" name="location"></label></td>
 			<td colspan="1" ><label>Street Address: <br>
 				<input type="text"class="enlg" name="street"></label></td>
 			<td><label>Phone Number: <br>
-				<input type="text"class="enlg" name="phone"></label></td></tr>
+				<input type="text"class="enlg" name="phone" placeholder="+383-XX-XXX-XXX"></label></td></tr>
 
 		<tr><td colspan="2"><label>City:<br>
 				<input type="text"class="enlg" name="city"></label></td>
 			<td><label>Province:<br>
 				<input type="text"class="enlg"></label></td>
 			<td><label>Postal Code:<br>
-				<input type="text"class="enlg" name="zip"></label></td></tr>
+				<input type="text"class="enlg" name="zip" placeholder="XXXXX"></label></td></tr>
 
-		<tr><td colspan="4" class="span" align="center"><label>
+		<tr><td colspan="3" class="span" ><label>
 				Email: <br>
-				<input type="Email" class="cd_num">
-			</label></td></tr>
+				<input type="Email" class="cd_num" name="email" placeholder="example@domain">
+			</label></td>
+		<td  class="enlg" ><label>
+			Password: <br>
+			<input type="Password" name="psw">
+		</label></td></tr>
 
+
+	<!-- html form element KEYGEN eshte fshire nga HTML5	
+		<tr>
+			<td colspan="4"><label>Encryption:<br><keygen name="security"></label></td>
+		</tr>
+	-->
+	
 		<tr><td colspan="4"><h5>STEP 4. VALIDATION OF IDENTITY</h5></td>
 		</tr>
-		<tr><td colspan="4" align="center"><i><small>Please drag  and drop image to show you are not a robot.
+		<tr><td colspan="4" align="center" style="background-color: #cdbfdb;"><i><small>Please drag  and drop image to show you are not a robot.
 		</small><i></td>
 		</tr>
 		<tr><td colspan="4">
@@ -161,70 +172,155 @@ This offer is only available to customers who have not been subscribed to Vogue 
 <p id="copyright"><strong>Copyright &copy; 2020 Condé Nast Digital. All rights reserved.</strong></span></p>
 </div>
 	
+
 <script>
- // validate form
+
+ // validate form using mostly elementary js operations
+
 	function validate() {
 
+		// card number validation
 		if(isNaN(document.subscription.cd.value) || document.subscription.cd.value == "" || document.subscription.cd.value.length != 16 ) {
             alert( "Please provide your correct Card Information!" );
-            document.subscription.cd.focus() ;
+            document.subscription.cd.focus();
             return false;
          }
-
+         // month as datalist validation
          if( document.subscription.month.value == "-1") {
             alert( "Please provide your correct card expiry month!" );
+            document.subscription.month.focus();
+
             return false;
          }
-
+         // year as a number bigger or equal to 2020 validationn
 		  if( isNaN(document.subscription.year.value) || document.subscription.year.value == "" || document.subscription.year.value.length != 4 || document.subscription.year.value <2020) {
             alert( "Please provide your correct card expiry year!" );
-            document.subscription.year.focus() ;
+            document.subscription.year.focus();
             return false;
          }
-        
+        // check cvv security nummber as a 3 digit number
 		  if( isNaN(document.subscription.cvv.value) || document.subscription.cvv.value == "" || document.subscription.cvv.value.length != 3) {
             alert( "Please provide your correct cvv !" );
-            document.subscription.cvv.focus() ;
+            document.subscription.cvv.focus();
             return false;
          }
 
-         if( document.subscription.name.value == "" || document.subscription.name.value == null ) {
-            alert( "Please provide your correct Name!" );
-            document.subscription.name.focus() ;
-            return false;
-         }
-         if( document.subscription.surname.value == "" || document.subscription.surname.value == null) {
-            alert( "Please provide your correct Last Name!" );
-            document.subscription.surname.focus() ;
-            return false;
-         }
-         if( document.subscription.location.value == "" || document.subscription.location.value == null) {
-            alert( "Please provide your correct Location!" );
-            document.subscription.location.focus() ;
-            return false;
-         }
-         if( document.subscription.str.value == "" || document.subscription.str.value == null) {
-            alert( "Please provide your correct Street Address!" );
-            document.subscription.str.focus() ;
-            return false;
-         }
-         // phone number validation next here
+         // check name and lastname as all letters words 
+         var letters = /^[A-Za-z]+$/;
+          if (!document.subscription.name.value.match(letters)){
+	   	 alert("Please provide your correct Name!");
+	     return false;
+	  	 }
+
+	  	 if (!document.subscription.surname.value.match(letters)){
+	   	 alert("Please provide your correct Last Name! ");
+	     return false;
+	  	 }
 
 
+	  // location and street address validation
+          if( document.subscription.location.value == "" || document.subscription.location.value == null) {
+             alert( "Please provide your correct Location Address!" );
+             document.subscription.location.focus();
+             return false;
+          }
+
+         if( document.subscription.street.value == "" || document.subscription.street.value == null) {
+             alert( "Please provide your correct Street Address!" );
+             document.subscription.street.focus() ;
+             return false;
+          }
+
+         // phone number validation 
+         try
+	    {	// call function
+	        checkPhoneNumber(document.subscription.phone);
+	    }
+	    catch(error)
+	    {
+	      alert(error);
+	      document.subscription.phone.focus();
+	        return false;
+	    }
+
+	    // city validation
          if( document.subscription.city.value == "" || document.subscription.city.value == null) {
             alert( "Please provide your correct City!" );
             document.subscription.city.focus() ;
             return false;
          }
 
+         // postal code
          if( isNaN(document.subscription.zip.value) || document.subscription.zip.value == "" || document.subscription.zip.value.length != 5) {
-            alert( "Please provide your correct cvv !" );
+            alert( "Please provide your correct Postal Code !" );
             document.subscription.zip.focus() ;
             return false;
          }  
+         // email validation
+	   try
+	    {
+	        checkUserEmail(document.subscription.email.value);
+	    }
+	    catch(error)
+	    {
+	      alert(error);
+	       document.subscription.email.focus();
+	        return false;
+	    }
+
+	    // password validation
+	     try
+	    {
+	        checkPassword(document.subscription.psw.value);
+	    }
+	    catch(error)
+	    {
+	      alert(error);
+	      document.subscription.psw.focus();
+	        return false;
+	    }
+
 
           return true;
 	}
+
+
+function checkPhoneNumber(input){
+
+  	var phoneno = /^\+?([0-9]{3})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
+ 	
+ 	 if(!input.value.match(phoneno))
+    {
+
+        throw 'Please provide a valid phone number! ';
+    }
+
+}
+
+function checkPassword(str) { 
+            if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match( 
+                    /[^a-zA-Z\d]/g) && str.length >= 8) 
+                return true;
+            else 
+                throw 'Please provide a valid Strong Password containing the following : \n A minimum of 8 letters; \n At least 1 uppercase character; \n At least 1 lowercase character; \n At least 1 digit; \n At least 1 special character. '  ;
+        } 
+
+function checkUserEmail(email)
+{
+  var Rsymbol = new RegExp("@");
+  var Rpoint = new RegExp("\\.");
+    if(email.length == 0)
+    {
+        throw 'Please provide an email address';
+    }
+    else if(Rsymbol.exec(email)== null || Rpoint.exec(email)==null || email.search(Rpoint)==email.length-1 || email.search(Rpoint) <=(email.search(Rsymbol)+1) ||email.search(Rsymbol) == 0)
+
+    {
+        throw 'Please provide a valid email address';
+    }
+
+}
+
   </script>
   <script src="../js/geoloc.js"></script>
          <script async defer
