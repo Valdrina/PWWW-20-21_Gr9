@@ -126,7 +126,7 @@ header nav a:hover {
  #works .projectDiv{
  	float: left;
  	margin-right:30px;
-
+   	margin-top: -20px;
 
  }                        
 #works .projectDiv h3{
@@ -173,6 +173,10 @@ color: #fff;
 
 #works .projectDiv.last{
 	margin: 0;
+	margin-top: -20px;
+}
+#works .projectDiv a{
+	text-decoration: none;
 }
 
 
@@ -203,7 +207,7 @@ color: #fff;
 .cut{
 	margin-bottom: 40px;
 	border-top: 0.5px solid #979797;
-	width:740px;
+	width:735px;
 	text-align:left;
     margin-left: 0;
 }
@@ -240,18 +244,12 @@ color: #fff;
 	float: left;
 	 margin: 3px auto   30px auto; 
 	 margin-right: 10px;
+   margin-left: 5px;
 
-/* margin-right: 5px;
-margin-top: 0px;
-margin-bottom: 0px; */
 
 }
 
-/* .about-img-author {
-	height: 100px;
 
-}
- */
 
  .about-us hr{
  	border-top: 0.5px solid #979797;
@@ -269,10 +267,19 @@ margin-bottom: 0px; */
  	border-bottom: 1px solid #e6e6e6;
  
 }
+.about-name-last {
+	  width: 137px;  
+	text-align: left; 	
+	width: 100%;
+	margin-right: 40px;
+	margin-bottom: 10px;
+
+ 	
+ 
+}
 .about-name a{
 	color: #7e5c88;
 }
-
 
 .about-author-name {
 	font-size: 0.9em;
@@ -291,20 +298,14 @@ margin-bottom: 0px; */
 }
 
 .about-author-link {
-	font-size: 0.9em;
+	 font-size: 0em; 
 	margin-bottom: 7px;
 	color: #7e5c88;
 	text-transform: capitalize;
+	margin-bottom: 20px
 }
-/* 
-.about-name {
-	width: 137px;
-	 margin: 0 auto;  
-/* 	text-align: center; */
-/* 	width: 100%; */
-	
 
-/* } */
+
 
 .from-the-blog{
 
@@ -318,26 +319,118 @@ margin-bottom: 0px; */
 }
  .vogue-post{
  	float: left;
-	/* display: inline-block; */
-	margin-right: 35px;
+	
+	margin-right: 30px;
 }  
-/*  .about-us{
-	float: right;
-	 width: 20%;
-}   */
+
 .about-us{
 	float: left;
 	width: 20%;
-	margin-left: -16px;
+	margin-left: -35px;
    
 }
 
 .about-img{
 	float: left;
 
- /* pjesa e footer-it */                        
+                   
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blog-post__title {
+	font-size: 0.875em;
+	margin-top: 20px;
+	margin-bottom: 6px;
+	color: #7e5c88;	
+	text-transform: capitalize;
+}
+
+.blog-post__date {
+	font-size: 0.6875em;	
+	margin-bottom: 14px;
+	color: #979797;	
+	text-transform: capitalize;	
+}
+
+.blog-post__text {
+	font-size: 0.75em;
+	line-height: 16.8px;
+	color: #979797;
+}
+
+.about {
+	clear: both;
+}
+
+.about-author {	
+	float: left;
+    overflow: hidden;
+    /*padding-bottom: 28px;*/
+    margin-right: 20px;
+    margin-bottom: 28px;
+    margin-right: 2.96%;
+    width: 228.2px;
+    width: 31.328%;
+} 
+
+.about-author:last-child {
+    margin-right: 0;
+}
+
+.about-author__img-container {
+	float: left;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	outline: 1px solid #d8d8d8;
+	outline-offset: 5px;
+	margin: 7px;
+	margin-right: 13px;
+}
+
+.about-author__img-container-img {
+	height: 60px;
+}
+
+.about-author__name-wrapper {
+    overflow: auto;
+    padding: 6px 0;
+}
+
+.about-author__author-name {
+	font-size: 0.75em;
+	margin-bottom: 4px;	
+	color: #979797;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.about-author__name-descr {
+	font-size: 0.75em;
+	margin-bottom: 4px;
+	color: #979797;
+}
+
+.about-author__name-link {
+	font-size: 0.75em;
+	margin-bottom: 4px;
+	color: #7e5c88;
+	text-transform: capitalize;
+}
 /*footer{
  padding-top: 50px;
 }

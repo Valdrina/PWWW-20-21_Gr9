@@ -12,34 +12,57 @@
             }   
                     
             function moveRight(){
+
+              check(imgObj.style.left,imgObj.style.top);
                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-                 check(imgObj.style.left,imgObj.style.top);
+                if(parseInt(imgObj.style.left)> 10    ){
+              imgObj.style.left = 10+'px';
+
+                }
+                
+
+
+                 
+                              
+                     
                               }
             
             function moveLeft(){
+              check(imgObj.style.left,imgObj.style.top);
                imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
-
                 // check(imgObj.style.left,imgObj.style.top);
-            
 
-                check(imgObj.style.left,imgObj.style.top);
+                  if(parseInt( imgObj.style.left)< -250 ){
+              imgObj.style.left = -250+'px';
+               
+                }
+                
                
 
             }
     
 
              function moveDown(){
-               imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
               check(imgObj.style.left,imgObj.style.top);
-
+               imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
+              
+             
+             if(parseInt(imgObj.style.top ) > 0){
+                 imgObj.style.top= 0+'px';
+             }
+             
             }
     
             function moveTop(){
+                check(imgObj.style.left,imgObj.style.top); 
                imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
-
-               check(imgObj.style.left,imgObj.style.top);
-                               
-
+  if(parseInt(imgObj.style.top ) < -540  ){
+                 imgObj.style.top= -540+'px';
+                  
+             }
+            
+                            
+       
             }
             console.log(a);
 
@@ -50,12 +73,7 @@
 
 
         
-  function myFunction() {
-  var x =imgObj.style.top;
-  console.log(x);
-  document.getElementById("demo").innerHTML = x; 
-}
-            
+      
 
          // function check(s,d ){
               
@@ -68,20 +86,19 @@
              if(a=='-120px' && b =='-230px'){
               alert('Congratulations you have reached the hand of the owner :)');
               }
+
+              if(parseInt(a)> 10 || parseInt(a)< -250 || parseInt(b) > -540 || parseInt(b)> 0) {
+
+              }
+
+
             }
 
 
-         // }
-
+    
 function displayF(){
   var p =document.getElementById("forma");
   p.style.display= "block";
 }
 
 
-// function mathCalc(){
-//  var m = Math.PI;
-//  return Math.round(m)*Math.sin(90 * m/ 180)*Math.cos(0 * m / 180)*Math.max(0,1)*Math.min(1,2)*766666.667;
-// }
-
-// document.getElementById("visitors").innerHTML = mathCalc();

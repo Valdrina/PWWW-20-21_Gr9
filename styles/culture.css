@@ -4,6 +4,7 @@ h1{
     color: #96739f;
 }
 
+
 .projectDiv{
 
 	width: 25%;
@@ -139,13 +140,13 @@ color: black;
 
 
 }
-.day { background: #bbceed; 
+.day { background:#ffedf6 ; 
 
 background-size: cover ; }
-.afternoon { background: #e0bbed;
+.afternoon { background:#ffdbec;
 
 background-size: cover ; }
-.night { background:#c4565c;
+.night { background:#ffd6ea;
 background-size: cover ;  }
 #ndrysho{
 	margin-top: 20px;
@@ -173,7 +174,7 @@ canvas {
     border:1px solid #d3d3d3;
     background-color: black;
 }
-<<<<<<< HEAD
+
 
 
 footer{
@@ -208,6 +209,7 @@ footer  p,a{
 	color: #999999;
 	padding-bottom: 1em;
 	font-weight: bold;
+	text-align: left;
 	}
 
 .footer-content-1 h1 span {
@@ -320,9 +322,9 @@ footer nav ul li span{
   opacity: 0.8;
 
 }
-=======
+
 /*#svg {
 	padding-top: 30px;
 	padding-left: 380px;
 }*/
->>>>>>> e678a9db3dff0c1e7ce7b4daa6123c02fee9cb83
+

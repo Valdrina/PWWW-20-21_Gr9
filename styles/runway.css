@@ -165,6 +165,18 @@ background-color: #ffffff;
     outline: none;
 }
 
+#subb{
+	background-color: #5ea4f3;
+	color: white;
+	text-decoration: none;
+    margin-left: 40px;
+
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 .tabela4{
 background-color: #ffffff;
   
@@ -235,3 +247,11 @@ background-color: #ffffff;
 em{
 	color: #7e5c88;
 }
+
+#svg{
+	margin-top: -100px;
+    margin-left: 110px;}
+
+    .tabela1{
+    	margin-left: 300px;
+    }
