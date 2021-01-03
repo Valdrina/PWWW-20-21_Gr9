@@ -1,7 +1,7 @@
 /*fashion css*/
 @font-face {
-  font-family: kng;
-  src: url(Kind_and_Rich.otf);
+       font-family: kng;
+       src: url(Kind_and_Rich.otf);
 }
 #title{
 	font-size: 70px;
@@ -24,17 +24,18 @@
   
    }
 #linkat a {
-text-decoration: none;
-    padding: 3.3em;
-    font-family: georgia;
-    color: #979797;
-    font-size: 13px;
+  text-decoration: none;
+  padding: 3.3em;
+  font-family: georgia;
+  color: #979797;
+  font-size: 13px;
   }
+
 #linkat a:hover {
   color: #7e5c88;
 }
 
- #view, #model, #trend {
+#view, #model, #trend {
  	text-align: center;
 	padding-top: 0px;
 	border-bottom: 1px dashed #979797;
@@ -43,7 +44,7 @@ text-decoration: none;
   text-shadow: 6px 4px 6px #7e5c88;
   font-weight: normal;
  }
- #c, #street {
+#c, #street {
  	text-align: center;
 	padding-top: 1px;
   border-bottom: 1px dotted #979797;
@@ -53,82 +54,78 @@ text-decoration: none;
   font-weight: normal;
  }
  
- #photoSection
-          {     
-              height: 350px;
-              margin: 3px 0px 0px 0px;
-              background-color: white;
-              padding: 15px 5px;
-            
-              
+#photoSection {     
+  height: 350px;
+  margin: 3px 0px 0px 0px;
+  background-color: white;
+  padding: 5px 5px;   
           }
-  .fotot img{
-            margin-left: -34px;
+
+.fotot img {
+  margin-left: -34px;
           }
-  .fotot
-          {
-              margin: 5px 0px 0px 0px;
-              width:24%;
-              height: 300px;
-              text-align: center;
-              display: inline-block;
-              padding: 0px;
-                
+
+.fotot {
+  margin: 5px 0px 0px 0px;
+  width:24%;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  padding: 0px;   
           }
-  .fotot h2 {
-    font-weight: normal;
+
+.fotot h2 {
+  font-weight: normal;
   }
 
-  #teksti { font-size: 12px;
-                      color: #979797;
-                      line-height: 20px;
-
+#teksti { 
+  font-size: 12px;
+  color: #979797;
+  line-height: 20px;
   }
-   .more a{
-           padding: 5px;
-           color: white;
-           width:fit-content;
-           height:fit-content;
-           background-color: #7e5c88;
-           text-decoration: none;
-           border-radius: 15px; 
-           font-size: 12px;
-            }
-#photoSection2
-          {     
-              height: 280px;
-              margin: 3px 0px 0px 0px;
-              background-color: white;
-              padding: 5px 5px;
-            
-              
+
+.more a {
+  padding: 5px;
+  color: white;
+  width:fit-content;
+  height:fit-content;
+  background-color: #7e5c88;
+  text-decoration: none;
+  border-radius: 15px; 
+  font-size: 12px;
           }
+
+#photoSection2 {     
+  height: 280px;
+  margin: 3px 0px 0px 0px;
+  background-color: white;
+  padding: 5px 5px;      
+          }
+
 .shadow {
-  
-    padding-bottom: 20px;
-    display: flex;
-    background: #fff;
-    position: relative;
-    border-bottom: 0.5px solid #e0e0e0;
-    width: 100%;
-  
-}
+  padding-bottom: 20px;
+  display: flex;
+  background: #fff;
+  position: relative;
+  border-bottom: 0.5px solid #e0e0e0;
+  width: 100%;  
+  }
 .shadow::before {
-    content: "";
-    height: 10px;
-    width: 80%;
-    margin: 0 10%;
-    position: absolute;
-    bottom: 1px;
-    z-index: -5;
-    -webkit-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
-    -moz-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
-    box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-
+  content: "";
+  height: 10px;
+  width: 80%;
+  margin: 0 10%;
+  position: absolute;
+  bottom: 1px;
+  z-index: -5;
+  -webkit-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+  -moz-box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+  box-shadow: 0 1px 2px #cacaca, 0 4px 5px #cacaca;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
 }
+
 #button {
   border-radius: 8px;
   font-size: georgia;
@@ -139,49 +136,46 @@ text-decoration: none;
   background-color: #7e5c88;
 
 }
- #pjesaLast
-          {     
-              background-color: white;  
+#button:hover {
+  border-color: orange;
+}
+ #pjesaLast {     
+  background-color: white;  
+            }
 
+.last {   
+  margin: 5px 0px 0px 0px;
+  width:30%;
+  height: 100px;
+  text-align: left;
+  display: inline-block;
+  padding-left: 5em;
+  padding-right: 5em;    
           }
 
-  .last
-          {   
-              margin: 5px 0px 0px 0px;
-              width:30%;
-              height: 100px;
-              text-align: left;
-              display: inline-block;
-              padding-left: 5em;
-              padding-right: 5em;
-                
-          }
-.last video{
-    margin-left: -40px;
+.last video {
+  margin-left: -40px;
   }
 
- #vsubscribe
-          {     
-              height: 130px;
-              margin: 3px 0px 0px 0px;
-              background-color: white;
-              padding: 10px 5px;
-              text-align: center;
-              padding-top: 30px;
-              
+#vsubscribe {     
+  height: 130px;
+  margin: 3px 0px 0px 0px;
+  background-color: white;
+  padding: 10px 5px;
+  text-align: center;
+  padding-top: 30px;  
           }
-  .sublast
-          {   
-              margin: 5px 0px 0px 0px;
-              width:24%;
-              height: 100px;
-              text-align: center;
-              display: inline-block;
-              color: black;
-              font-size: 28px;
 
-                
+.sublast {   
+  margin: 5px 0px 0px 0px;
+  width:24%;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  color: black;
+  font-size: 28px;    
           }
+
 #vsub {
   padding-left: 40px;
   padding-right: 10px;
@@ -191,6 +185,7 @@ text-decoration: none;
   font-size: 20px;
 
 }
+
 #video1 {
   padding-bottom: 15px;
 }
@@ -201,23 +196,22 @@ text-decoration: none;
   text-align: center;
   margin-left:-100px; 
   padding-left: 25%;
-  
-
 }
+
 .moreLast {
   padding-left: 26%;
 }
 
-.moreLast a{
-           padding: 5px;
-           color: white;
-           width:fit-content;
-           height:fit-content;
-           background-color: #7e5c88;
-           text-decoration: none;
-           border-radius: 15px; 
-           font-size: 12px;
-           text-align: center;
+.moreLast a {
+  padding: 5px;
+  color: white;
+  width:fit-content;
+  height:fit-content;
+  background-color: #7e5c88;
+  text-decoration: none;
+  border-radius: 15px; 
+  font-size: 12px;
+  text-align: center;
             }
 #rate {
   text-align: center;
