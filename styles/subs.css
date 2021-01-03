@@ -1,6 +1,11 @@
+
+/* creating a new font*/
 @font-face {
   font-family: kng;
   src: url(Kind_and_Rich.otf);
+}
+*{
+	font-family: georgia, serif;
 }
 
 #maindiv{
@@ -40,7 +45,7 @@
 }
 
 
-
+/* the div that will hold the map*/
 #locationx{
 
 margin-left: 25%
@@ -56,6 +61,7 @@ height: 450px;
 	text-align: center;
 
 }
+/* styling buttons */
 .buttons {
     line-height: 2.5;
     padding: 0 20px;
@@ -74,6 +80,7 @@ height: 450px;
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                
 }
+/* styling main Button*/
 #buttonSubsc{
     border: 0;
     line-height: 2.5;

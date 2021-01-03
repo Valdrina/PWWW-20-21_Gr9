@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html manifest="develop.manifest">
+<html>
+
+<!-- duke marre parasysh se atributi manifest ne html5 eshte depricated dhe jo me i mbeshtetur nga browseret tane atehere po komentojme pjesen -->
+<!-- <html manifest = "develop.appcache" -->
+
 <head>
 	<title>Vogue Magazine</title>
 	<meta charset="utf-8">
@@ -31,7 +35,7 @@
 
 <main>
 	<section id="banner" style="display: block;">
-				<!-- right arrow -->
+				<!-- left arrow -->
 		<div class="left" onclick="switchState();"></div>
 
 		<div class="image-caption">
@@ -83,11 +87,6 @@
   						<br class="clearBoth" > 
 	 		 	
 
-<!-- <section id="works">
- -->
-	<!-- 	<h2 class="latest-work-title" >Latest project work</h2>
- -->
-
 	<section id="works">
 
 <h2  >Latest project work</h2>
@@ -107,7 +106,7 @@
 		</div>
 
 		<div class="projectDiv">
-			 <a href="#" class="latest-a">
+			 <a href="#" class="latest-a" onclick="return false">
 			<h3 >Vogue Portugal</h3>
 			<img src="images/8.jpeg" alt="Project image"   width="225px" height="225px">
 			<h4>A Wonderful Feeling</h4>
@@ -115,7 +114,7 @@
 		</div>
 
 		<div class="projectDiv">
-			<a href="#" class="latest-a">
+			<a href="#" class="latest-a" onclick="return false">
 			<h3 >Vogue China</h3>
 			<img src="images/9.jpg" alt="Project image" width="225px" height="225px">
 			<h4>Angelica Cheung </h4>
@@ -123,7 +122,7 @@
 		</div>
 
 		<div class="projectDiv last">
-			<a href="#" class="latest-a"> 
+			<a href="#" class="latest-a" onclick="return false"> 
 			<h3 >Condé Nast</h3>
 			<img src="images/10.jpg" alt="Project image" width="225px" height="225px">
 			<h4>Vogue Footprint</h4>
@@ -138,7 +137,7 @@
 				<hr class="cut">
 				<article class="vogue-post">
 					<div class="vogue-img">
-						<a href="#"><img src="images/11.jpg" alt="vogue-pic" width="225" height="125"></a>
+						<a href="#" onclick="return false"><img src="images/11.jpg" alt="vogue-pic" width="225" height="125"></a>
 
 					<a href="#"><h6 class="from-the-vogue-img-title">Charlie Chin</h6></a>
 					<p class="from-the-vogue-img-date">Friday 5th September</p>
@@ -147,7 +146,7 @@
 
 				<article class="vogue-post">
 					<div class="vogue-img">
-						<a href="#"><img src="images/FTHB2.jpg" alt="vogue-pic"width="225" height="125"></a>
+						<a href="#" onclick="return false"><img src="images/FTHB2.jpg" alt="vogue-pic"width="225" height="125"></a>
 
 					</div>
 					<a href="#"><h6 class="from-the-vogue-img-title">Fall</h6></a>
@@ -157,7 +156,7 @@
 
 				<article class="vogue-post">
 					<div class="vogue-img">
-						<a href="#"><img src="images/12.png" alt="vogue-pic" width="225" height="125"></a>
+						<a href="#" onclick="return false"><img src="images/12.png" alt="vogue-pic" width="225" height="125"></a>
 
 					</div>
 					<a href="#"><h6 class="from-the-vogue-img-title">Salma Noor</h6></a>
@@ -175,7 +174,7 @@
 
 				<div class="about-name">
 					<h6 class="about-author-name">Roger Lynch</h6>
-					<p class="about-author-desc">CHIEF EXECUTIVE AND ACCOUNTING OFFICER</p>
+					<p class="about-author-desc">Chief Executive Accounting and Communications Officer</p>
 					<p class="about-author-link"><a href="https://www.vogue.com.au/fashion/news/roger-lynch-has-been-appointed-the-new-global-ceo-of-cond-nast/news-story/ad001e32fdf5a580a302b1fa8531db7d">View Profile &#187;</a></p>
 				</div>
 				</div>
@@ -187,7 +186,7 @@
 
 				<div class="about-name">
 					<h6 class="about-author-name">Danielle Carrig</h6>
-					<p class="about-author-desc">CHIEF COMMUNICATIONS OFFICER</p>
+					<p class="about-author-desc">Chief Communications and Product Officer</p>
 					<p class="about-author-link"><a href="https://www.hollywoodreporter.com/news/vice-comms-chief-jumps-conde-nast-1293088">View Profile &#187;</a></p>
 				</div>
 				</div>
@@ -200,7 +199,7 @@
 
 				<div class="about-name-last">
 					<h6 class="about-author-name">Sanjay Bhakta</h6>
-					<p class="about-author-desc">CHIEF PRODUCT AND TECHNOLOGY OFFICER</p>
+					<p class="about-author-desc">Chief Product Technology and Quality Officer</p>
 					<p class="about-author-link"><a href="https://us.fashionnetwork.com/news/Conde-nast-names-new-chief-product-and-technology-officer,1178505.html">View Profile &#187;</a></p>
 				</div>
 				</div>
@@ -211,13 +210,7 @@
 
 	</div>
 
-
-	
-			
-
-  						 
-
-  						  <br class="clearBoth" >
+   <br class="clearBoth" >
 </main>
 		
  <footer>
@@ -234,7 +227,7 @@
         <span>Posted by Grupi 9 on 03.01.2020</span>
         </h1>
        <p>Duke iu p&euml;rgjigjur k&euml;rkes&euml;s s&euml; dhjet&euml; t&euml; parashtuar n&euml; punim tani ku p&euml;rve&ccedil; shkronjave t&euml; njohura t&euml;  gjuh&euml;s angleze k&euml;rkohet dhe p&euml;rdorimi disa prej atyre t&euml; gjuh&euml;s shqipe, po shkruajm&euml; nj&euml; tekst t&euml; &ccedil;far&euml;dosh&euml;m q&euml; i p&euml;rmban k&euml;to shkronja. &Euml;sht&euml; e r&euml;nd&euml;sis&euml; t&euml; lart&euml; plot&euml;simi i k&euml;rkesave. &Ccedil;do k&euml;rkes&euml; ka r&euml;nd&euml;si t&euml; lart&euml;. </p>
-         <span id = "rm"><a href="#">Read More &#187;</a></span>                   
+         <span id = "rm"><a href="#"onclick="return false">Read More &#187;</a></span>                   
           </div>
                   
   <div class="footer-content-1">
@@ -250,7 +243,7 @@
         </ul></nav>
                     
         </div>
-        <div class="footer-content-1">
+        <div class="footer-content-1 contact">
         <h1>CONTACT US</h1>
        <p>
         Cond&eacute; Nast Publications<br>

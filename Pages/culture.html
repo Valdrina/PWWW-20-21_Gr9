@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Culture</title>
-	<link rel="stylesheet" type="text/css" href="../styles/culture.css">
+  <title>Culture</title>
+  <link rel="stylesheet" type="text/css" href="../styles/culture.css">
 <link rel="stylesheet" type="text/css" href="../styles/general.css">
 
  <link rel="icon"  href="../images/v.ico">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <style>
-canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
-}
-</style> -->
 
 <script>
-	function clickCorona(){
-	  if (typeof(Storage) !== "undefined") {
-	   localStorage.setItem("con", "session.");
+  function clickCorona(){
+    if (typeof(Storage) !== "undefined") {
+     localStorage.setItem("con", "session.");
   // Retrieve
   document.getElementById("result").innerHTML = localStorage.getItem("con");
     if (sessionStorage.clickcount) {
@@ -31,10 +25,7 @@ canvas {
   } else {
     document.getElementById("res").innerHTML = "Sorry, your browser does not support web storage...";
   }
-	}
-
-
-
+  }
 
 $(document).ready(function(){
   $("#r").click(function(){
@@ -44,168 +35,138 @@ $(document).ready(function(){
   });
 
 
-// var bodyColor;
 var currentTime = new Date().getHours();
-
-//       var toggleSwitch = document.getElementById("ndrysho");
- 
-
-//   toggleSwitch.addEventListener("click", toggle);
-//        toggleSwitch.addEventListener("click", function() {
-//   alert("background changed");
-// });
-
-//      function toggle() {
-//   var backColor = document.body.style.backgroundColor;
-//   var a = document.body.style.backgroundColor;
-//   document.body.style.backgroundColor = a != "white" ? "white": "#e0bbed";
-// };
 
 function switchBodyColor() {
 
-
-
 if (document.body) {
-    	
+      
     if (currentTime >= 0 && currentTime < 12) {
         document.body.className = "day";
     }
     
-    	else if (currentTime >= 12 && currentTime < 17) {
+      else if (currentTime >= 12 && currentTime < 17) {
          document.body.className = "afternoon";
     }
     else if (currentTime >= 17 && currentTime < 24) {
-    	 document.body.className = "night";
-
+       document.body.className = "night";
     }
 
-// if(document.body.className == "night"){
-//  document.body.style.backgroundColor= "white";
-// }
-
 }
-
-
-
 }
-
-
 
 </script>
 
 </head>
 <body >
 
-	  <header>
-	<hgroup>
-		<h2>VOGUE</h2>
-		<h3>Free PSD Website Template</h3>
-	</hgroup>
+    <header>
+  <hgroup>
+    <h2>VOGUE</h2>
+    <h3>Free PSD Website Template</h3>
+  </hgroup>
 
-	<nav>
-		<a href="../index.html">HOME</a>
-		<a href="../Pages/fashion.html">FASHION</a>
-		<a href="../Pages/beauty.html">BEAUTY</a>
-		<a href="../Pages/culture.html">CULTURE</a>
-		<a href="../Pages/runway.html">RUNWAY</a>
-		<a href="../Pages/Subsc.html">SUBSCRIBE NOW</a>
-	</nav>
-	<div class="clearFix"></div>
+  <nav>
+    <a href="../index.html">HOME</a>
+    <a href="../Pages/fashion.html">FASHION</a>
+    <a href="../Pages/beauty.html">BEAUTY</a>
+    <a href="../Pages/culture.html">CULTURE</a>
+    <a href="../Pages/runway.html">RUNWAY</a>
+    <a href="../Pages/Subsc.html">SUBSCRIBE NOW</a>
+  </nav>
+  <div class="clearFix"></div>
 </header>
 
 <main>
-	<header>
-		<div>
-	<h1>CULTURE</h1>
-	<nav>
-	    <a href="#">VIEW ALL</a>
-	    <a href="#">OPINION</a>
-	    <a href="#">TV & MOVIES</a>
-	    <a href="#">MUSIC</a>
-	    <a href="#">ARTS</a>	
-	    <a href="#">BOOKS</a>
-	</nav>
-	</div>
+  <header>
+    <div>
+  <h1>CULTURE</h1>
+  <nav>
+      <a href="#works">VIEW ALL</a>
+      <a href="#">OPINION</a>
+      <a href="#tmtxt">TV & MOVIES</a>
+      <a href="#">MUSIC</a>
+      <a href="#">ARTS</a>  
+      <a href="#">BOOKS</a>
+  </nav>
+  </div>
 
 </header>
 
 
-	<img src="../images/c1.jpg" id="img">
-	<h2 id="h2">An Oral History of Fashion's Response to the <abbr title="Acquired Immunodeficiency Syndrome">AIDS</abbr> Epidemic</h2>
-	<section id="works">
-		
-		<div class="projectDiv">
-			<a href="#"><h3>CULTURE</h3>
-			<img src="../images/c2.jpg" width="225" height="225">
-			<h4>For Years I Reported of Gender-Based Violendce. Now My life's Work Is Fighting Against IT</h4></a>
-		</div>
+  <img src="../images/c1.jpg" id="img">
+  <h2 id="h2">An Oral History of Fashion's Response to the <abbr title="Acquired Immunodeficiency Syndrome">AIDS</abbr> Epidemic</h2>
+  <section id="works">
+    
+    <div class="projectDiv">
+      <a href="#" onclick="return false"><h3>CULTURE</h3>
+      <img src="../images/c2.jpg" width="225" height="225">
+      <h4>For Years I Reported of Gender-Based Violendce. Now My life's Work Is Fighting Against IT</h4></a>
+    </div>
 
-				<div class="projectDiv">
-			<a href="#"><h3>MAGAZINE</h3>
-			<img src="../images/c3.jpg" width="225" height="225">
-			<h4>How Savannah Guthire and Kristen Welker Won 2020 Election Coverage</h4></a>
-		</div>
-
-
-				<div class="projectDiv">
-			<a href="#"><h3>OPINION</h3>
-			<img src="../images/c4.jpg" width="225" height="225">
-			<h4>Why I'm Using Dr. from Here on out</h4></a>
-		</div>
-
-				<div class="projectDiv">
-			<a href="#"><h3>POSTCARDS FROM HOME</h3>
-			<img src="../images/c5.jpg" width="225" height="225">
-			<h4>No, This Pandemic Is Not Over.Please Don't Act Like It Is</h4></a>
-		</div>
+        <div class="projectDiv">
+      <a href="#"onclick="return false"><h3>MAGAZINE</h3>
+      <img src="../images/c3.jpg" width="225" height="225">
+      <h4>How Savannah Guthire and Kristen Welker Won 2020 Election Coverage</h4></a>
+    </div>
 
 
+        <div class="projectDiv">
+      <a href="#" onclick="return false"><h3>OPINION</h3>
+      <img src="../images/c4.jpg" width="225" height="225">
+      <h4>Why I'm Using Dr. from Here on out</h4></a>
+    </div>
 
-	</section>
+        <div class="projectDiv">
+      <a href="#" onclick="return false"><h3>POSTCARDS FROM HOME</h3>
+      <img src="../images/c5.jpg" width="225" height="225">
+      <h4>No, This Pandemic Is Not Over.Please Don't Act Like It Is</h4></a>
+    </div>
+  </section>
 
-	<div class="from-the-news">
+  <div class="from-the-news">
     <h3>NEWS</h3>
     <hr>
     <ol>
    <li> <article class="news-post">
-    	
-					<div class="news-img">
-						<a href="#"><img src="../images/c6.jpg" alt="vogue-pic" width="225" height="125"></a>
+      
+          <div class="news-img">
+            <a href="#" onclick="return false"><img src="../images/c6.jpg" alt="vogue-pic" width="225" height="125"></a>
 
-				<a onClick="clickCorona()" href="#">CORONAVIRUS</a>
-					<p class="from-the-news-img-date">Friday 5th September</p>
-					<h4 style=" font-weight:normal ;width: 200px;">An Infection Disease Doctor Answers All Your Questions About The Covid Vaccine</h4>
-				</div>
-				</article>
-				</li>  
+        <a onClick="clickCorona()" href="#">CORONAVIRUS</a>
+          <p class="from-the-news-img-date">Friday 5th September</p>
+          <h4 style=" font-weight:normal ;width: 200px;">An Infection Disease Doctor Answers All Your Questions About The Covid Vaccine</h4>
+        </div>
+        </article>
+        </li>  
 
-	 <li> <article class="news-post">
-					<div class="news-img">
-						<a href="#"><img src="../images/c7.jpg" alt="vogue-pic" width="225" height="125"></a>
+   <li> <article class="news-post">
+          <div class="news-img">
+            <a href="#" onclick="return false"><img src="../images/c7.jpg" alt="vogue-pic" width="225" height="125"></a>
 
-					<a href="#">ELECTION 2020</a>
-					<p class="from-the-news-img-date">Friday 5th September</p>
-					<h4 style=" font-weight:normal ;width: 200px;">As Biden's Pick for Interior, Deb Haaland Will be the First Native American to Serve the Cabinet</h4>
+          <a href="#">ELECTION 2020</a>
+          <p class="from-the-news-img-date">Friday 5th September</p>
+          <h4 style=" font-weight:normal ;width: 200px;">As Biden's Pick for Interior, Deb Haaland Will be the First Native American to Serve the Cabinet</h4>
 
-					</div>
-				</article></li>
+          </div>
+        </article></li>
 
-				 <li>   <article class="news-post">
-					<div class="news-img">
-						<a href="#"><img src="../images/c8.jpg" alt="vogue-pic" width="225" height="125"></a>
+         <li>   <article class="news-post">
+          <div class="news-img">
+            <a href="#" onclick="return false"><img src="../images/c8.jpg" alt="vogue-pic" width="225" height="125"></a>
 
-					<a href="#">NEWS</a>
-					<p class="from-the-news-img-date">Friday 5th September</p>
-					<h4 style=" font-weight:normal ;width: 200px;">Here's What Everyone was Googling in 2020</h4>
+          <a href="#" onclick="return false">NEWS</a>
+          <p class="from-the-news-img-date">Friday 5th September</p>
+          <h4 style=" font-weight:normal ;width: 200px;">Here's What Everyone was Googling in 2020</h4>
             </div> 
-					
-				</article></li>
-			</ol>
+          
+        </article></li>
+      </ol>
 
-	
-	<div id="r">
-	<div id="res"> </div>	
-	<div id="result"></div>
+  
+  <div id="r">
+  <div id="res"> </div> 
+  <div id="result"></div>
 
 
 
@@ -213,28 +174,21 @@ if (document.body) {
  <h3 id="tmtxt">TV & MOVIES </h3>
     <hr>
 <div class="tvandmovies">
-<div id="tv"><!-- 
-     <h6>TV & MOVIES </h6> -->
-	<a href="#"><img src="../images/c9.jpg" width="600" height="400"></a>
-   <!--  <h4>It's Little Women Season </h4> -->
-	</div>
+<div id="tv">
+  <a href="#" onclick="return false"><img src="../images/c9.jpg" width="600" height="400"></a>
+  </div>
 
 <div id="tv">
-     <!-- <h6>TV & MOVIES </h6> -->
-	<a href="#"><img src="../images/c10.jpg" width="600" height="400"></a>
- <!--    <h4>What’s Going On With the Nancy Meyers Family Drama?</h4> -->
-	</div>
+  <a href="#" onclick="return false"><img src="../images/c10.jpg" width="600" height="400"></a>
+  </div>
 
 <div id="tv">
-    <!--  <h6>TV & MOVIES </h6> -->
-	<a href="#"><img src="../images/c11.jpg" width="600" height="400"></a>
-   <!--  <h4>The Hair in Mank: How Amanda Seyfried and Lily Collins Transformed Into Their Iconic Characters</h4> -->
-	
+  <a href="#" onclick="return false" ><img src="../images/c11.jpg" width="600" height="400"></a>  
 
-	</div>
+  </div>
 </div>
 
-	<svg id="svg" height="130" width="500">
+  <svg id="svg" height="130" width="500">
      <defs>
       <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"
@@ -248,25 +202,15 @@ if (document.body) {
   x="50" y="86">VOGUE</text> Sorry, your browser does not support inline SVG.
 </svg>
 
-	</div>
-
-
-	<button onClick="switchBodyColor()" id="ndrysho">CHANGE BACKGROUND</button>
-
-
-	<script>
-	
-
-    document.getElementById("ndrysho").addEventListener("click", function() {
+  </div>
+  <button onClick="switchBodyColor()" id="ndrysho">CHANGE BACKGROUND</button>
+  <script>
+ document.getElementById("ndrysho").addEventListener("click", function() {
  alert("background changed");
-
 
 
 </script>
 </main>
-
-
-
  
 <footer>
      <hr>

@@ -1,10 +1,9 @@
-/*beauty css*/
 @font-face {
   font-family: kng;
   src: url(Kind_and_Rich.otf);
 }
 *{
-	font-family: georgia, sans-serif;
+	font-family: georgia, serif;
 }
 
 

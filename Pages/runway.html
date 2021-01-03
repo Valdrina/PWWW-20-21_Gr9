@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
     <title>Runway</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" type="text/css" href="../styles/general.css">
@@ -14,99 +16,6 @@
     margin-left: 375px;
 } 
 </style>
-
-
-<!--<script >
-    
-
-
-
-  var imgObj ;
-           function init(){
-               imgObj = document.getElementById('myImage');
-               imgObj.style.position= 'relative';
-               imgObj.style.left = '0px';
-               imgObj.style.top ='0px';
-           
-
-               var y=imgObj.offsetTop;
-            }   
-                    var a;
-            function moveRight(){
-               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-               a= imgObj.style.left;
-                              }
-            
-            function moveLeft(){
-               imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
-                // check(imgObj.style.left,imgObj.style.top);
-               if(imgObj.style.left =='-120px'){
-                alert("go on");
-
-               }
-               return imgObj.style.left;
- 
-            }
-    
-
-             function moveDown(){
-               imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
-      
-            }
-    
-            function moveTop(){
-               imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
-        
-              
-              if(imgObj.style.top =='-230px'){
-                // alert("yay");
-
-               }
-                 
-              return imgObj.style.top;
-
- 
-                    
-            }
-
-           
-
-            window.onload =init;
-
->>>>>>> e678a9db3dff0c1e7ce7b4daa6123c02fee9cb83
-
-
-<<<<<<< HEAD
-=======
-
-
-
-// (function(){
-//   largeFunction();
-// })(window.getComputedStyle( imgObj ).left)
-
-
-        
-               function myFunction() {
-  var x =imgObj.style.top;
-  console.log(x);
-  document.getElementById("demo").innerHTML = x; 
-}
-            
-         // function check(s,d ){
-              
-            
-              
-         //      if(s=='120px' && d =='-230px'){
-         //      alert('ajvhh');
-         //      }
-
-         // }
-
-
-
-
-</script>-->
 <script src="../js/runway.js"></script>
 
 </head>
@@ -189,7 +98,7 @@ ctx.strokeText("Move the bag",10,50);
         <div class="projectDiv">
             
             <img src="../images/r1.jpg" width="225" height="225">
-            <a href="#"><h6>TRENDS</h6>
+            <a href="#" onclick="return false"><h6>TRENDS</h6>
             <h4>“We’ve Gone From Dressing to Look Good to Dressing to Feel Good”—How Fashion Is Changing for Spring 2021</h4></a>
             <hr/>
         </div>
@@ -197,7 +106,7 @@ ctx.strokeText("Move the bag",10,50);
                 <div class="projectDiv">
          
             <img src="../images/r2.jpg" width="225" height="225">
-               <a href="#"><h6>RUNWAY</h6>
+               <a href="#" onclick="return false"><h6>RUNWAY</h6>
             <h4>“Faced With Restrictions, These Are the Designers Who Took Us Somewhere New”—Vogue Editors Weigh In on the Most Innovative Presentations of Spring 2021</h4></a>
             <hr/>
         </div>
@@ -206,7 +115,7 @@ ctx.strokeText("Move the bag",10,50);
                 <div class="projectDiv">
           
             <img src="../images/r3.jpg" width="225" height="225">
-              <a href="#"><h6>CELEBRITY STYLE</h6>
+              <a href="#" onclick="return false"><h6>CELEBRITY STYLE</h6>
             <h4>“It’s Important to All of Us That Our Conversations Reflect What’s Going On”: How the Digital Red Carpet Is Changing Celebrity Fashion</h4></a>
             <hr/>
         </div>
@@ -214,7 +123,7 @@ ctx.strokeText("Move the bag",10,50);
                 <div class="projectDiv">
            
             <img src="../images/r4.jpg" width="225" height="225">
-             <a href="#"><h6>RUNWAY</h6>
+             <a href="#" onclick="return false"><h6>RUNWAY</h6>
             <h4>“The Conditions That We’re Facing Are Making Us Think Very Differently”—Nicolas Ghesquière Talks Louis Vuitton on Good Morning Vogue</h4></a>
             <hr />
         </div>
@@ -225,7 +134,7 @@ ctx.strokeText("Move the bag",10,50);
  <dl><dt>Fashion Week</dt><dd>Russia</dd></dl>
     <div class="liimg"> 
 
-        <a href="#">
+        <a href="#" onclick="return false">
 
         <ul><li>Erdem</li>
         <ul><li>Fashion</li></ul>
@@ -233,7 +142,7 @@ ctx.strokeText("Move the bag",10,50);
          <img src="../images/r5.jpg" width="300px" height="300px">
          </a>
 
-         <a href="#">
+         <a href="#" onclick="return false">
         
          <img src="../images/r6.jpg" width="300px" height="300px"> <ul><li>Batsheva</li> <ul><li>Fashion</li></ul></ul>
          </a>
@@ -288,7 +197,7 @@ ctx.strokeText("Move the bag",10,50);
 
 </script>
 
-<form name="forma" id="forma" onsubmit="validate()" action=“#” method=“post”>
+<form name="forma" id="forma" onsubmit="return(validate());" action=“#” method=“post” novalidate>
   <fieldset>
     <legend>PERSONAL INFO</legend>
     <div class="personalInfo">
@@ -345,13 +254,13 @@ ctx.strokeText("Move the bag",10,50);
   <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
   </p>
 <p>
-    <label for="size_1">Street Addres:</label><br/>
+    <label for="size_1">Street Address:</label><br/>
       <input type="text" name="str">
 
     </p>
 <p>
     <label for="size_1">Phone Number:</label><br/>
-      <input type="text" name="number" placeholder="123-45-678">
+      <input type="text" name="number" placeholder="+383-XX-XXX-XXX">
 
     </p>
 
@@ -368,7 +277,7 @@ ctx.strokeText("Move the bag",10,50);
     </p>
 </div>
 
-<input type="submit" id="subb">
+<input type="submit" id="subb" align="center">
   </fieldset>
 </form>
 
@@ -557,11 +466,7 @@ function validate() {
             document.forma.surname.focus() ;
             return false;
          }
-         // if( document.subscription.location.value == "" || document.subscription.location.value == null) {
-         //    alert( "Please provide your correct Location!" );
-         //    document.subscription.location.focus() ;
-         //    return false;
-         // }
+         
          if( document.forma.str.value == "" || document.forma.str.value == null) {
             alert( "Please provide your correct Street Address!" );
             document.forma.str.focus() ;
@@ -636,12 +541,6 @@ drawingContext.moveTo(Math.random()*800,Math.random()*200);   drawingContext.lin
 
     
 </script> 
-
-
-
-
-
-
 
 <footer>
    <div class="shadow"></div>
