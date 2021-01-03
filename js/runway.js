@@ -13,29 +13,27 @@
                     
             function moveRight(){
 
-              check(imgObj.style.left,imgObj.style.top);
-               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-                if(parseInt(imgObj.style.left)> 10    ){
+               if(parseInt(imgObj.style.left)> 10    ){
               imgObj.style.left = 10+'px';
 
                 }
-                
-
-
-                 
-                              
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';  
+                 check(imgObj.style.left,imgObj.style.top);
+           
                      
                               }
             
             function moveLeft(){
-              check(imgObj.style.left,imgObj.style.top);
-               imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
-                // check(imgObj.style.left,imgObj.style.top);
-
+             
                   if(parseInt( imgObj.style.left)< -250 ){
               imgObj.style.left = -250+'px';
                
                 }
+                 
+               imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+               check(imgObj.style.left,imgObj.style.top);
+                // check(imgObj.style.left,imgObj.style.top);
+
                 
                
 
@@ -43,23 +41,27 @@
     
 
              function moveDown(){
-              check(imgObj.style.left,imgObj.style.top);
-               imgObj.style.top =parseInt(imgObj.style.top) + 10 + 'px';
-              
-             
+            
              if(parseInt(imgObj.style.top ) > 0){
                  imgObj.style.top= 0+'px';
              }
+            
+               imgObj.style.top = parseInt(imgObj.style.top) + 10 + 'px';
+                check(imgObj.style.left,imgObj.style.top);
+              
              
             }
     
             function moveTop(){
-                check(imgObj.style.left,imgObj.style.top); 
-               imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
-  if(parseInt(imgObj.style.top ) < -540  ){
+
+                
+            if(parseInt(imgObj.style.top ) < -540  ){
                  imgObj.style.top= -540+'px';
                   
              }
+        
+               imgObj.style.top = parseInt(imgObj.style.top)  - 10 + 'px';
+                check(imgObj.style.left,imgObj.style.top); 
             
                             
        
@@ -71,27 +73,13 @@
             window.onload =init;
 
 
-
-        
-      
-
-         // function check(s,d ){
-              
-            
-              
-         //      if(s=='120px' && d =='-230px'){
-         //      alert('ajvhh');
-
          function check(a,b){
+          
              if(a=='-120px' && b =='-230px'){
               alert('Congratulations you have reached the hand of the owner :)');
+              disableF();
               }
-
-              if(parseInt(a)> 10 || parseInt(a)< -250 || parseInt(b) > -540 || parseInt(b)> 0) {
-
-              }
-
-
+                
             }
 
 
@@ -99,6 +87,23 @@
 function displayF(){
   var p =document.getElementById("forma");
   p.style.display= "block";
+}
+
+
+function enableF(){
+  document.getElementById("topB").disabled=false;
+  document.getElementById("leftB").disabled=false;
+  document.getElementById("rightB").disabled=false;
+  document.getElementById("downB").disabled=false;
+
+}
+
+function disableF(){
+  document.getElementById("topB").disabled=true;
+  document.getElementById("leftB").disabled=true;
+  document.getElementById("rightB").disabled=true;
+  document.getElementById("downB").disabled=true;
+
 }
 
 

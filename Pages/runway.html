@@ -134,12 +134,12 @@
 <div id="fb">
 <img src="../images/c17.jpg"  height="500px" id="foto" >
  <div style="text-align:center;width:480px;" class="d">
-  <button onclick="moveTop()" class="but">UP</button><br/><br/>
+  <button onclick="moveTop()" class="but" disabled="true" id="topB">UP</button><br/><br/>
   <div id="twobut">
-  <button onclick="moveLeft()" class="but">LEFT</button>
-  <button onclick="moveRight()" class="but">RIGHT</button>
+  <button onclick="moveLeft()" class="but" disabled="true" id="leftB">LEFT</button>
+  <button onclick="moveRight()" class="but" disabled="true" id="rightB">RIGHT</button>
 </div><br/><br/>
-  <button onclick="moveDown()" class="but">DOWN</button>
+  <button onclick="moveDown()" class="but" disabled="true" id="downB">DOWN</button>
 </div>
 </div>
 <br /> 
@@ -169,6 +169,7 @@ ctx.strokeText("Move the bag",10,50);
   x="65" y="40">PLAY THE GAME</text>
 </svg> 
 <p id="demo"></p>
+<button onclick="enableF();">Start</button>
 <div class="clearFix"></div>
 
    <section id="works">
