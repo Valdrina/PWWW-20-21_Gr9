@@ -13,8 +13,8 @@
                     
             function moveRight(){
 
-               if(parseInt(imgObj.style.left)> 10    ){
-              imgObj.style.left = 10+'px';
+               if(parseInt(imgObj.style.left)> 0    ){
+              imgObj.style.left = 0+'px';
 
                 }
                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';  
@@ -89,6 +89,23 @@ function displayF(){
   p.style.display= "block";
 }
 
+
+function restart(){
+
+ 
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative';
+               imgObj.style.left = '0px';
+               imgObj.style.top ='0px';
+           
+
+               var y=imgObj.offsetTop;
+            
+            
+           
+
+
+}
 
 function enableF(){
   document.getElementById("topB").disabled=false;

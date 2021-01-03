@@ -107,6 +107,7 @@ header nav a:hover {
 	}
 
 #works{
+
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -117,16 +118,16 @@ header nav a:hover {
  font-weight: 500;
  font-size: 20px;
  margin-bottom: 8px;
-
+padding-bottom: 5px;
+    border-bottom: 1px solid #d5d4d4;
+    margin-bottom: 50px;
  } 
- #works hr{
- 	margin-bottom:50px;
-	border-top: 0.5px solid #979797;
- }                      
+                   
  #works .projectDiv{
  	float: left;
  	margin-right:30px;
    	margin-top: -20px;
+
 
  }                        
 #works .projectDiv h3{
@@ -151,7 +152,7 @@ header nav a:hover {
 	width: 225px;
 	
 	text-align: center;
-   margin-top: -4px;
+   margin-top: -5px;
 
    padding: 13px 0;
 
@@ -203,6 +204,10 @@ color: #fff;
  .content-title {
 	/*margin-bottom: 28px;*/
 	padding-bottom: 0px;
+
+	    margin-bottom: 8px;
+    margin-top: 40px;
+    font-weight: normal;
 }
 .cut{
 	margin-bottom: 40px;
@@ -249,8 +254,13 @@ color: #fff;
 
 }
 
+.vogue-post a{
+	text-decoration: none;
+}
 
-
+.about-name a{
+	text-decoration: none;
+}
  .about-us hr{
  	border-top: 0.5px solid #979797;
  	margin-bottom: 40px;
@@ -306,14 +316,17 @@ color: #fff;
 }
 
 
-
+.about-author-link a{
+	color: #7e5c88;
+	text-decoration: none;
+}
 .from-the-blog{
 
 	float: left;
-	width: 80%;
+	
     margin-left: 5px;
 
-
+   width: 774px;
 
  
 }
@@ -325,9 +338,9 @@ color: #fff;
 
 .about-us{
 	float: left;
-	width: 20%;
-	margin-left: -35px;
-   
+	
+	margin-left: -10px;
+   width: 226px;
 }
 
 .about-img{
