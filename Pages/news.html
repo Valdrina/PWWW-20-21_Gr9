@@ -97,7 +97,29 @@
  <h3>What is your favorite TikTok you’ve ever made? What took the longest?</h3>
  <p id="teksti">My favorite TikTok has nothing to do with scarves or fashion tips, and did not take much work to edit, but is the one that puts a smile on my face and gives me joy every time I look at it. It’s the one where I was trying to dance and <u>the kids jumped in </u>. It was natural and real. The one that took me the longest and caused me the most stress—and because of this, I almost deleted the app—was the video where I had to <u>jump into my shoes</u> to change my outfit. The timing between the jumps just wasn’t working for me. I tried for almost three weeks and still the video didn’t turn out perfect, but I posted anyway because it was the hardest one.</p>
 
+<address>
+Written by <a href="mailto:webmaster@example.com">CHRISTIAN ALLAIRE</a>.<br> 
+Visit us at:<br>
+Vogue.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+
+<style> 
+p.test {
+  width: 30em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+  margin-left: 27%;
+  margin-bottom: 20px;
+  resize: both;
+  overflow: auto;
+}
+</style>
+<p class="test"><i>"If you are not familiar yet with wearing scarves, I would highly recommend starting by wearing small scarves as an accessory."</i></p>
  </div>
+
 
  <div id="signUp">
  	<p ><i>Sign up for our weekly shopping newsletter, The Get!</i></p>
@@ -113,6 +135,19 @@
 <input type="email" name="email" id="em"><input type="submit" value="Sign Up" id="signButton">
   
 </form>
+
+ <canvas id="myCanvas"/>
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var grd = ctx.createRadialGradient(90, 70, 5, 90, 60, 90);
+grd.addColorStop(0, "purple");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(15, 30, 300, 5);
+</script>
 
  </div>
   

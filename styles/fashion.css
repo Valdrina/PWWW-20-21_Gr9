@@ -1,11 +1,16 @@
 /*fashion css*/
+@font-face {
+  font-family: kng;
+  src: url(Kind_and_Rich.otf);
+}
 #title{
-	font-size: 30;
+	font-size: 70px;
 	margin-top: 150px;
 	text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: kng;
 	color: #7e5c88;
-  height: 40px;
+  height: 70px;
+  padding-top: 25px;
   background-image: url("../images/back.jpg");
   background-size:cover;
   outline-style: double;

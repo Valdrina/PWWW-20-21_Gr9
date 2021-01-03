@@ -32,7 +32,9 @@ padding-bottom: 20px;
 }
 .bodyNews {
 float: center;
-border-bottom: 1px solid #979797;
+border-bottom: 5px solid transparent;
+  padding: 15px;
+  border-image: url(../images/linear.png) 5% round;
 
 }
 #fig2 {
@@ -80,4 +82,17 @@ border-bottom: 1px solid #979797;
 #em{
 	border-style: solid none solid solid;
 }
-
+address {
+		  display: inline-block;
+          font-style: italic;
+         text-align: left;
+         padding-bottom: 25px;
+	}
+address a{
+	font-size: 12px;
+	color: black;
+}
+#myCanvas {
+	margin-bottom: -25%;
+	margin-left: 15%;
+}
