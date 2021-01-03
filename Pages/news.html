@@ -145,6 +145,20 @@ p.test {
 <input type="email" name="email" id="em"><input type="submit" value="Sign Up" id="signButton">
   
 </form>
+<p id="lastButton"><button id="lastButton onclick="myFunction()">For people that like numbers</button></p>
+
+<script>
+function myFunction() {
+  alert("Math.E:  " + Math.E + "\n" +
+"Math.PI: " + Math.PI + "\n" +
+"Math.SQRT2: " + Math.SQRT2 + "\n" +
+"Math.SQRT1_2: " + Math.SQRT1_2 + "\n" +
+"Math.LN2: " + Math.LN2 + "\n" +
+"Math.LN10: " + Math.LN10 + "\n" +
+"Math.LOG2E: " + Math.LOG2E + "\n" +
+"Math.Log10E: " + Math.LOG10E + "\n");
+}
+</script>
 
  <canvas id="myCanvas"/>
 Your browser does not support the HTML5 canvas tag.</canvas>
@@ -161,21 +175,6 @@ ctx.fillRect(15, 30, 300, 5);
 
  </div>
   
-<h2 id="numbers">For people that like numbers</h2>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = 
-"<p><b>Math.E:</b> " + Math.E + "</p>" +
-"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
-"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
-"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
-"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
-"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
-"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
-"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
-</script>
 
   </main>
  <footer>
