@@ -4,7 +4,7 @@
 	    margin-top: 170px;
 	    text-align: center;
         font-family: times new roman;
-	    color: #323232;
+	    color: #656565;
 	    
 	    padding-bottom: 10px;
 
@@ -46,7 +46,6 @@ border-bottom: 5px solid transparent;
 #teksti {
 	width: 600px;
 	text-align: left;
-    float: center;
     padding-left: 240px;
     font-size: 19px;
     font-family: times new roman;
@@ -69,15 +68,24 @@ border-bottom: 5px solid transparent;
 	padding-left: 200px;
 }
 .tx{
-	font-size: 14px;
+	font-size: 13px;
 }
+#titlSect{
+	margin-left: 25%;
+	text-align: center;
+	font-size: 22px;
+	max-width: 50%; 
+}
+
 
 #signButton{
 	height:35px;
 	width: 100px;
+	background-color: #7e5c88;
+
 }
 #signButton:hover{
-	background-color: #7e5c88;
+	background-color: #e9d3ff;
 }
 #em{
 	border-style: solid none solid solid;

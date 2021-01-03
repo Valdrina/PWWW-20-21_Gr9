@@ -17,6 +17,8 @@
 	font-size: 30px;
 	background-image: url('../images/pink.png'),url('../images/water.jpg') ;
 	background-position: center ,left top;
+	background-origin: content-box , content-box;
+	background-attachment: scroll,scroll;
     background-repeat: no-repeat,repeat;
 
 }
@@ -89,14 +91,15 @@ font-size: 14px;
 	font-size: 12px;
 
 }
-#author1, #author2,#author3, #author4{
+#author1, #author2,#author3, #author4,#author5{
 	float: right;
 	margin-right: 10px;
 	font-size: 12px;
 }
-#dataEP, #dataEP2{
+#dataEP, #dataEP2,#dataEP3,#dataEP4, #dataEP5{
 	float: right;
 	font-size: 12px;
+	margin-right: 10px;
 }
 #audio {
 	padding-top: 30px;
@@ -232,12 +235,15 @@ font-size: 14px;
 	text-align: center;
 }
 #freeProducts{
-	background-color:  #add8e6;
-	height: 320px;
+	margin-top: 20px;
+	padding-top: 5px;
+	background-color: #add8e6;
+	height: 355px;
 	width: 100%;
 }
 #freeProducts h3{
-	padding-top: 10px;
+	padding-top:10px;
+	margin-top: 0px;
 	font-weight: normal;
 	font-size: 25px;
 }
@@ -245,6 +251,33 @@ font-size: 14px;
 	font-weight: normal;
 	font-size: 14px;
 }
+#clr,#sbm{
+	width: 80px;
+	font-size: 15px;
+	background-color:#0277bd;
+	border-radius: 10px;
+	color: white;
+	border:1px solid blue;
+
+}
+#animantionL{
+	outline-color: #0277bd;
+	background-color: #bfe6ff;
+	outline-style: solid;
+	font-size: 17px;
+	width: 80px;
+	margin-left: 190px;
+	padding:5px;
+ 	transform: skewY(-20deg);
+ 	transform-origin: 110% 110%;
+}
+
+#animantionL:active{
+	 	transform: skewY(20deg);
+}
+
+
+
 #movingAnimation{
 	margin-top: -50px;
 	width: 200px;
@@ -275,7 +308,5 @@ font-size: 14px;
   100% {
   	background-image: url("../images/7.png");
   	left: 0px;}
-
-
 }
 
